@@ -29,7 +29,10 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["8000-linobollans-theluxerybl-r1r4f0ivilw.ws.codeinstitute-ide.net"]
+ALLOWED_HOSTS = [
+    "8000-linobollans-theluxerybl-r1r4f0ivilw.ws.codeinstitute-ide.net",
+    "the-luxury-blog.onrender.com",
+]
 
 
 # Application definition
