@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "8000-linobollans-theluxerybl-r1r4f0ivilw.ws.codeinstitute-ide.net",
+    "8000-linobollans-theluxurybl-trosltpa2qv.ws.codeinstitute-ide.net",
     "the-luxury-blog.onrender.com",
 ]
 
