@@ -164,3 +164,12 @@ body {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+.luxury {
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    color: #D4AF37; /* Gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    line-height: 0.9;
+}
