@@ -10,10 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-from pathlib import Path
 import os
-import dj_database_url
 import sys
+from pathlib import Path
+
+import dj_database_url
+from django.contrib.messages import constants as messages
+
 if os.path.isfile('env.py'):
     import env
 
