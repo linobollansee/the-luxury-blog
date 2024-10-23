@@ -5,6 +5,7 @@
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
+{% url 'tombola' as tombola_url %}
 
 
 <!DOCTYPE html>
@@ -52,6 +53,9 @@
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
                             href="{% url 'about' %}">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if request.path == tombola_url %}active{% endif %}"
+                            href="{% url 'tombola' %}">Tombola</a>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"

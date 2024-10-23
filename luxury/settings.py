@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'blog',
     'about',
+    'tombola',
 ]
 
 SITE_ID = 1
