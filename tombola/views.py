@@ -1,3 +1,4 @@
+from django.core.paginator import Paginator
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .models import Participant
@@ -17,6 +18,13 @@ def tombola_view(request):
     else:
         form = ParticipantForm()
 
-    participants = Participant.objects.all()
-    return render(request, 'tombola/tombola.html',
-                  {'form': form, 'participants': participants})
+    # Fetch all participants and apply pagination
+    participants_list = Participant.objects.all().order_by('-created_at')
+    paginator = Paginator(participants_list, 10)  # Show 10 participants per page
+    page_number = request.GET.get('page')
+    participants = paginator.get_page(page_number)
+
+    return render(request, 'tombola/tombola.html', {
+        'form': form,
+        'participants': participants
+    })

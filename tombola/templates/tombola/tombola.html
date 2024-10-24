@@ -30,8 +30,47 @@
                         {{ participant.name }}
                         <span class="text-muted">{{ participant.email }}</span>
                     </li>
+                {% empty %}
+                    <li class="list-group-item">No participants yet.</li>
                 {% endfor %}
             </ul>
+
+            <!-- Pagination controls -->
+            <nav aria-label="Page navigation" class="my-4">
+                <ul class="pagination justify-content-center">
+                    {% if participants.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ participants.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&laquo;</span>
+                        </li>
+                    {% endif %}
+
+                    {% for num in participants.paginator.page_range %}
+                        {% if participants.number == num %}
+                            <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                        {% else %}
+                            <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if participants.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ participants.next_page_number }}" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="page-item disabled">
+                            <span class="page-link" aria-hidden="true">&raquo;</span>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
         </div>
     </div>
 </div>
