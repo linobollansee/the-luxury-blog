@@ -54,7 +54,7 @@
                             href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == tombola_url %}active{% endif %}"
+                        <a class="nav-link {% if request.path == tombola_url %}active" aria-current="page{% endif %}"
                             href="{% url 'tombola' %}">Tombola</a>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
