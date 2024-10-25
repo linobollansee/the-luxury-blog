@@ -1,15 +1,13 @@
+# Import the messages framework to display one-time notifications to the user.
+from django.contrib import messages
 # Import the Paginator class from Django to handle pagination.
 from django.core.paginator import Paginator
-
 # Import render and redirect functions to render templates, handle redirects.
 from django.shortcuts import render, redirect
 
-# Import the messages framework to display one-time notifications to the user.
-from django.contrib import messages
 
 # Import the Participant model, it represents the participants in the database.
 from .models import Participant
-
 # Import the ParticipantForm form class for form submissions, validations.
 from .forms import ParticipantForm
 
