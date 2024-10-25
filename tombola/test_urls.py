@@ -1,6 +1,6 @@
 # Import necessary modules from Django
-from django.urls import reverse  # Allows us to reverse resolve URLs
 from django.test import SimpleTestCase  # Provides a way to create simple tests
+from django.urls import reverse  # Allows us to reverse resolve URLs
 
 
 # Define a test case class for URL testing, inheriting from SimpleTestCase
