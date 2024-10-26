@@ -165,6 +165,7 @@ body {
     color: rgb(222, 146, 168);
 }
 
+/* Luxury logo */
 .luxury {
     font-family: 'Great Vibes', cursive;
     font-size: 64px;
@@ -172,4 +173,26 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     display: block;
     line-height: 0.9;
+}
+
+/* Flash effect for edit input */
+.edit-highlight {
+    animation: flashEdit 1s ease-in-out;
+}
+
+@keyframes flashEdit {
+    0% { background-color: #fffdd0; } /* Light yellow */
+    100% { background-color: white; }
+}
+
+/* Shake effect for delete modal */
+.modal-shake {
+    animation: shakeModal 0.5s ease-in-out;
+}
+
+@keyframes shakeModal {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
 }
