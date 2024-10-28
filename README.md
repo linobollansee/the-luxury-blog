@@ -217,3 +217,16 @@ User Story 5.2: Document the Development Process (Must Have, Story Points: 8)
      - A README file was created in the project's root directory with many sections discussing rationale, setup, and testing.
      - Clear deployment instructions are written in the README file, and the live project link made available at the top of the README.
 
+User Story 6.1: Deploy the Application to a Cloud Platform (Must Have, Story Points: 3)
+- Description: As a developer, I want to deploy the final version of the application to a cloud platform so that it is accessible online.
+  - Acceptance Criteria:
+    - Application is deployed and functions correctly on the cloud platform.
+    - No sensitive data in the repository.
+  - Tasks:
+    - Configure cloud platform.
+    - Deploy the application.
+    - Test the deployed application.
+  - How Tasks were respectively completed:
+    - An account was created on [https://render.com/](https://render.com/), a new Web Service created, and its start command, environment variables, etc. configured.
+    - Deploy Web Service was clicked to deploy the application.
+    - The dashboard was used to retrieve the live link which was opened to test the deployed application.
