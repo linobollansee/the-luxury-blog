@@ -129,4 +129,4 @@ User Story 2.1: Build the Data Model and Database Structure (Must Have, Story Po
   - How Tasks were respectively completed:
     - An Entity-Relationship Diagram (ERD) was created to design a database schema that fits the project domain.
     - Database models were implemented through `models.py` files with field declarations in app folders.
-    - Running the following commands in the terminal: `python manage.py makemigrations` and `python manage.py migrate` initialized the database structure. It executes the SQL commands defined in the migration files.
+    - Running the following commands in the terminal: `python manage.py makemigrations` and `python manage.py migrate` initialized the database structure. It executes the SQL commands through the migration files.
