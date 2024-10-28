@@ -179,4 +179,15 @@ User Story 3.2: Secure Restricted Content (Must Have, Story Points: 3)
     - The blog checks if the user is logged-in with the DTL tag `{% if user.is_authenticated %}` and if not, renders different content below the {% else %} tag.
     - Visiting a blog post while not logged in displays "Log in to leave a comment"
 
-
+User Story 4.1: Implement Manual and Automated Tests (Should Have, Story Points:5)
+- Description: As a developer, I want to create test procedures for both front-end and back-end components to ensure the application functions correctly.
+  - Acceptance Criteria:
+    - Automated and manual tests for core functionality are in place.
+  - Tasks:
+    - Write unit tests for Python back-end code.
+    - Test CRUD operations, authentication, and data manipulation.
+    - Document all testing procedures in the README.
+  - How Tasks were respectively completed:
+    - Test files were written for the back-end code containing unit tests: `test_apps.py`, `test_forms.py`, `test_models.py`, `test_urls.py`, `test_views.py`
+    - Live interaction on [https://the-luxury-blog.onrender.com/] allowed to test CRUD operations, authentication, and data manipulation. The superuser admin panel showed the condition of the database.
+    - Testing procedures were documented in the README.
