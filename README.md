@@ -116,3 +116,17 @@ User Story 1.3: Ensure Code Quality Standards (Must Have, Story Points: 3)
   - How Tasks were respectively completed:
     - The list of files to be checked was prepared, including all `*.html`, `*.css`, `*.js`, `*.py` files essential to this project.
     - Python code was checked with the Code Institute linter, HTML with the W3C Markup Validation Service, CSS with The W3C CSS Validation Service, Javascript with the JSHint JavaScript Code Quality Tool.
+
+User Story 2.1: Build the Data Model and Database Structure (Must Have, Story Points: 5)
+- Description: As a developer, I want to implement a database model that supports the application’s business logic and data manipulation needs.
+  - Acceptance Criteria:
+    - A well-structured data model exists for storing and retrieving data.
+    - At least one custom model is implemented.
+  - Tasks:
+    - Design a database schema that fits the project domain.
+    - Implement the database model.
+    - Create migrations to initialize the database structure.
+  - How Tasks were respectively completed:
+    - An Entity-Relationship Diagram (ERD) was created to design a database schema that fits the project domain.
+    - Database models were implemented through `models.py` files with field declarations in app folders.
+    - Running the following commands in the terminal: `python manage.py makemigrations` and `python manage.py migrate` initialized the database structure. It executes the SQL commands defined in the migration files.
