@@ -155,3 +155,16 @@ User Story 2.3: Handle Notifications for Data Changes (Must Have, Story Points: 
   - How Tasks were respectively completed:
     - The notification system was based on views files importing `from django.contrib import messages` and using its constants for browser feedback.
     - The web browser was used to check for message notifications on each operation.
+
+User Story 3.1: Implement Role-Based Authentication (Must Have, Story Points: 3)
+- Description: As a user, I want to log in with role-based permissions so that I can access the appropriate content and features based on my role.
+  - Acceptance Criteria:
+    - Role-based authentication is implemented.
+    - Users can register and log in.
+  - Tasks:
+    - Implement user registration and login functionality.
+    - Apply role-based access controls to different features.
+  - How Tasks were respectively completed:
+    - The package `django-allauth` and its templates was used for handling authentication, registration, and account management. 
+    - Role-based access controls to different features were implemented through template tags: `{% if user.is_authenticated %}`
+
