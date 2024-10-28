@@ -278,3 +278,16 @@ User Story 8.3: Advanced Filtering and Search Options (Won't Have, Story points:
   - How Tasks were respectively completed:
     - Not completed.
 
+User Story 8.4: Multi-Language Support
+- Description: As a user, I want to use the application in my preferred language so that I can interact with it in a language I’m comfortable with.
+  - Acceptance Criteria:
+    - Application is available in at least two languages.
+    - Users can easily switch between languages from a settings menu.
+  - Tasks:
+    - Implement language selection functionality.
+    - Translate all user-facing content and labels into the chosen languages.
+    - Ensure proper formatting and layout for different languages (e.g., text direction).
+  - How Tasks were respectively completed:
+    - Not implemented, but considered partially in progress due to `{% load i18n %}` internationalization and `{% trans %}` translation tags being present in some of the project templates: `signup.html`, `login.html`, `logout.html`.
+
+
