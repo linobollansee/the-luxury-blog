@@ -165,6 +165,18 @@ User Story 3.1: Implement Role-Based Authentication (Must Have, Story Points: 3)
     - Implement user registration and login functionality.
     - Apply role-based access controls to different features.
   - How Tasks were respectively completed:
-    - The package `django-allauth` and its templates was used for handling authentication, registration, and account management. 
-    - Role-based access controls to different features were implemented through template tags: `{% if user.is_authenticated %}`
+    - The package `django-allauth` and its templates were used for handling authentication, registration, and account management. 
+    - Role-based access controls to different features were implemented through template tags: `{% if user.is_authenticated %}` and the `django-allauth` framework.
+
+User Story 3.2: Secure Restricted Content (Must Have, Story Points: 3)
+- Description: As a user, I should not be able to access restricted content before logging in.
+  - Acceptance Criteria:
+    - Restricted pages are inaccessible to unauthorized users.
+  - Tasks:
+    - Implement access control for restricted pages.
+    - Test to ensure unauthorized users are redirected to login.
+  - How Tasks were respectively completed:
+    - The blog checks if the user is logged-in with the DTL tag `{% if user.is_authenticated %}` and if not, renders different content below the {% else %} tag.
+    - Visiting a blog post while not logged in displays "Log in to leave a comment"
+
 
