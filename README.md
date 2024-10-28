@@ -17,6 +17,11 @@ This project was planned using Agile project management through Epics, Descripti
 
 A Kanban board has been set up and used for this purpose, providing an organized overview. It can be accessed at: [https://github.com/users/linobollansee/projects/6](https://github.com/users/linobollansee/projects/6)
 
+A screenshot of The Luxury Blog Kanban Board during active development phase usage:
+
+![Luxury Blog Kanban Board](readme/images/luxury-blog-kanban-board.png)
+
+
 ### Epics
 
 Epic 1: Plan and Design the Full-Stack Web Application using an MVC Framework
