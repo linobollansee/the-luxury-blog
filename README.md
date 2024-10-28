@@ -230,3 +230,15 @@ User Story 6.1: Deploy the Application to a Cloud Platform (Must Have, Story Poi
     - An account was created on [https://render.com/](https://render.com/), a new Web Service created, and its start command, environment variables, etc. configured.
     - Deploy Web Service was clicked to deploy the application.
     - The dashboard was used to retrieve the live link which was opened to test the deployed application.
+
+User Story 7.1: Design Efficient Models Using OOP (Must Have, Story Points: 5)
+- Description: As a developer, I want to design a custom data model using OOP principles to efficiently manage data.
+  - Acceptance Criteria:
+    - Data model is designed using OOP principles.
+  - Tasks:
+    - Implement data model classes with relevant methods.
+    - Refactor code to adhere to OOP principles.
+  - How Tasks were respectively completed:
+    - Models files were expanded through consultation of Django's Model field reference available at [https://docs.djangoproject.com/en/5.1/ref/models/fields/](https://docs.djangoproject.com/en/5.1/ref/models/fields/)
+    - Object-oriented code was adjusted with OOP principles enforced by the Django framework.
+
