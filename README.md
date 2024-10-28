@@ -290,4 +290,19 @@ User Story 8.4: Multi-Language Support
   - How Tasks were respectively completed:
     - Not implemented, but considered partially in progress due to `{% load i18n %}` internationalization and `{% trans %}` translation tags being present in some of the project templates: `signup.html`, `login.html`, `logout.html`.
 
+## Design
 
+#### Logo
+
+The logo was made by CSS styling:
+
+`
+.luxury {
+    font-family: 'Great Vibes', cursive;
+    font-size: 64px;
+    color: #D4AF37; /* Gold color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    line-height: 0.9;
+}
+`
