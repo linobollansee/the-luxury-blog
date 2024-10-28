@@ -92,7 +92,7 @@ User Story 1.1: Design Front-End for a Data-Driven Web Application (Must Have, S
     - The Bootstrap Framework with predefined grid classes with built-in responsive design was used to implement CSS for responsive design.
     - Google Lighthouse was utilized to assess and verify the front-end design's compliance with accessibility standards.
 
-User Story 1.2: Plan Agile Development Using an Agile Tool
+User Story 1.2: Plan Agile Development Using an Agile Tool (Must Have, Story Points: 8)
 - Description: As a developer, I want to plan and track all tasks and user stories in an Agile tool so that I can manage the project efficiently.
   - Acceptance Criteria:
     - All user stories, epics, and tasks documented in the Agile tool.
@@ -105,7 +105,7 @@ User Story 1.2: Plan Agile Development Using an Agile Tool
     - GitHub project issues were created to document user stories, epics, and tasks.
     - GitHub project labels with MoSCoW criteria were applied to create a project board with priorities.
 
-User Story 1.3: Ensure Code Quality Standards
+User Story 1.3: Ensure Code Quality Standards (Must Have, Story Points: 3)
 - Description: As a developer, I want the code to conform to PEP8 and validated HTML/CSS/Javascript standards so that the application maintains high-quality and consistent coding practices.
   - Acceptance Criteria:
     - Python code conforms to PEP8 standards.
