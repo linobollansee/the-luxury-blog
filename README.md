@@ -179,7 +179,7 @@ User Story 3.2: Secure Restricted Content (Must Have, Story Points: 3)
     - The blog checks if the user is logged-in with the DTL tag `{% if user.is_authenticated %}` and if not, renders different content below the {% else %} tag.
     - Visiting a blog post while not logged in displays "Log in to leave a comment"
 
-User Story 4.1: Implement Manual and Automated Tests (Should Have, Story Points:5)
+User Story 4.1: Implement Manual and Automated Tests (Should Have, Story Points: 5)
 - Description: As a developer, I want to create test procedures for both front-end and back-end components to ensure the application functions correctly.
   - Acceptance Criteria:
     - Automated and manual tests for core functionality are in place.
@@ -192,7 +192,7 @@ User Story 4.1: Implement Manual and Automated Tests (Should Have, Story Points:
     - Live interaction on [https://the-luxury-blog.onrender.com/] allowed to test CRUD operations, authentication, and data manipulation. The superuser admin panel showed the condition of the database.
     - Testing procedures were documented in the README.
 
-User Story 5.1: Maintain Version Control with Git (Must Have, Story Points:3)
+User Story 5.1: Maintain Version Control with Git (Must Have, Story Points: 3)
 - Description: As a developer, I want to use Git for version control so that I can document and manage changes in the codebase.
   - Acceptance Criteria:
     - Version control is implemented using Git and GitHub.
