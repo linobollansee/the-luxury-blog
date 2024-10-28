@@ -24,10 +24,11 @@ class TestAboutView(TestCase):
         """Test for a user requesting a collaboration"""
         post_data = {
             'name': 'test name',
-            'email': 'test@email.com',
+            'luxury_category': 'Diamonds',
+            'email': 'test@test.com',
             'message': 'test message'
         }
         response = self.client.post(reverse('about'), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertIn(
-            b'Collaboration request received! I endeavour to respond within 2 working days.', response.content)
+            b'Form received! Thank you for your interest.', response.content)
