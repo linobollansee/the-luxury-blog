@@ -67,3 +67,23 @@ Epic 8: Enhance User Experience with Advanced Features
     - User Story 8.2: Customize Dashboard Layout
     - User Story 8.3: Advanced Filtering and Search Options
     - User Story 8.4: Multi-Language Support
+
+### User Stories
+
+Please read this section thoroughly, as it includes important and comprehensive information on how the User Stories and their Tasks were accomplished for this project.
+
+User Story 1.1: Design Front-End for a Data-Driven Web Application (Must Have, Story Points: 5)
+- Description: As a user, I want a user-friendly front-end that follows accessibility guidelines and UX principles so that I can easily interact with the application.
+  - Acceptance Criteria:
+    - Front-end meets UX and accessibility guidelines.
+    - Wireframes, mockups, and diagrams are documented.
+  - Tasks:
+    - Create wireframes and mockups for the front-end design.
+    - Design HTML templates with consistent structure.
+    - Implement CSS for responsive design.
+    - Review and validate the front-end design against accessibility standards.
+  - How Tasks were respectively completed:
+    - Balsamiq software was used to create the wireframes, and web browser screenshots were taken for the mockups.
+    - The {% extends 'base.html' %} tag was used to create a consistent structure throughout the Django templates by inheriting the base layout.
+    - The Bootstrap Framework with predefined grid classes with built-in responsive design was used to implement CSS for responsive design.
+    - Google Lighthouse was utilized to assess and verify the front-end design's compliance with accessibility standards.
