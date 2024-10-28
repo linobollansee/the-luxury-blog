@@ -296,7 +296,6 @@ User Story 8.4: Multi-Language Support
 
 The logo was made by CSS styling:
 
-
 `.luxury {`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;`font-family: 'Great Vibes', cursive;`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;`font-size: 64px;`<br>
@@ -305,3 +304,9 @@ The logo was made by CSS styling:
 &nbsp;&nbsp;&nbsp;&nbsp;`display: block;`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;`line-height: 0.9;`<br>
 `}`
+
+#### Favicon
+
+The favicon was generated using [https://favicon.io/favicon-generator/](https://favicon.io/favicon-generator/)
+
+![Luxury Blog Favicon](readme/images/luxury-blog-favicon.png)
