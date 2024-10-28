@@ -104,3 +104,15 @@ User Story 1.2: Plan Agile Development Using an Agile Tool
     - A new GitHub project was started to be used as an Agile tool.
     - GitHub project issues were created to document user stories, epics, and tasks.
     - GitHub project labels with MoSCoW criteria were applied to create a project board with priorities.
+
+User Story 1.3: Ensure Code Quality Standards
+- Description: As a developer, I want the code to conform to PEP8 and validated HTML/CSS/Javascript standards so that the application maintains high-quality and consistent coding practices.
+  - Acceptance Criteria:
+    - Python code conforms to PEP8 standards.
+    - HTML, CSS, Javascript code are validated.
+  - Tasks:
+    - Implement a code review process.
+    - Use tools for Python, HTML, CSS, Javascript validation.
+  - How Tasks were respectively completed:
+    - The list of files to be checked was prepared, including all `*.html`, `*.css`, `*.js`, `*.py` files essential to this project.
+    - Python code was checked with the Code Institute linter, HTML with the W3C Markup Validation Service, CSS with The W3C CSS Validation Service, Javascript with the JSHint JavaScript Code Quality Tool.
