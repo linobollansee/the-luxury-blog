@@ -144,3 +144,14 @@ User Story 2.2: Implement CRUD Functionality (Must Have, Story Points: 5)
     - Designing the back-end logic for CRUD operations involved defining `models.py` files to represent data structures, creating `views.py` files to handle the logic for displaying and processing data, `forms.py` for user input validation, setting up `urls.py` files to map requests to the appropriate views, and creating templates to render the HTML presentation.
     - The forms.py files were created and include a Meta class with attributes designed to validate data input.
     - The deployed website at [https://the-luxury-blog.onrender.com/](https://the-luxury-blog.onrender.com/) was actively verified to ensure changes to data were reflected on the front-end.
+
+User Story 2.3: Handle Notifications for Data Changes (Must Have, Story Points: 3)
+- Description: As a user, I want to receive notifications when data is added, updated, or deleted so that I’m informed about changes.
+  - Acceptance Criteria:
+    - Notifications are displayed to the user after data changes.
+  - Tasks:
+    - Implement a notification system for CRUD actions.
+    - Test notifications with each operation.
+  - How Tasks were respectively completed:
+    - The notification system was based on views files importing `from django.contrib import messages` and using its constants for browser feedback.
+    - The web browser was used to check for message notifications on each operation.
