@@ -254,3 +254,14 @@ User Story 8.1: Enable Social Media Sharing for User Content (Won't Have, Story 
    - How Tasks were respectively completed:
     - Not completed.
 
+User Story 8.2: Customize Dashboard Layout (Won't Have, Story points: 2)
+- Description: As a user, I want to customize the layout of my dashboard so that I can organize the information in a way that suits my preferences.
+  - Acceptance Criteria:
+    - Users can drag and drop widgets or rearrange sections of their dashboard.
+    - User preferences for the dashboard layout are saved and persist across sessions.
+  - Tasks:
+    - Implement a customizable dashboard with draggable components.
+    - Store layout preferences in user profiles or local storage.
+    - Test the persistence and functionality of customized layouts across devices.
+  - How Tasks were respectively completed:
+    - Not completed.
