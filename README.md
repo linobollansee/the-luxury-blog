@@ -205,3 +205,15 @@ User Story 5.1: Maintain Version Control with Git (Must Have, Story Points:3)
     - A new repository was created by using the Code Institute's Public template: [https://github.com/Code-Institute-Org/ci-full-template](https://github.com/Code-Institute-Org/ci-full-template)
     - Features and changes were commmited with sufficiently detailed messages of a maximum of 50 characters.
     - All environmental variables were stored in `env.py` and added to the `.gitignore` list so they wouldn't be accidently committed and pushed to GitHub.
+
+User Story 5.2: Document the Development Process (Must Have, Story Points: 8)
+- Description: As a developer, I want to document the development process in a README so that others can understand how the project was built and used.
+  - Acceptance Criteria:
+     - README file includes project rationale, data schema, and testing/deployment instructions.
+  - Tasks:
+     - Write a README file with sections for rationale, setup, and testing.
+     - Ensure deployment and usage instructions are clear.
+  - How Tasks were respectively completed:
+     - A README file was created in the project's root directory with many sections discussing rationale, setup, and testing.
+     - Clear deployment instructions are written in the README file, and the live project link made available at the top of the README.
+
