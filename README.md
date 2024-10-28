@@ -191,3 +191,17 @@ User Story 4.1: Implement Manual and Automated Tests (Should Have, Story Points:
     - Test files were written for the back-end code containing unit tests: `test_apps.py`, `test_forms.py`, `test_models.py`, `test_urls.py`, `test_views.py`
     - Live interaction on [https://the-luxury-blog.onrender.com/] allowed to test CRUD operations, authentication, and data manipulation. The superuser admin panel showed the condition of the database.
     - Testing procedures were documented in the README.
+
+User Story 5.1: Maintain Version Control with Git (Must Have, Story Points:3)
+- Description: As a developer, I want to use Git for version control so that I can document and manage changes in the codebase.
+  - Acceptance Criteria:
+    - Version control is implemented using Git and GitHub.
+    - Descriptive commit messages are present.
+  - Tasks:
+    - Initialize a Git repository.
+    - Commit changes for each feature or fix with detailed messages.
+    - Ensure the repository is clean of security-sensitive information.
+  - How Tasks were respectively completed:
+    - A new repository was created by using the Code Institute's Public template: [https://github.com/Code-Institute-Org/ci-full-template](https://github.com/Code-Institute-Org/ci-full-template)
+    - Features and changes were commmited with sufficiently detailed messages of a maximum of 50 characters.
+    - All environmental variables were stored in `env.py` and added to the `.gitignore` list so they wouldn't be accidently committed and pushed to GitHub.
