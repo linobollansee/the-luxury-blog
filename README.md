@@ -21,7 +21,6 @@ A screenshot of The Luxury Blog Kanban Board during active development phase usa
 
 ![Luxury Blog Kanban Board](readme/images/luxury-blog-kanban-board.png)
 
-
 ### Epics
 
 Epic 1: Plan and Design the Full-Stack Web Application using an MVC Framework
@@ -92,3 +91,16 @@ User Story 1.1: Design Front-End for a Data-Driven Web Application (Must Have, S
     - The {% extends 'base.html' %} tag was used to create a consistent structure throughout the Django templates by inheriting the base layout.
     - The Bootstrap Framework with predefined grid classes with built-in responsive design was used to implement CSS for responsive design.
     - Google Lighthouse was utilized to assess and verify the front-end design's compliance with accessibility standards.
+
+User Story 1.2: Plan Agile Development Using an Agile Tool
+- Description: As a developer, I want to plan and track all tasks and user stories in an Agile tool so that I can manage the project efficiently.
+  - Acceptance Criteria:
+    - All user stories, epics, and tasks documented in the Agile tool.
+  - Tasks:
+    - Set up an Agile tool for task tracking.
+    - Document all user stories, epics, and tasks in the tool.
+    - Create a project board with priorities.
+  - How Tasks were respectively completed:
+    - A new GitHub project was started to be used as an Agile tool.
+    - GitHub project issues were created to document user stories, epics, and tasks.
+    - GitHub project labels with MoSCoW criteria were applied to create a project board with priorities.
