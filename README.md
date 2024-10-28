@@ -130,3 +130,17 @@ User Story 2.1: Build the Data Model and Database Structure (Must Have, Story Po
     - An Entity-Relationship Diagram (ERD) was created to design a database schema that fits the project domain.
     - Database models were implemented through `models.py` files with field declarations in app folders.
     - Running the following commands in the terminal: `python manage.py makemigrations` and `python manage.py migrate` initialized the database structure. It executes the SQL commands through the migration files.
+
+User Story 2.2: Implement CRUD Functionality (Must Have, Story Points: 5)
+- Description: As a user, I want to create, update, read, and delete data so that I can manage my information within the application.
+  - Acceptance Criteria:
+    - All CRUD actions are functional.
+    - Data changes are immediately reflected in the UI.
+  - Tasks:
+    - Build the back-end logic for CRUD operations.
+    - Design forms for data input with validation.
+    - Ensure changes to data are reflected on the front-end.
+  - How Tasks were respectively completed:
+    - Designing the back-end logic for CRUD operations involved defining `models.py` files to represent data structures, creating `views.py` files to handle the logic for displaying and processing data, `forms.py` for user input validation, setting up `urls.py` files to map requests to the appropriate views, and creating templates to render the HTML presentation.
+    - The forms.py files were created and include a Meta class with attributes designed to validate data input.
+    - The messages framework was imported with `from django.contrib import messages` in the views files in order to display notifications to users when data changes are made.
