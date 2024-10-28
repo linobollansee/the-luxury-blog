@@ -10,3 +10,9 @@ Important: Please note that Render.com has a feature that automatically pauses s
 Luxury Blog web application preview screenshot:
 
 ![Luxury Blog preview screenshot](readme/images/luxury-blog-preview.png)
+
+## Agile Methodology
+
+This project was planned using Agile project management through Epics, Descriptions, User Stories, Story Points, MoSCoW prioritization, Acceptance Criteria, and Tasks.
+
+A Kanban board has been set up and used for this purpose, providing an organized overview. It can be accessed at: [https://github.com/users/linobollansee/projects/6](https://github.com/users/linobollansee/projects/6)
