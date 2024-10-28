@@ -265,3 +265,16 @@ User Story 8.2: Customize Dashboard Layout (Won't Have, Story points: 2)
     - Test the persistence and functionality of customized layouts across devices.
   - How Tasks were respectively completed:
     - Not completed.
+
+User Story 8.3: Advanced Filtering and Search Options (Won't Have, Story points: 2)
+- Description: As a user, I want to filter and search through data using advanced options like keyword search, date range filters, and category-based sorting so that I can quickly find relevant information.
+  - Acceptance Criteria:
+    - Users can filter and sort data based on multiple parameters (e.g., keywords, categories, dates).
+    - Search results are displayed in real-time as the user types.
+  - Tasks:
+    - Implement filtering and sorting logic on the back-end.
+    - Add real-time search functionality with auto-suggestions.
+    - Test advanced filtering and ensure it works seamlessly with large datasets.
+  - How Tasks were respectively completed:
+    - Not completed.
+
