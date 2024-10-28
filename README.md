@@ -242,3 +242,15 @@ User Story 7.1: Design Efficient Models Using OOP (Must Have, Story Points: 5)
     - Models files were expanded through consultation of Django's Model field reference available at [https://docs.djangoproject.com/en/5.1/ref/models/fields/](https://docs.djangoproject.com/en/5.1/ref/models/fields/)
     - Object-oriented code was adjusted with OOP principles enforced by the Django framework.
 
+User Story 8.1: Enable Social Media Sharing for User Content (Won't Have, Story points: 2)
+- Description: As a user, I want to share my content or data from the application directly to social media platforms so that I can easily promote and share my work with others.
+  - Acceptance Criteria:
+    - Users can share content to platforms like Facebook, Twitter, and LinkedIn.
+    - Social media buttons are integrated and functional for relevant content.
+  - Tasks:
+    - Add social media sharing buttons to key areas (e.g., profile, content pages).
+    - Implement OAuth or API connections for social media sharing.
+    - Test sharing functionality on different social platforms.
+   - How Tasks were respectively completed:
+    - Not completed.
+
