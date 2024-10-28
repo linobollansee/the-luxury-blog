@@ -143,4 +143,4 @@ User Story 2.2: Implement CRUD Functionality (Must Have, Story Points: 5)
   - How Tasks were respectively completed:
     - Designing the back-end logic for CRUD operations involved defining `models.py` files to represent data structures, creating `views.py` files to handle the logic for displaying and processing data, `forms.py` for user input validation, setting up `urls.py` files to map requests to the appropriate views, and creating templates to render the HTML presentation.
     - The forms.py files were created and include a Meta class with attributes designed to validate data input.
-    - The messages framework was imported with `from django.contrib import messages` in the views files in order to display notifications to users when data changes are made.
+    - The deployed website at [https://the-luxury-blog.onrender.com/](https://the-luxury-blog.onrender.com/) was actively verified to ensure changes to data were reflected on the front-end.
