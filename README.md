@@ -296,13 +296,12 @@ User Story 8.4: Multi-Language Support
 
 The logo was made by CSS styling:
 
-`
-.luxury {
-    font-family: 'Great Vibes', cursive;
-    font-size: 64px;
-    color: #D4AF37; /* Gold color */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    display: block;
-    line-height: 0.9;
-}
-`
+
+`.luxury {`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`font-family: 'Great Vibes', cursive;`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`font-size: 64px;`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`color: #D4AF37; /* Gold color */`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`display: block;`<br>
+&nbsp;&nbsp;&nbsp;&nbsp;`line-height: 0.9;`<br>
+`}`
