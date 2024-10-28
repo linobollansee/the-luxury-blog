@@ -23,6 +23,7 @@ class CollaborateRequest(models.Model):
     Stores a single collaboration request message
     """
     name = models.CharField(max_length=200)
+    luxury_category = models.CharField(max_length=100)
     email = models.EmailField()
     message = models.TextField()
     read = models.BooleanField(default=False)
