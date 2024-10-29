@@ -419,6 +419,12 @@ A middleware for serving static files in a Django application. Whitenoise allows
 3. Click on dashboard, Go to API Keys
 4. Use the API Key, API Secret, and displayed cloud name to create the environment variable in the following format: `CLOUDINARY_URL=cloudinary://<your_api_key>:<your_api_secret>@<cloud_name>`
 
+### PostgreSQL Database
+
+1. Input your email address at [https://dbs.ci-dbs.net/](https://dbs.ci-dbs.net/)
+2. Open the email of the Code Institute bot, it contains the Postgres Database URL.
+3. Alternatively, you can click on the email's database management link and on the info button of the Database name to get the Database URL.
+
 ## Credits
 
 ### Acknowledgments
