@@ -333,6 +333,16 @@ Luxury Blog HTML Errors:
 
 - Markdown: Markdown is a lightweight markup language designed for formatting plain text. It allows users to create formatted documents using easy-to-read syntax, which can be converted to HTML. Markdown is popular for writing documentation, README files, and content on platforms like GitHub and blogs, due to its simplicity and readability.
 
+### Frameworks
+
+- Django: [https://www.djangoproject.com/](https://www.djangoproject.com/)
+
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It follows the Model-View-Template (MVT) architectural pattern and includes built-in features for security, database management, and user authentication. Django emphasizes the reusability of components, allowing developers to build scalable and maintainable web applications quickly. With its robust ORM (Object-Relational Mapping) system, Django simplifies database interactions and supports multiple database backends. The framework is widely used for developing complex web applications and is known for its "batteries-included" philosophy, providing numerous built-in tools and features.
+
+- Bootstrap: [https://getbootstrap.com/](https://getbootstrap.com/)
+
+Bootstrap is a popular open-source front-end framework for developing responsive and mobile-first websites. It provides a collection of CSS and JavaScript components, such as grid systems, buttons, forms, and navigation bars, that streamline the web design process. Bootstrap is designed to be customizable and comes with a set of predefined styles, making it easier for developers to create visually appealing and consistent layouts. Its responsive design capabilities ensure that websites adapt seamlessly to various screen sizes and devices, enhancing user experience.
+
 ## Credits
 
 ### Acknowledgments
