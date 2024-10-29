@@ -412,6 +412,13 @@ A middleware for serving static files in a Django application. Whitenoise allows
 7. Add the Environment Variables: CLOUDINARY_URL, DATABASE_URL, SECRET_KEY, and their corresponding values.
 8. Click Deploy Web Service
 
+### Cloudinary
+
+1. Sign up at [https://cloudinary.com/](https://cloudinary.com/)
+2. Login to your account
+3. Click on dashboard, Go to API Keys
+4. Use the API Key, API Secret, and displayed cloud name to create the environment variable in the following format: `CLOUDINARY_URL=cloudinary://<your_api_key>:<your_api_secret>@<cloud_name>`
+
 ## Credits
 
 ### Acknowledgments
