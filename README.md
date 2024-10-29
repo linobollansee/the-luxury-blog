@@ -427,6 +427,13 @@ A middleware for serving static files in a Django application. Whitenoise allows
 
 ## Credits
 
+### Content
+
+The images used in the Luxury Blog posts were sourced through online searches and manually resized to 800x530 in webp format to enhance loading speed:
+  - [https://presse.mercedes-benz.at/Content/441067/55f35cb0-5d40-4f8b-b662-ff5d99f7c0bc/1200/2400/.jpg](https://presse.mercedes-benz.at/Content/441067/55f35cb0-5d40-4f8b-b662-ff5d99f7c0bc/1200/2400/.jpg)
+  - [https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7/c_limit,w_1920/v1/catalogue/2024/upright-c/m126618ln-0002](https://media.rolex.com/image/upload/q_auto:eco/f_auto/t_v7/c_limit,w_1920/v1/catalogue/2024/upright-c/m126618ln-0002)
+  - [https://dsfantiquejewelry.com/cdn/shop/files/vintage-montblanc-meisterstuck-fountain-pen-602022.jpg?v=1711743082&width=1600](https://dsfantiquejewelry.com/cdn/shop/files/vintage-montblanc-meisterstuck-fountain-pen-602022.jpg?v=1711743082&width=1600)
+
 ### Acknowledgments
 
 - Code Institute mentors Dick Vlaanderen and Mo Shami: They clarified the project requirements during online audio call sessions, providing valuable insights and guidance that helped me understand the expectations and objectives more clearly. Their expertise was instrumental in navigating the complexities of the project I undertook. Additionally, they verified my work before submission to the Code Institute, offering constructive feedback that enabled me to enhance the quality of my submissions. Their support and mentorship not only bolstered my confidence but also significantly contributed to my growth as a developer.
