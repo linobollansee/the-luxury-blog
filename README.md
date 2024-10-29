@@ -399,6 +399,19 @@ A powerful, user-friendly HTTP library for Python that provides features like co
 `whitenoise==5.3.0`
 A middleware for serving static files in a Django application. Whitenoise allows applications to serve static assets directly without needing a separate web server, simplifying deployment and reducing complexity.
 
+## Deployment
+
+### Render Web Application Deployment
+
+1. Sign in at [https://render.com/](https://render.com/) using GitHub
+2. Click the "New" button at the top of the page, click "Web Service"
+3. Select the GitHub repository, click "Connect"
+4. Verify Language is set to "Python3", Branch to "main", Region to "Frankfurt (EU Central)", build command to `pip install -r requirements.txt`
+5. Set the start command to `gunicorn luxury.wsgi`
+6. Select the Instance type: Free
+7. Add the Environment Variables: CLOUDINARY_URL, DATABASE_URL, SECRET_KEY, and their corresponding values.
+8. Click Deploy Web Service
+
 ## Credits
 
 ### Acknowledgments
