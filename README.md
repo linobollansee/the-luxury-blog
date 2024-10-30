@@ -298,69 +298,71 @@ User Story 8.4: Multi-Language Support
 
 The syntax used on [https://app.eraser.io/](https://app.eraser.io/) to generate the diagram was as follows:
 
-`// Tables`<br>
-`About [icon: user, color: yellow] {`<br>
-&nbsp;&nbsp;`id string pk`<br>
-&nbsp;&nbsp;`title string`<br>
-&nbsp;&nbsp;`profile_image string`<br>
-&nbsp;&nbsp;`profile_image2 string`<br>
-&nbsp;&nbsp;`updated_on timestamp`<br>
-&nbsp;&nbsp;`content text`<br>
-`}`<br>
+```
+// Tables
+About [icon: user, color: yellow] {
+  id string pk
+  title string
+  profile_image string
+  profile_image2 string
+  updated_on timestamp
+  content text
+}
 
-`CollaborateRequest [icon: mail, color: green] {`<br>
-&nbsp;&nbsp;`id string pk`<br>
-&nbsp;&nbsp;`name string`<br>
-&nbsp;&nbsp;`luxury_category string`<br>
-&nbsp;&nbsp;`email string`<br>
-&nbsp;&nbsp;`message text`<br>
-&nbsp;&nbsp;`read boolean`<br>
-`}`<br>
+CollaborateRequest [icon: mail, color: green] {
+  id string pk
+  name string
+  luxury_category string
+  email string
+  message text
+  read boolean
+}
 
-`Post [icon: file-text, color: blue] {`<br>
-&nbsp;&nbsp;`id string pk`<br>
-&nbsp;&nbsp;`title string`<br>
-&nbsp;&nbsp;`slug string`<br>
-&nbsp;&nbsp;`author string fk`<br>
-&nbsp;&nbsp;`featured_image string`<br>
-&nbsp;&nbsp;`content text`<br>
-&nbsp;&nbsp;`created_on timestamp`<br>
-&nbsp;&nbsp;`status integer`<br>
-&nbsp;&nbsp;`excerpt text`<br>
-&nbsp;&nbsp;`updated_on timestamp`<br>
-`}`<br>
+Post [icon: file-text, color: blue] {
+  id string pk
+  title string
+  slug string
+  author string fk
+  featured_image string
+  content text
+  created_on timestamp
+  status integer
+  excerpt text
+  updated_on timestamp
+}
 
-`Comment [icon: message-circle, color: red] {`<br>
-&nbsp;&nbsp;`id string pk`<br>
-&nbsp;&nbsp;`post string fk`<br>
-&nbsp;&nbsp;`author string fk`<br>
-&nbsp;&nbsp;`body text`<br>
-&nbsp;&nbsp;`created_on timestamp`<br>
-&nbsp;&nbsp;`approved boolean`<br>
-`}`<br>
+Comment [icon: message-circle, color: red] {
+  id string pk
+  post string fk
+  author string fk
+  body text
+  created_on timestamp
+  approved boolean
+}
 
-`Participant [icon: users, color: purple] {`<br>
-&nbsp;&nbsp;`id string pk`<br>
-&nbsp;&nbsp;`name string`<br>
-&nbsp;&nbsp;`email string`<br>
-&nbsp;&nbsp;`created_at timestamp`<br>
-`}`<br>
+Participant [icon: users, color: purple] {
+  id string pk
+  name string
+  email string
+  created_at timestamp
+}
 
-`User [icon: user, color: gray] {`<br>
-&nbsp;&nbsp;`id string pk`<br>
-&nbsp;&nbsp;`name string`<br>
-&nbsp;&nbsp;`email string`<br>
-&nbsp;&nbsp;`password string`<br>
-&nbsp;&nbsp;`created_on timestamp`<br>
-`}`<br>
+User [icon: user, color: gray] {
+  id string pk
+  name string
+  email string
+  password string
+  created_on timestamp
+}
 
-`// End of tables`<br>
-`title The Luxury Blog`<br>
+// End of tables
+title The Luxury Blog
 
-`// Relationships`<br>
-`Post.author > User.id`<br>
-`Comment.post > Post.id`<br>
-`Comment.author > User.id`<br>
+// Relationships
+Post.author > User.id
+Comment.post > Post.id
+Comment.author > User.id
+```
 
 ## Design
 
@@ -368,14 +370,16 @@ The syntax used on [https://app.eraser.io/](https://app.eraser.io/) to generate 
 
 The logo was made by CSS styling:
 
-`.luxury {`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;`font-family: 'Great Vibes', cursive;`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;`font-size: 64px;`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;`color: #D4AF37; /* Gold color */`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;`text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;`display: block;`<br>
-&nbsp;&nbsp;&nbsp;&nbsp;`line-height: 0.9;`<br>
-`}`
+```
+.luxury {
+font-family: 'Great Vibes', cursive;
+font-size: 64px;
+color: #D4AF37; /* Gold color */
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+display: block;
+line-height: 0.9;
+}
+```
 
 ### Favicon
 
@@ -392,6 +396,8 @@ The favicon was generated using [https://favicon.io/favicon-generator/](https://
 Luxury Blog HTML Errors:
 
 ![Luxury Blog HTML Errors](readme/images/luxury-blog-html-errors.png)
+
+- When writing code in the README.md file, there were formatting issues with the indentation spaces when inputting nested code. To correct these, 
 
 ## Technologies Used
 
