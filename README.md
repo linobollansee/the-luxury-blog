@@ -397,7 +397,7 @@ Luxury Blog HTML Errors:
 
 ![Luxury Blog HTML Errors](readme/images/luxury-blog-html-errors.png)
 
-- When writing code in the README.md file, there were formatting issues with the indentation spaces when inputting nested code. To correct these, 
+- Single backticks, `&nbsp;` non-breaking spaces, and `<br>` line breaks were excessively used to create the README file. When I remembered that triple backticks were also supported and would implement similar functionality automatically, I upgraded all the content that would benefit from it.
 
 ## Technologies Used
 
