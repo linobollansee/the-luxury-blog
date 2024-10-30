@@ -479,6 +479,16 @@ A powerful, user-friendly HTTP library for Python that provides features like co
 `whitenoise==5.3.0`
 A middleware for serving static files in a Django application. Whitenoise allows applications to serve static assets directly without needing a separate web server, simplifying deployment and reducing complexity.
 
+## Testing
+
+### Browser Compatibility
+The testing phase employed a range of web browsers to ensure comprehensive coverage and functionality of the site. The following browsers were utilized during this process:
+
+- Google Chrome Version 130.0.6723.70 (64-bit)
+- Microsoft Edge Version 130.0.2849.52 (64-bit)
+- Firefox Version 131.0.3 (64-bit)
+- Opera Version 114.0.5282.115 (64-bit)
+
 ## Deployment
 
 ### Render Web Application Deployment
