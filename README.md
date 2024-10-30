@@ -290,6 +290,12 @@ User Story 8.4: Multi-Language Support
   - How Tasks were respectively completed:
     - Not implemented, but considered partially in progress due to `{% load i18n %}` internationalization and `{% trans %}` translation tags being present in some of the project templates: `signup.html`, `login.html`, `logout.html`.
 
+## Database
+
+### Entity Relationship Diagram (ERD)
+
+![Luxury Blog ERD](readme/images/luxury-blog-erd.png)
+
 ## Design
 
 ### Logo
