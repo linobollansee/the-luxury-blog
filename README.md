@@ -292,7 +292,7 @@ User Story 8.4: Multi-Language Support
 
 ## Design
 
-#### Logo
+### Logo
 
 The logo was made by CSS styling:
 
@@ -305,11 +305,13 @@ The logo was made by CSS styling:
 &nbsp;&nbsp;&nbsp;&nbsp;`line-height: 0.9;`<br>
 `}`
 
-#### Favicon
+### Favicon
 
 The favicon was generated using [https://favicon.io/favicon-generator/](https://favicon.io/favicon-generator/)
 
 ![Luxury Blog Favicon](readme/images/luxury-blog-favicon.png)
+
+
 
 ## Bugs and Issues
 
