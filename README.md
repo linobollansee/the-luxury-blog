@@ -489,6 +489,684 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
 - Firefox Version 131.0.3 (64-bit)
 - Opera Version 114.0.5282.115 (64-bit)
 
+### Automated Testing
+
+A comprehensive suite of Python files was created to thoroughly test various components of The Luxury Blog's tombola app. This suite includes the following test files, with functionality clearly commented with triple quote docstrings and hashtags:
+
+- [https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_apps.py](https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_apps.py)
+```python
+# Import TestCase from Django's testing framework
+from django.test import TestCase
+
+# Import the Tombola application configuration
+from .apps import TombolaAppConfig
+
+
+class TombolaAppConfigTest(TestCase):
+    """Test case for the Tombola application configuration."""
+
+    def test_app_config(self):
+        """Test that the application name is set correctly."""
+        # Assert that the name of the application matches the expected value
+        self.assertEqual(TombolaAppConfig.name, 'tombola')
+
+    def test_default_auto_field(self):
+        """Test that the default auto field is set correctly."""
+        # Assert that the default_auto_field is set to BigAutoField
+        self.assertEqual(
+            TombolaAppConfig.default_auto_field,
+            'django.db.models.BigAutoField'
+        )
+  ```
+
+- [https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_forms.py](https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_forms.py)
+```python
+# Import necessary Django form functionalities.
+from django import forms
+# Import TestCase from Django's testing framework to create unit tests.
+from django.test import TestCase
+# Import the ParticipantForm from the local forms module for testing.
+
+from .forms import ParticipantForm
+# Import the Participant model from the local models module.
+from .models import Participant
+
+
+class ParticipantFormTest(TestCase):
+    """Unit tests for the ParticipantForm, ensuring it behaves correctly
+    with valid and invalid input data.
+    """
+
+    def test_form_valid_data(self):
+        """Test the form's behavior when provided with valid data."""
+        # Define a dictionary with valid participant information, including
+        # name and email fields.
+        form_data = {
+            'name': 'John Doe',
+            'email': 'john.doe@example.com'
+        }
+        # Create an instance of ParticipantForm with the valid data.
+        form = ParticipantForm(data=form_data)
+        # Assert that the form is valid as the provided data meets all
+        # the requirements.
+        self.assertTrue(form.is_valid())
+        # Verify that the cleaned data for 'name' matches the input data.
+        self.assertEqual(form.cleaned_data['name'], 'John Doe')
+        # Verify that the cleaned data for 'email' matches the input data.
+        self.assertEqual(form.cleaned_data['email'],
+                         'john.doe@example.com')
+
+    def test_form_invalid_data_missing_name(self):
+        """Test the form's behavior when the 'name' field is missing."""
+        # Define form data that only includes an email, omitting the name.
+        form_data = {
+            'email': 'john.doe@example.com'
+        }
+        # Create an instance of ParticipantForm with the incomplete data.
+        form = ParticipantForm(data=form_data)
+        # Assert that the form is invalid because the 'name' field is required.
+        self.assertFalse(form.is_valid())
+        # Check if an error for the 'name' field is present in the form's
+        # errors dictionary.
+        self.assertIn('name', form.errors)
+        # Assert that the error message indicates that the field is required.
+        self.assertEqual(form.errors['name'], ['This field is required.'])
+
+    def test_form_invalid_data_missing_email(self):
+        """Test the form's behavior when the 'email' field is missing."""
+        # Define form data that only includes a name, omitting the email.
+        form_data = {
+            'name': 'John Doe'
+        }
+        # Create an instance of ParticipantForm with the incomplete data.
+        form = ParticipantForm(data=form_data)
+        # Assert that the form is invalid because 'email' field is required.
+        self.assertFalse(form.is_valid())
+        # Check if an error for the 'email' field is present in the form's
+        # errors dictionary.
+        self.assertIn('email', form.errors)
+        # Assert that the error message indicates that the field is required.
+        self.assertEqual(form.errors['email'], ['This field is required.'])
+
+    def test_form_invalid_email_format(self):
+        """Test the form's behavior when an invalid email format is provided"""
+        # Define form data that includes an invalid email format.
+        form_data = {
+            'name': 'John Doe',
+            'email': 'not-an-email'
+        }
+        # Create an instance of ParticipantForm with the invalid email.
+        form = ParticipantForm(data=form_data)
+        # Assert that the form is invalid due to the incorrect email format.
+        self.assertFalse(form.is_valid())
+        # Check if an error for the 'email' field is present in the form's
+        # errors dictionary.
+        self.assertIn('email', form.errors)
+        # Assert that the error message indicates the email format is invalid.
+        self.assertEqual(form.errors['email'],
+                         ['Enter a valid email address.'])
+
+    def test_form_with_existing_email(self):
+        """Test the form's behavior when an existing email is submitted."""
+        # Create a participant with an email to test against existing entries.
+        Participant.objects.create(name='Jane Doe',
+                                   email='jane.doe@example.com')
+        # Define form data that includes the existing email.
+        form_data = {
+            'name': 'John Doe',
+            'email': 'jane.doe@example.com'  # same email as existing
+        }
+        # Create an instance of ParticipantForm with the data containing
+        # the existing email.
+        form = ParticipantForm(data=form_data)
+        # Note: Add assertions to check the form's behavior regarding
+        # duplicate emails as needed.
+
+    def test_form_empty_data(self):
+        """Test the form's behavior when no data is provided."""
+        # Create an instance of ParticipantForm with empty data.
+        form = ParticipantForm(data={})
+        # Assert the form is invalid because both required fields are empty.
+        self.assertFalse(form.is_valid())
+        # Check if an error for the 'name' field is present in the form's
+        # errors dictionary.
+        self.assertIn('name', form.errors)
+        # Check if an error for the 'email' field is present in the form's
+        # errors dictionary.
+        self.assertIn('email', form.errors)
+```
+
+- [https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_models.py](https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_models.py)
+```python
+# Import necessary modules and classes
+from datetime import datetime  # Import datetime for date/time checks
+
+from django.core.exceptions import ValidationError  # For validation errors
+from django.db import IntegrityError  # For database integrity errors
+from django.test import TestCase  # For creating test cases in Django
+
+# Import the Participant model from the current application
+from .models import Participant
+
+
+class ParticipantModelTest(TestCase):
+    """
+    A test case class for testing the Participant model's functionality.
+
+    This class inherits from Django's TestCase, providing methods for
+    testing database models and their behavior.
+    """
+
+    def setUp(self):
+        """
+        Set up the test case environment before each test method runs.
+
+        This method creates a sample Participant instance for use in
+        multiple test methods.
+        """
+        self.participant = Participant.objects.create(
+            name="John Doe",  # Set the name of the participant
+            email="johndoe@example.com"  # Set the email of the participant
+        )
+
+    def test_participant_creation(self):
+        """
+        Test that a Participant instance is created correctly.
+
+        This method checks if the attributes of the created Participant
+        match the expected values.
+        """
+        # Assert that the name of the participant matches the expected value
+        self.assertEqual(self.participant.name, "John Doe")
+        # Assert that the email of the participant matches the expected value
+        self.assertEqual(self.participant.email, "johndoe@example.com")
+        # Check that the created_at field is a datetime instance
+        self.assertIsInstance(self.participant.created_at, datetime)
+
+    def test_string_representation(self):
+        """
+        Test the string representation of the Participant instance.
+
+        This method checks if the string representation of the
+        Participant instance returns the correct name.
+        """
+        # Assert that converting the participant to a string returns the name
+        self.assertEqual(str(self.participant), "John Doe")
+
+    def test_unique_email_constraint(self):
+        """
+        Test that email addresses for Participants are unique.
+
+        This method verifies that attempting to create a second
+        Participant with the same email raises an IntegrityError.
+        """
+        # Use a context manager to assert that IntegrityError is raised
+        with self.assertRaises(IntegrityError):
+            Participant.objects.create(
+                name="Jane Doe",  # Create new participant with the same email
+                email="johndoe@example.com"  # Same email
+            )
+
+    def test_max_length_name(self):
+        """
+        Test that the maximum length for the Participant's name is enforced.
+
+        This method checks that trying to create a Participant with a
+        name longer than the allowed maximum length raises a
+        ValidationError.
+        """
+        # Create a string that exceeds the maximum length for the name
+        max_length_name = 'a' * 101  # Assuming max length is 100
+        # Use a context manager to assert that ValidationError is raised
+        with self.assertRaises(ValidationError):
+            # Create a participant with an excessively long name
+            participant = Participant(
+                name=max_length_name,
+                email="test@example.com"
+            )
+            # Trigger model validation
+            participant.full_clean()  # This will validate all fields
+
+    def test_valid_email(self):
+        """
+        Test that an invalid email format raises a ValidationError.
+
+        This method verifies that creating a Participant with an
+        improperly formatted email address triggers a validation error.
+        """
+        # Use a context manager to assert that ValidationError is raised
+        with self.assertRaises(ValidationError):
+            # Create a participant with an invalid email format
+            participant = Participant(
+                name="Invalid Email",
+                email="invalidemail.com"
+            )
+            # Trigger model validation
+            participant.full_clean()  # This will check the email format
+```
+
+- [https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_urls.py](https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_urls.py)
+```python
+# Import necessary modules from Django
+from django.test import SimpleTestCase  # Provides a way to create simple tests
+from django.urls import reverse  # Allows us to reverse resolve URLs
+
+
+# Define a test case class for URL testing, inheriting from SimpleTestCase
+class UrlsTestCase(SimpleTestCase):
+
+    # Define a test method to check the URL for the tombola view
+    def test_tombola_url(self):
+        """
+        Test that the tombola URL resolves correctly to the tombola_view.
+
+        This method checks if the URL associated with the name 'tombola' can
+        be correctly resolved to the expected path. It ensures that the URL
+        configuration is set up correctly in the Django project.
+        """
+
+        # Use Django's reverse function to get the URL for the tombola view
+        url = reverse('tombola')
+
+        # Assert that the resolved URL matches the expected URL pattern
+        self.assertEqual(url, '/tombola/')
+```
+
+- [https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_views.py](https://github.com/linobollansee/the-luxury-blog/blob/main/tombola/test_views.py)
+```python
+# Import necessary modules for testing
+from django.contrib.messages import get_messages  # For testing messages
+from django.test import TestCase  # Base class for creating test cases
+from django.urls import reverse  # Utility for reversing URL patterns
+
+from .forms import ParticipantForm  # Import the form used in the view
+from .models import Participant  # Import the Participant model
+
+
+class TombolaViewTests(TestCase):
+    """
+    Test suite for the Tombola view functionality.
+
+    This class contains various test cases to ensure the Tombola view
+    behaves as expected. It tests GET and POST requests, form validation,
+    and pagination.
+    """
+
+    def setUp(self):
+        """
+        Set up the initial conditions for the test cases.
+
+        This method is called before every test method to set up any state
+        that's shared across tests. Here, we define the URL and valid
+        participant data for testing.
+        """
+        # Define the URL for the tombola view using reverse lookup
+        self.url = reverse('tombola')
+
+        # Define valid participant data for testing the form
+        self.participant_data = {
+            'name': 'Test Participant',  # Valid name for the participant
+            'email': 'test@example.com',  # Valid email address
+            # Other required fields for the ParticipantForm can be added here
+        }
+
+    def test_tombola_view_get(self):
+        """
+        Test tombola view returns correct template and context on GET request.
+
+        This test ensures that when the tombola view is accessed via a GET
+        request, it returns the correct HTTP status code, template, and
+        context variables.
+        """
+        # Simulate a GET request to the tombola view
+        response = self.client.get(self.url)
+
+        # Check that the response has a status code of 200 (OK)
+        self.assertEqual(response.status_code, 200)
+
+        # Ensure that the correct template is used for rendering the response
+        self.assertTemplateUsed(response, 'tombola/tombola.html')
+
+        # Verify that 'form' and 'participants' are included in the response
+        self.assertIn('form', response.context)
+        self.assertIn('participants', response.context)
+
+        # Ensure the form in context is an instance of ParticipantForm
+        self.assertIsInstance(response.context['form'], ParticipantForm)
+
+    def test_tombola_view_post_valid(self):
+        """
+        Test tombola view processes valid form data correctly.
+
+        This test checks that when valid participant data is posted to the
+        tombola view, it processes the data correctly and creates a new
+        participant.
+        """
+        # Simulate a POST request with valid participant data
+        response = self.client.post(self.url, self.participant_data)
+
+        # Check that the response redirects after successful submission
+        self.assertEqual(response.status_code, 302)  # 302 means a redirect
+
+        # Verify that a new participant has been created in the database
+        self.assertEqual(Participant.objects.count(), 1)
+
+        # Ensure that the created participant's name matches the expected name
+        self.assertEqual(
+            Participant.objects.first().name,
+            'Test Participant'
+        )
+
+        # Check that a success message was added to the request
+        messages = list(get_messages(response.wsgi_request))  # Retrieve msgs
+        self.assertEqual(len(messages), 1)  # Ensure one message exists
+        self.assertEqual(
+            messages[0].message,
+            'Your Tombola participation has been successfully registered!'
+        )
+
+    def test_tombola_view_post_invalid(self):
+        """
+        Test tombola view handles invalid form data correctly.
+
+        This test ensures that when invalid data is submitted to the tombola
+        view, it returns to the form without creating a new participant.
+        """
+        # Define invalid participant data (missing required name field)
+        invalid_data = {
+            'name': '',  # Invalid: name is required and cannot be empty
+            'email': 'test@example.com',  # Valid email, but data is invalid
+        }
+
+        # Simulate a POST request with invalid participant data
+        response = self.client.post(self.url, invalid_data)
+
+        # Check that the response returns a status code of 200
+        self.assertEqual(response.status_code, 200)
+
+        # Verify that no new participants were created in the database
+        self.assertEqual(Participant.objects.count(), 0)
+
+    def test_tombola_view_pagination(self):
+        """
+        Test pagination works correctly in the tombola view.
+
+        This test ensures that when there are more participants than can
+        fit on one page, the pagination correctly displays the participants
+        across multiple pages.
+        """
+        # Create 25 participant instances for testing pagination
+        for i in range(25):
+            Participant.objects.create(
+                name=f'Participant {i}',
+                email=f'participant{i}@example.com'
+            )
+
+        # Simulate a GET request to retrieve the second page of participants
+        response = self.client.get(self.url + '?page=2')
+
+        # Check that the response status is OK
+        self.assertEqual(response.status_code, 200)
+
+        # Verify that the response contains exactly 10 participants (per page)
+        self.assertEqual(len(response.context['participants']), 10)
+
+        # Ensure that the participants object is on the second page
+        self.assertEqual(response.context['participants'].number, 2)
+```
+
+Existing tests from the walkthrough project were also updated due to added field content:
+
+- [https://github.com/linobollansee/the-luxury-blog/blob/main/about/test_forms.py](https://github.com/linobollansee/the-luxury-blog/blob/main/about/test_forms.py)
+```python
+# Importing the TestCase class from Django's test framework,
+# which provides tools for creating unit tests for Django applications.
+from django.test import TestCase
+
+# Importing the CollaborateForm class from the forms module.
+from .forms import CollaborateForm
+
+# Defining a test case class for the CollaborateForm.
+# This class inherits from TestCase, allowing us to create tests for the form.
+
+
+class TestCollaborateForm(TestCase):
+
+    # Test method to check if the form is valid with all required fields.
+    def test_form_is_valid(self):
+        """Test for all fields to ensure the form is valid."""
+
+        # Creating an instance of the CollaborateForm with valid data.
+        form = CollaborateForm(
+            {
+                'name': 'test',  # Providing a name
+                'luxury_category': 'Diamonds',  # Providing a luxury category
+                'email': 'test@test.com',  # Providing a valid email address
+                'message': 'Hello!'  # Providing a message
+            }
+        )
+
+        # Asserting that the form is valid. If not, show an error message.
+        self.assertTrue(form.is_valid(), msg="Form is not valid")
+
+    # Test method to check if the 'name' field is required.
+    def test_name_is_required(self):
+        """Test for the 'name' field to ensure it is mandatory."""
+
+        # Creating an instance of CollaborateForm with an empty 'name' field.
+        form = CollaborateForm(
+            {
+                'name': '',  # Empty name field
+                'luxury_category': 'Diamonds',  # Provide valid luxury category
+                'email': 'test@test.com',  # Providing valid email address
+                'message': 'Hello!'  # Providing a message
+            }
+        )
+
+        # Asserting that the form is invalid because the name field is empty.
+        self.assertFalse(
+            form.is_valid(),
+            msg="Name was not provided, but the form is valid"
+        )
+
+    # Test method to check if the 'luxury_category' field is required.
+    def test_luxury_category_is_required(self):
+        """Test for the 'luxury_category' field to ensure it is mandatory."""
+
+        # Create an instance of CollaborateForm with empty 'luxury_category'.
+        form = CollaborateForm(
+            {
+                'name': 'Matt',  # Provide a valid name
+                'luxury_category': '',  # Empty luxury category
+                'email': 'test@test.com',  # Provide a valid email address
+                'message': 'Hello!'  # Provide a message
+            }
+        )
+
+        # Asserting form is invalid because the luxury category field is empty.
+        self.assertFalse(
+            form.is_valid(),
+            msg="Luxury category was not provided, but the form is valid"
+        )
+
+    # Test method to check if the 'email' field is required.
+    def test_email_is_required(self):
+        """Test for the 'email' field to ensure it is mandatory."""
+
+        # Create instance of the CollaborateForm with an empty 'email' field.
+        form = CollaborateForm(
+            {
+                'name': 'Matt',  # Provide a valid name
+                'luxury_category': 'Diamonds',  # Provide valid luxury category
+                'email': '',  # Empty email field
+                'message': 'Hello!'  # Provide a message
+            }
+        )
+
+        # Asserting that the form is invalid because the email field is empty.
+        self.assertFalse(
+            form.is_valid(),
+            msg="Email was not provided, but the form is valid"
+        )
+
+    # Test method to check if the 'message' field is required.
+    def test_message_is_required(self):
+        """Test for the 'message' field to ensure it is mandatory."""
+
+        # Create an instance of CollaborateForm with an empty 'message' field.
+        form = CollaborateForm(
+            {
+                'name': 'Matt',  # Provide a valid name
+                'luxury_category': 'Diamonds',  # Provide valid luxury category
+                'email': 'test@test.com',  # Provide valid email address
+                'message': ''  # Empty message field
+            }
+        )
+
+        # Asserting the form is invalid because the message field is empty.
+        self.assertFalse(
+            form.is_valid(),
+            msg="Message was not provided, but the form is valid"
+        )
+```
+
+- [https://raw.githubusercontent.com/linobollansee/the-luxury-blog/refs/heads/main/about/test_views.py](https://raw.githubusercontent.com/linobollansee/the-luxury-blog/refs/heads/main/about/test_views.py)
+```python
+from django.test import TestCase  # Import TestCase to create test cases
+from django.urls import reverse  # Import reverse to generate URLs by own name
+# Import About model to interact with about content in the test
+from .models import About
+# Import CollaborateForm to verify form existence in the view context
+from .forms import CollaborateForm
+
+
+class TestAboutView(TestCase):
+    """Test case for the 'About' view"""
+
+    def setUp(self):
+        """Sets up initial test data for the About view."""
+        # Create an instance of About model with sample 'About Me' content
+        self.about_content = About(
+            title="About Me", content="This is about me.")
+        self.about_content.save()  # Save the instance to the test database
+
+    def test_render_about_page_with_collaborate_form(self):
+        """Tests rendering of the About page, checking for a form."""
+        # Simulate a GET request to the 'about' URL
+        response = self.client.get(reverse('about'))
+
+        # Verify the response status is 200 (successful)
+        self.assertEqual(response.status_code, 200)
+
+        # Check if the content 'About Me' is present in the response
+        self.assertIn(b'About Me', response.content)
+
+        # Verify 'collaborate_form' is an instance of CollaborateForm
+        self.assertIsInstance(
+            response.context['collaborate_form'], CollaborateForm)
+
+    def test_successful_collaboration_request_submission(self):
+        """Tests submission of a collaboration request via POST."""
+        # Define POST data to simulate a form submission
+        post_data = {
+            'name': 'test name',
+            'luxury_category': 'Diamonds',
+            'email': 'test@test.com',
+            'message': 'test message'
+        }
+
+        # Simulate a POST request to the 'about' URL with the post_data
+        response = self.client.post(reverse('about'), post_data)
+
+        # Verify the response status is 200 (successful)
+        self.assertEqual(response.status_code, 200)
+
+        # Check if a success message is in the response content
+        self.assertIn(
+            b'Form received! Thank you for your interest.', response.content)
+```
+
+Blog automated tests were kept the same on purpose, to always have working components to refer back to during development. They were however commented for enhanced clarity:
+
+- [https://raw.githubusercontent.com/linobollansee/the-luxury-blog/refs/heads/main/blog/test_forms.py](https://raw.githubusercontent.com/linobollansee/the-luxury-blog/refs/heads/main/blog/test_forms.py)
+```python
+from django.test import TestCase  # Import TestCase class for writing tests
+from .forms import CommentForm  # Import the CommentForm from current package
+
+
+class TestCommentForm(TestCase):
+    # A test case class for testing the CommentForm functionality
+
+    def test_form_is_valid(self):
+        # Test that the form is valid when a valid body is provided
+        # Create a CommentForm instance with a valid body
+        comment_form = CommentForm({'body': 'This is a great post'})
+        # Check that the form is valid and assert if it's not
+        self.assertTrue(comment_form.is_valid(), msg="Form is invalid")
+
+    def test_form_is_invalid(self):
+        # Test that the form is invalid when no body is provided
+        # Create a CommentForm instance with an empty body
+        comment_form = CommentForm({'body': ''})
+        # Check that the form is invalid and assert if it is
+        self.assertFalse(comment_form.is_valid(), msg="Form is valid")
+```
+
+- [https://raw.githubusercontent.com/linobollansee/the-luxury-blog/refs/heads/main/blog/test_views.py](https://raw.githubusercontent.com/linobollansee/the-luxury-blog/refs/heads/main/blog/test_views.py)
+```python
+from django.test import TestCase  # Import Django's test framework
+# Import the User model for authentication
+from django.contrib.auth.models import User
+from django.urls import reverse  # Import reverse to resolve URLs by name
+from .forms import CommentForm  # Import the CommentForm for testing
+from .models import Post  # Import the Post model
+
+
+class TestBlogViews(TestCase):
+    """Unit tests for blog views"""
+
+    def setUp(self):
+        """Set up test data: create a superuser and a sample blog post"""
+        # Create a superuser for testing
+        self.user = User.objects.create_superuser(
+            username="myUsername", password="myPassword",
+            email="test@test.com")
+        # Create a sample blog post linked to the superuser
+        self.post = Post(title="Blog title", author=self.user,
+                         slug="blog-title", excerpt="Blog excerpt",
+                         content="Blog content", status=1)
+        self.post.save()  # Save the blog post to the test database
+
+    def test_render_post_detail_page_with_comment_form(self):
+        """Verify the post detail page renders correctly with a comment form"""
+        # Get the detail page for the created blog post
+        response = self.client.get(reverse('post_detail', args=['blog-title']))
+        # Check if the page returns a status code of 200 (OK)
+        self.assertEqual(response.status_code, 200)
+        # Verify that the post title and content are present in the response
+        self.assertIn(b"Blog title", response.content)
+        self.assertIn(b"Blog content", response.content)
+        # Confirm that the page includes an instance of the CommentForm
+        self.assertIsInstance(response.context['comment_form'], CommentForm)
+
+    def test_successful_comment_submission(self):
+        """Test posting a comment to a post"""
+        # Log in the superuser to simulate an authenticated request
+        self.client.login(username="myUsername", password="myPassword")
+        # Define the post data for a comment submission
+        post_data = {
+            'body': 'This is a test comment.'
+        }
+        # Post the comment data to the post detail page
+        response = self.client.post(
+            reverse('post_detail', args=['blog-title']), post_data)
+        # Ensure the response status code is 200 (OK)
+        self.assertEqual(response.status_code, 200)
+        # Check for a success message confirming comment submission
+        self.assertIn(b'Comment submitted and awaiting approval',
+                      response.content)
+```
+
 ## Deployment
 
 ### Render Web Application Deployment
