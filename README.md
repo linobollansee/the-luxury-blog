@@ -296,6 +296,72 @@ User Story 8.4: Multi-Language Support
 
 ![Luxury Blog ERD](readme/images/luxury-blog-erd.png)
 
+The syntax used on [https://app.eraser.io/](https://app.eraser.io/) to generate the diagram was as follows:
+
+`// Tables`<br>
+`About [icon: user, color: yellow] {`<br>
+&nbsp;&nbsp;`id string pk`<br>
+&nbsp;&nbsp;`title string`<br>
+&nbsp;&nbsp;`profile_image string`<br>
+&nbsp;&nbsp;`profile_image2 string`<br>
+&nbsp;&nbsp;`updated_on timestamp`<br>
+&nbsp;&nbsp;`content text`<br>
+`}`<br>
+
+`CollaborateRequest [icon: mail, color: green] {`<br>
+&nbsp;&nbsp;`id string pk`<br>
+&nbsp;&nbsp;`name string`<br>
+&nbsp;&nbsp;`luxury_category string`<br>
+&nbsp;&nbsp;`email string`<br>
+&nbsp;&nbsp;`message text`<br>
+&nbsp;&nbsp;`read boolean`<br>
+`}`<br>
+
+`Post [icon: file-text, color: blue] {`<br>
+&nbsp;&nbsp;`id string pk`<br>
+&nbsp;&nbsp;`title string`<br>
+&nbsp;&nbsp;`slug string`<br>
+&nbsp;&nbsp;`author string fk`<br>
+&nbsp;&nbsp;`featured_image string`<br>
+&nbsp;&nbsp;`content text`<br>
+&nbsp;&nbsp;`created_on timestamp`<br>
+&nbsp;&nbsp;`status integer`<br>
+&nbsp;&nbsp;`excerpt text`<br>
+&nbsp;&nbsp;`updated_on timestamp`<br>
+`}`<br>
+
+`Comment [icon: message-circle, color: red] {`<br>
+&nbsp;&nbsp;`id string pk`<br>
+&nbsp;&nbsp;`post string fk`<br>
+&nbsp;&nbsp;`author string fk`<br>
+&nbsp;&nbsp;`body text`<br>
+&nbsp;&nbsp;`created_on timestamp`<br>
+&nbsp;&nbsp;`approved boolean`<br>
+`}`<br>
+
+`Participant [icon: users, color: purple] {`<br>
+&nbsp;&nbsp;`id string pk`<br>
+&nbsp;&nbsp;`name string`<br>
+&nbsp;&nbsp;`email string`<br>
+&nbsp;&nbsp;`created_at timestamp`<br>
+`}`<br>
+
+`User [icon: user, color: gray] {`<br>
+&nbsp;&nbsp;`id string pk`<br>
+&nbsp;&nbsp;`name string`<br>
+&nbsp;&nbsp;`email string`<br>
+&nbsp;&nbsp;`password string`<br>
+&nbsp;&nbsp;`created_on timestamp`<br>
+`}`<br>
+
+`// End of tables`<br>
+`title The Luxury Blog`<br>
+
+`// Relationships`<br>
+`Post.author > User.id`<br>
+`Comment.post > Post.id`<br>
+`Comment.author > User.id`<br>
+
 ## Design
 
 ### Logo
