@@ -97,16 +97,24 @@
         </div>
     </div>
     <main class="flex-shrink-0 main-bg">
+        <!-- Check if the user is authenticated -->
         {% if user.is_authenticated %}
-        <p class="text-end m-3">You are logged in as {{ user }}</p>
+        <!-- Check if the user is a superuser -->
+        {% if user.is_superuser %}
+        <!-- Display a message for superuser login -->
+        <p class="text-end m-3">You are logged in as a superuser: {{ user }}</p>
         {% else %}
+        <!-- Display a message for regular user login -->
+        <p class="text-end m-3">You are logged in as {{ user }}</p>
+        {% endif %}
+        {% else %}
+        <!-- Display a message if the user is not logged in -->
         <p class="text-end m-3">You are not logged in</p>
         {% endif %}
 
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
-
     </main>
 
     <!-- Footer -->
