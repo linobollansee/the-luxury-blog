@@ -1241,3 +1241,7 @@ The images used in the Luxury Blog posts were sourced through online searches an
 with project time management. Daisy's GitHub profile page is at [https://github.com/Dee-McG](https://github.com/Dee-McG)
 
 - Slack Community member Kelly Hutchison: Along with project discussions, gave me the motto: "Pass first, then play later" in order to succeed with PP4. Kelly's GitHub profile page is at [https://github.com/quiltingcode](https://github.com/quiltingcode)
+
+### Project Advice
+
+- When using a Kanban board, seeing a task marked as "Done" can give a sense of completion, but it shouldn't necessarily signal the end of refinement. Reassessing finished tasks, especially when there’s extra time or resources, can be invaluable. This approach not only allows for minor tweaks that improve functionality or visual polish but also supports continuous improvement principles. Optimizing user interactions, improving performance, or adding small but impactful features can elevate the project.
