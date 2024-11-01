@@ -1253,6 +1253,12 @@ The W3C CSS Validation Service at [https://jigsaw.w3.org/css-validator/](https:/
 
 ![readme/images/luxury-blog-css-validation.png](readme/images/luxury-blog-css-validation.png)
 
+### Javascript Validation
+
+JSHint, a JavaScript Code Quality Tool at [https://jshint.com/](https://jshint.com/) was used to validate the `static/js/comments.js` file used in the Luxury Blog project without errors:
+
+![readme/images/luxury-blog-jshint.png](readme/images/luxury-blog-jshint.png)
+
 ## Deployment
 
 ### Render Web Application Deployment
