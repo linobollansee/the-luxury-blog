@@ -366,6 +366,26 @@ Comment.author > User.id
 
 ## Design
 
+### Wireframes
+
+Balsamiq Wireframes, a powerful and user-friendly tool, was used to create a series of detailed wireframes that played a role in shaping the design and functionality of the web application, Luxury Blog. These wireframes serve as visual blueprints, allowing to map out the layout and structure of the website, ensuring that each component, from navigation menus to content, is thoughtfully arranged to enhance user experience and engagement.
+
+Desktop computer wireframes:
+
+![readme/images/luxury-blog-wireframe-desktop-home.png](readme/images/luxury-blog-wireframe-desktop-home.png)
+![readme/images/luxury-blog-wireframe-desktop-about.png](readme/images/luxury-blog-wireframe-desktop-about.png)
+![readme/images/luxury-blog-wireframe-desktop-tombola.png](readme/images/luxury-blog-wireframe-desktop-tombola.png)
+![readme/images/luxury-blog-wireframe-desktop-register.png](readme/images/luxury-blog-wireframe-desktop-register.png)
+![readme/images/luxury-blog-wireframe-desktop-login.png](readme/images/luxury-blog-wireframe-desktop-login.png)
+
+Mobile device wireframes:
+
+![readme/images/luxury-blog-wireframe-mobile-home.png](readme/images/luxury-blog-wireframe-mobile-home.png)
+![readme/images/luxury-blog-wireframe-mobile-about.png](readme/images/luxury-blog-wireframe-mobile-about.png)
+![readme/images/luxury-blog-wireframe-mobile-tombola.png](readme/images/luxury-blog-wireframe-mobile-tombola.png)
+![readme/images/luxury-blog-wireframe-mobile-register.png](readme/images/luxury-blog-wireframe-mobile-register.png)
+![readme/images/luxury-blog-wireframe-mobile-login.png](readme/images/luxury-blog-wireframe-mobile-login.png)
+
 ### Logo
 
 The logo was made by CSS styling:
