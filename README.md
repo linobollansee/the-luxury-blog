@@ -1249,7 +1249,7 @@ The `luxury/settings.py` errors that do not break PEP 8 guidelines:
 
 ### CSS Validation
 
-The W3C CSS Validation Service at [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/) validated the style.css file used in The Luxury Blog project without errors:
+The W3C CSS Validation Service at [https://jigsaw.w3.org/css-validator/](https://jigsaw.w3.org/css-validator/) validated the `style.css` file used in The Luxury Blog project without errors:
 
 ![readme/images/luxury-blog-css-validation.png](readme/images/luxury-blog-css-validation.png)
 
