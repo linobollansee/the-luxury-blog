@@ -1239,7 +1239,11 @@ tombola/urls.py
 tombola/views.py
 ```
 
-The luxury/settings.py errors that do not break PEP 8 guidelines:
+The `tombola/models.py` file passing PEP 8 validation
+
+![readme/images/luxury-blog-pep8-validation.png](readme/images/luxury-blog-pep8-validation.png)
+
+The `luxury/settings.py` errors that do not break PEP 8 guidelines:
 
 ![readme/images/luxury-blog-pep8-error.png](readme/images/luxury-blog-pep8-error.png)
 
