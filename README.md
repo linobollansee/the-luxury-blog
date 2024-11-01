@@ -1191,6 +1191,58 @@ Running the automated tests in the IDE Terminal:
 
 ![readme/images/luxury-blog-automated-tests.png](readme/images/luxury-blog-automated-tests.png)
 
+### Python Testing
+
+All the project and app Python files listed below were checked with the Code Institute Python Linter at [https://pep8ci.herokuapp.com/](https://pep8ci.herokuapp.com/)
+and none contained errors except for `luxury/settings.py` As the error is pregenerated code, and the PEP8 guidelines make an exception for extremely long imports, the file did not have to be corrected.
+
+```plaintext
+about/__init__.py
+about/admin.py
+about/apps.py
+about/forms.py
+about/models.py
+about/test_forms.py
+about/test_views.py
+about/tests.py
+about/urls.py
+about/views.py
+
+blog/__init__.py
+blog/admin.py
+blog/apps.py
+blog/forms.py
+blog/models.py
+blog/test_forms.py
+blog/test_views.py
+blog/tests.py
+blog/urls.py
+blog/views.py
+
+luxury/__init__.py
+luxury/asgi.py
+luxury/settings.py
+luxury/urls.py
+luxury/wsgi.py
+
+tombola/__init__.py
+tombola/admin.py
+tombola/apps.py
+tombola/forms.py
+tombola/models.py
+tombola/test_apps.py
+tombola/test_forms.py
+tombola/test_models.py
+tombola/test_urls.py
+tombola/test_views.py
+tombola/urls.py
+tombola/views.py
+```
+
+The luxury/settings.py errors that do not break PEP8 guidelines:
+
+![readme/images/luxury-blog-pep8-error.png](readme/images/luxury-blog-pep8-error.png)
+
 ## Deployment
 
 ### Render Web Application Deployment
