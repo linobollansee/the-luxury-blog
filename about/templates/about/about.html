@@ -7,11 +7,9 @@
     <div class="row">
         <div class="col-12 col-md-4 text-center">
             {% if "placeholder" in about.profile_image.url %}
-            <!-- Deleted the class to increase image size-->
-            <img src="{% static 'images/nobody.jpg' %}" alt="{{ about.title }}">
+            <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }}">
             {% else %}
-            <!-- Deleted the class to increase image size-->
-            <img src="{{ about.profile_image.url }}" alt="{{ about.title }}">
+            <img src="{{ about.profile_image.url }}" class="profile-image" alt="{{ about.title }}">
             {% endif %}
         </div>
         <div class="col-12 col-md-4">
@@ -20,11 +18,9 @@
         </div>
         <div class="col-12 col-md-4 text-center">
             {% if "placeholder2" in about.profile_image2.url %}
-            <!-- Deleted the class to increase image size-->
-            <img src="{% static 'images/nobody.jpg' %}" alt="{{ about.title }} - second image">
+            <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }} - second image">
             {% else %}
-            <!-- Deleted the class to increase image size-->
-            <img src="{{ about.profile_image2.url }}" alt="{{ about.title }} - second image">
+            <img src="{{ about.profile_image2.url }}" class="profile-image" alt="{{ about.title }} - second image">
             {% endif %}
         </div>
     </div>
