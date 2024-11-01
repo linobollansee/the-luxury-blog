@@ -1187,6 +1187,10 @@ class TestBlogViews(TestCase):
                       response.content)
 ```
 
+Running the automated tests in the IDE Terminal:
+
+![readme/images/luxury-blog-automated-tests.png](readme/images/luxury-blog-automated-tests.png)
+
 ## Deployment
 
 ### Render Web Application Deployment
