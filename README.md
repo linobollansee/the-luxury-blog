@@ -1191,10 +1191,10 @@ Running the automated tests in the IDE Terminal:
 
 ![readme/images/luxury-blog-automated-tests.png](readme/images/luxury-blog-automated-tests.png)
 
-### Python Testing
+### Python PEP 8
 
 All the project and app Python files listed below were checked with the Code Institute Python Linter at [https://pep8ci.herokuapp.com/](https://pep8ci.herokuapp.com/)
-and none contained errors except for `luxury/settings.py` As the error is pregenerated code, and the PEP8 guidelines make an exception for extremely long imports, the file did not have to be corrected.
+and none contained PEP 8 errors except for `luxury/settings.py` As the errors are pregenerated code, and the PEP 8 guidelines make an exception for extremely long imports, the file did not have to be corrected.
 
 ```plaintext
 about/__init__.py
@@ -1239,7 +1239,7 @@ tombola/urls.py
 tombola/views.py
 ```
 
-The luxury/settings.py errors that do not break PEP8 guidelines:
+The luxury/settings.py errors that do not break PEP 8 guidelines:
 
 ![readme/images/luxury-blog-pep8-error.png](readme/images/luxury-blog-pep8-error.png)
 
