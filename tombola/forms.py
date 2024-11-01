@@ -17,6 +17,6 @@ class ParticipantForm(forms.ModelForm):
         """
         # Specify the model that this form is associated with
         model = Participant
-     
+
         # Define the fields to be included in the form
         fields = ['name', 'email']  # Only the fields will be rendered.
