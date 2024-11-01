@@ -1251,6 +1251,34 @@ The `luxury/settings.py` errors that do not break PEP 8 guidelines:
 
 ### HTML Validation
 
+Django Template Language (DTL) constructs such as Template Tags (e.g., {% if condition %}), Template Variables (e.g., {{ variable }}), Custom Filters (e.g., {{ value|filter_name }}), Load Statements (e.g., {% load static %}), Comment Syntax (e.g., {# This is a comment #}), Block Tags (e.g., {% block content %}), and Extends Tags (e.g., {% extends 'base.html' %}) cannot be validated by standard HTML validators. Therefore, it is necessary to validate the rendered pages instead.
+
+Home
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2F)
+
+About
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Fabout%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Fabout%2F)
+
+Tombola
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Ftombola%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Ftombola%2F
+)
+
+Important: The Sign Up page below contains HTML validation errors that were directly blamed on `allauth` by the Code Institute and not the fault or responsibility of the student. See the Bugs and Issues section for more detailed information.
+
+Sign Up
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Faccounts%2Fsignup%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Faccounts%2Fsignup%2F)
+
+Log in
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Faccounts%2Flogin%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Faccounts%2Flogin%2F)
+
+Log out
+
+[https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Faccounts%2Flogout%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthe-luxury-blog.onrender.com%2Faccounts%2Flogout%2F)
 
 ### CSS Validation
 
