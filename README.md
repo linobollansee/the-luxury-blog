@@ -511,6 +511,66 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
 - Firefox Version 131.0.3 (64-bit)
 - Opera Version 114.0.5282.115 (64-bit)
 
+### Manual Testing
+
+- Desktop navigation bar functionality
+  - PASS: The Logo button loads the home page.
+  - PASS: The Home link loads the home page. 
+  - PASS: The About link loads the about page.
+  - PASS: The Tombola link loads the tombola page.
+  - PASS: The Register link loads the sign up page.
+  - PASS: The Login link loads the login page.
+
+- Mobile navigation bar functionality
+  - PASS: The hamburger menu icon loads at 991 pixels width or less.
+  - PASS: The hamburger menu opens when clicked.
+  - PASS: The Logo button loads the home page.
+  - PASS: The Home link loads the home page. 
+  - PASS: The About link loads the about page.
+  - PASS: The Tombola link loads the tombola page.
+  - PASS: The Register link loads the sign up page.
+  - PASS: The Login link loads the login page.
+
+- Logging in/out functionality
+  - PASS: Logging in with the `superuser` account.
+  - PASS: Logging in with a `user` account.
+  - PASS: Superuser login notification: "You are logged in as a superuser:"
+  - PASS: User login notification: "You are logged in as:"
+  - PASS: Logout notification: "Are you sure you want to sign out?"
+
+- Blog post functionality:
+  - PASS: The blog posts are visible on the home page.
+  - PASS: The superuser can create new blog posts through the admin panel.
+  - PASS: The superuser can edit blog posts through the admin panel.
+  - PASS: The superuser can delete blog posts through the admin panel.
+
+- Blog comment functionality
+  - PASS: Users can submit blog comments.
+  - PASS: Users can edit blog comments.
+  - PASS: The edit button flashes the comment body with Javascript/CSS code when clicked.
+  - PASS: Users can delete their blog comments.
+  - PASS: The delete confirmation pop-up shakes with Javascript/CSS code when clicked.
+  - PASS: The superuser can approve comments in the admin panel.
+
+- About page functionality
+  - PASS: The about content displays correctly.
+  - PASS: The about content can be edited in the admin panel in rich-text mode with summernote.
+  - PASS: The two cloudinary images can be chosen through the admin panel.
+  - PASS: The about content can be deleted.
+
+- Tombola page functionality
+  - PASS: Anyone can participate in the Tombola with a name and unique email address.
+  - PASS: Pagination of participants works correctly.
+
+- Footer icons functionality
+  - PASS: The footer icons display correctly on desktop and mobile.
+  - PASS: Clicking the Facebook icon opens Facebook in a new tab.
+  - PASS: Clicking the Twitter icon opens Twitter in a new tab.
+  - PASS: Clicking the Instagram icon opens Instagram in a new tab.
+  - PASS: Clicking the YouTube icon opens YouTube in a new tab.
+
+This list of tests aims to verify the general stability and features of the web application but is not considered exhaustive; there are endless ways to test a web application.
+
 ### Automated Testing
 
 A comprehensive suite of Python files was created to thoroughly test various components of The Luxury Blog's tombola app. This suite includes the following test files, with functionality clearly commented with triple quote docstrings and hashtags:
