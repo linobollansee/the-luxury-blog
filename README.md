@@ -511,6 +511,60 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
 - Firefox Version 131.0.3 (64-bit)
 - Opera Version 114.0.5282.115 (64-bit)
 
+### Lighthouse Testing
+
+Google Lighthouse was used to audit the web application, providing an in-depth analysis across four essential areas:
+
+- Performance: The tool measured loading times, resource efficiency, and responsiveness, identifying any bottlenecks and suggesting optimizations to improve speed and reduce load times for users.
+
+- Accessibility: Lighthouse reviewed the application's design to ensure it was accessible to users with disabilities. This includes verifying text contrast, button accessibility, and keyboard navigation, all of which help make the application more user-friendly.
+
+- Best Practices: The audit looked at security and coding best practices, checking for things like secure HTTPS connections, safe usage of third-party libraries, and ensuring no unsafe resources are loaded.
+
+- SEO: To improve search visibility, Lighthouse analyzed SEO fundamentals, such as proper use of meta tags, mobile-friendly design, and structured data, helping to make the application more discoverable.
+
+Home page:
+
+![readme/images/luxury-blog-lighthouse-home.png](readme/images/luxury-blog-lighthouse-home.png)
+
+Blog pages:
+
+Mercedes article:
+
+![readme/images/luxury-blog-lighthouse-mercedes.png](readme/images/luxury-blog-lighthouse-mercedes.png)
+
+Montblanc article:
+
+![readme/images/luxury-blog-lighthouse-montblanc.png](readme/images/luxury-blog-lighthouse-montblanc.png)
+
+Rolex article:
+
+![readme/images/luxury-blog-lighthouse-rolex.png](readme/images/luxury-blog-lighthouse-rolex.png)
+
+About page:
+
+![readme/images/luxury-blog-lighthouse-about.png](readme/images/luxury-blog-lighthouse-about.png)
+
+Tombola page:
+
+![readme/images/luxury-blog-lighthouse-tombola.png](readme/images/luxury-blog-lighthouse-tombola.png)
+
+Sign up page:
+
+![readme/images/luxury-blog-lighthouse-signup.png](readme/images/luxury-blog-lighthouse-signup.png)
+
+Login page:
+
+![readme/images/luxury-blog-lighthouse-login.png](readme/images/luxury-blog-lighthouse-login.png)
+
+Logout page:
+
+![readme/images/luxury-blog-lighthouse-logout.png](readme/images/luxury-blog-lighthouse-logout.png)
+
+Admin page:
+
+![readme/images/luxury-blog-lighthouse-admin.png](readme/images/luxury-blog-lighthouse-admin.png)
+
 ### Manual Testing
 
 A set of manual tests was developed for the web application The Luxury Blog.
