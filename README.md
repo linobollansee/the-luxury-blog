@@ -366,6 +366,81 @@ Comment.post > Post.id
 Comment.author > User.id
 ```
 
+### Tables and Entities
+
+About
+- Represents profile information about the blog.
+- Fields include:
+  - `id`: Unique identifier (primary key).
+  - `title`: Title of the profile or section.
+  - `profile_image` & `profile_image2`: URLs or paths for profile images.
+  - `updated_on`: Timestamp for the last update.
+  - `content`: Text content describing the profile.
+
+CollaborateRequest
+- Stores collaboration inquiries from users.
+- Fields include:
+  - `id`: Unique identifier (primary key).
+  - `name`: Name of the individual requesting collaboration.
+  - `luxury_category`: The category of luxury (e.g., fashion, travel).
+  - `email`: Contact email of the requester.
+  - `message`: Message content of the request.
+  - `read`: Boolean to indicate if the message has been reviewed.
+
+Post
+- Represents a blog post published on the platform.
+- Fields include:
+  - `id`: Unique identifier (primary key).
+  - `title`: Title of the blog post.
+  - `slug`: SEO-friendly URL segment.
+  - `author`: Foreign key linking to the **User** who created the post.
+  - `featured_image`: URL or path for the main image of the post.
+  - `content`: Full content of the post.
+  - `created_on`: Timestamp for post creation.
+  - `status`: Integer representing the publication status (e.g., draft, published).
+  - `excerpt`: Short summary or excerpt of the post.
+  - `updated_on`: Timestamp for the latest update.
+
+Comment
+- Stores user comments on blog posts.
+- Fields include:
+  - `id`: Unique identifier (primary key).
+  - `post`: Foreign key linking to the **Post** being commented on.
+  - `author`: Foreign key linking to the **User** who wrote the comment.
+  - `body`: Content of the comment.
+  - `created_on`: Timestamp for when the comment was made.
+  - `approved`: Boolean to indicate if the comment has been moderated and approved.
+
+Participant
+- Represents tombola participants.
+- Fields include:
+  - `id`: Unique identifier (primary key).
+  - `name`: Name of the participant.
+  - `email`: Contact email of the participant.
+  - `created_at`: Timestamp for when the participant was added.
+
+User
+- Represents registered users who interact with the platform.
+- Fields include:
+  - `id`: Unique identifier (primary key).
+  - `name`: User’s name.
+  - `email`: User’s email address.
+  - `password`: Hashed password for user authentication.
+  - `created_on`: Timestamp for when the user registered.
+
+Relationships
+- **Post.author > User.id**:
+  - Each **Post** is authored by one **User**.
+  - A **User** can author multiple **Posts**.
+
+- **Comment.post > Post.id**:
+  - Each **Comment** is related to a single **Post**.
+  - A **Post** can have multiple **Comments**.
+
+- **Comment.author > User.id**:
+  - Each **Comment** is created by one **User**.
+  - A **User** can author multiple **Comments**.
+
 ## Design
 
 ### Wireframes
