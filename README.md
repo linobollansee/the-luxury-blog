@@ -1504,6 +1504,23 @@ JSHint, a JavaScript Code Quality Tool at [https://jshint.com/](https://jshint.c
 
 ## Deployment
 
+### Local Deployment
+
+1. Create env.py
+In the root directory of your project, create a file named `env.py`. This file will store environment variables necessary for managing sensitive data like database credentials and API keys securely.
+
+2. Configure Environment Variables
+Populate env.py with the required environment variables specific to your project, including any credentials for external services and databases. This keeps your project organized and secure.
+
+3. Install Dependencies
+Install all necessary dependencies using pip install. If you have a requirements.txt file, run `pip install -r requirements.txt` to install them all at once.
+
+4. Django Configuration
+Install and configure your Django project in settings.py. Ensure you set key variables such as `DEBUG`, `ALLOWED_HOSTS`, `DATABASES`, and `INSTALLED_APPS`. For local development, set `DEBUG = True`.
+
+5. Run the Local Server
+Finally, run your local Django server by executing `python3 manage.py runserver` in the terminal. This will start the development server, allowing you to test your application locally.
+
 ### Render Web Application Deployment
 
 1. Sign in at [https://render.com/](https://render.com/) using GitHub
