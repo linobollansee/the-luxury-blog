@@ -513,7 +513,10 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
 
 ### Manual Testing
 
+A set of manual tests was developed for the web application The Luxury Blog.
+
 - Desktop navigation bar functionality
+  - PASS: The desktop version loads at 992 pixels width or more.
   - PASS: The Logo button loads the home page.
   - PASS: The Home link loads the home page. 
   - PASS: The About link loads the about page.
@@ -531,24 +534,17 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
   - PASS: The Register link loads the sign up page.
   - PASS: The Login link loads the login page.
 
-- Logging in/out functionality
-  - PASS: Logging in with the `superuser` account.
-  - PASS: Logging in with a `user` account.
-  - PASS: Superuser login notification: "You are logged in as a superuser:"
-  - PASS: User login notification: "You are logged in as:"
-  - PASS: Logout notification: "Are you sure you want to sign out?"
-
-- Blog post functionality:
+- Blog post functionality
   - PASS: The blog posts are visible on the home page.
   - PASS: The superuser can create new blog posts through the admin panel.
   - PASS: The superuser can edit blog posts through the admin panel.
   - PASS: The superuser can delete blog posts through the admin panel.
 
 - Blog comment functionality
-  - PASS: Users can submit blog comments.
-  - PASS: Users can edit blog comments.
+  - PASS: The superuser/users can submit blog comments.
+  - PASS: The superuser/users can edit blog comments.
   - PASS: The edit button flashes the comment body with Javascript/CSS code when clicked.
-  - PASS: Users can delete their blog comments.
+  - PASS: The superuser/users can delete their blog comments.
   - PASS: The delete confirmation pop-up shakes with Javascript/CSS code when clicked.
   - PASS: The superuser can approve comments in the admin panel.
 
@@ -556,11 +552,36 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
   - PASS: The about content displays correctly.
   - PASS: The about content can be edited in the admin panel in rich-text mode with summernote.
   - PASS: The two cloudinary images can be chosen through the admin panel.
-  - PASS: The about content can be deleted.
+  - PASS: The superuser can delete the about content through the admin panel.
 
 - Tombola page functionality
-  - PASS: Anyone can participate in the Tombola with a name and unique email address.
-  - PASS: Pagination of participants works correctly.
+  - PASS: The tombola participation information loads.
+  - PASS: The tombola participation form loads.
+  - PASS: All visitors can participate in the Tombola with a name and unique email address.
+  - PASS: Tombola participation notification: "Your Tombola participation has been successfully registered!".
+  - PASS: Notification "Your Tombola participation has been successfully registered!" can be closed.
+  - PASS: 10 participants are displayed at a time.
+  - PASS: Pagination buttons allow access to additional participants.
+  - PASS: Tombola participants can be deleted from the admin panel.
+
+- Registration functionality
+  - PASS: The sign up page loads correctly. 
+  - PASS: The username/email/password/password fields can be entered with information.
+  - PASS: The account is succesfully created.
+  - PASS: The account automatically logs-in.
+  - PASS: The account login notification can be closed.
+
+- Logging in/out functionality
+  - PASS: Logging in with the `superuser` account is succesful.
+  - PASS: Logging in with a `user` account is succesful.
+  - PASS: Superuser login notification: "You are logged in as a superuser:"
+  - PASS: The superuser login notification can be closed.
+  - PASS: User login notification: "You are logged in as: user"
+  - PASS: The user login notification can be closed.
+  - PASS: Logout notification: "Are you sure you want to sign out?"
+  - PASS: The logout notification can be closed.
+  - PASS: Logout confirmation: "You have signed out."
+  - PASS: The logout confirmation can be closed.
 
 - Footer icons functionality
   - PASS: The footer icons display correctly on desktop and mobile.
@@ -569,7 +590,7 @@ The testing phase employed a range of web browsers to ensure comprehensive cover
   - PASS: Clicking the Instagram icon opens Instagram in a new tab.
   - PASS: Clicking the YouTube icon opens YouTube in a new tab.
 
-This list of tests aims to verify the general stability and features of the web application but is not considered exhaustive; there are endless ways to test a web application.
+This list of tests aims to verify the general stability and features of the web application but is not considered exhaustive; there are endless ways to test a web application, especially from the admin panel.
 
 ### Automated Testing
 
