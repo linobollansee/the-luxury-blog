@@ -27,6 +27,7 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Favicon](#favicon)
 - [Bugs and Issues](#bugs-and-issues)
 - [Technologies Used](#technologies-used)
+  - [Languages](#languages)
   - [Frameworks](#frameworks)
   - [Libraries and modules](#libraries-and-modules)
 - [Testing](#testing)
