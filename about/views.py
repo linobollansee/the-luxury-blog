@@ -26,6 +26,7 @@ def about_me(request):
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
             collaborate_form.save()
+            # Custom thank you message
             messages.add_message(
                 request, messages.SUCCESS,
                 'Form received! Thank you for your interest.'
