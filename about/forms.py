@@ -11,4 +11,5 @@ class CollaborateForm(forms.ModelForm):
         Specify the django model and order of the fields
         """
         model = CollaborateRequest
+        # Added luxury_category variable
         fields = ('name', 'luxury_category', 'email', 'message')
