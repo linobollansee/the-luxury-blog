@@ -506,6 +506,8 @@ Luxury Blog HTML Errors:
 
 - Single backticks, `&nbsp;` non-breaking spaces, and `<br>` line breaks were excessively used to create the README file. When I remembered that triple backticks were also supported and would implement similar functionality automatically, I upgraded all the content that would benefit from it.
 
+- After a recent commit, Render.com failed to load The Luxury Blog correctly, even though I waited for the rebuild to complete. Initially, I worried that the commit might have broken the project and considered rolling back to an earlier version. However, after reviewing the minor changes on GitHub, I realized they were unlikely to be the cause. So, I cleared the cache and restarted the service on Render, and to my surprise, that solved the issue! This experience shows that technical glitches can happen on cloud platforms, and immediately reverting to previous code isn't always necessary. As I had not expected all this to happen, I unfortunately didn't keep any screenshots.
+
 ## Technologies Used
 
 ### Languages
