@@ -16,6 +16,7 @@
             <h2>{{ about.title }}</h2>
             {{ about.content | safe }}
         </div>
+        <!-- Display second profile image -->
         <div class="col-12 col-md-4 text-center">
             {% if "placeholder2" in about.profile_image2.url %}
             <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }} - second image">
@@ -26,7 +27,9 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
+            <!-- Custom profile heading -->
             <h2>Let’s work together!</h2>
+            <!-- Custom paragraph -->
             <p>The Luxury Blog invites businesses to collaborate in reaching
                 a discerning audience of affluent consumers. With our focus on
                 aspirational lifestyles, craftsmanship, and exclusivity, we offer
