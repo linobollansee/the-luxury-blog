@@ -13,6 +13,41 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
 
 ![Luxury Blog preview screenshot](readme/images/luxury-blog-preview.png)
 
+## Table of Contents
+- [Agile Methodology](#agile-methodology)
+- [Epics](#epics)
+- [User Stories](#user-stories)
+- [Database](#database)
+  - [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+  - [Tables and Entities](#tables-and-entities)
+- [Design](#design)
+  - [Wireframes](#wireframes)
+  - [Logo](#logo)
+  - [Background](#background)
+  - [Favicon](#favicon)
+- [Bugs and Issues](#bugs-and-issues)
+- [Technologies Used](#technologies-used)
+  - [Frameworks](#frameworks)
+  - [Libraries and modules](#libraries-and-modules)
+- [Testing](#testing)
+  - [Browser Compatibility](#browser-compatibility)
+  - [Lighthouse Testing](#lighthouse-testing)
+  - [Manual Testing](#manual-testing)
+  - [Automated Testing](#automated-testing)
+  - [Python PEP 8](#python-pep-8)
+  - [HTML Validation](#html-validation)
+  - [CSS Validation](#css-validation)
+  - [Javascript Validation](#javascript-validation)
+- [Deployment](#deployment)
+  - [Local Deployment](#local-deployment)
+  - [Render Web Application Deployment](#render-web-application-deployment)
+  - [Cloudinary](#cloudinary)
+  - [PostgreSQL Database](#postgresql-database)
+- [Credits](#credits)
+  - [Code](#code)
+  - [Acknowledgments](#acknowledgments)
+- [Project Advice](#project-advice)
+
 ## Agile Methodology
 
 This project was planned using Agile project management through Epics, Descriptions, User Stories, Story Points, MoSCoW prioritization, Acceptance Criteria, and Tasks.
@@ -1579,6 +1614,6 @@ with project time management. Daisy's GitHub profile page is at [https://github.
 
 - Slack Community member Kelly Hutchison: Along with project discussions, gave me the motto: "Pass first, then play later" in order to succeed with PP4. Kelly's GitHub profile page is at [https://github.com/quiltingcode](https://github.com/quiltingcode)
 
-### Project Advice
+## Project Advice
 
 - When using a Kanban board, seeing a task marked as "Done" can give a sense of completion, but it shouldn't necessarily signal the end of refinement. Reassessing finished tasks, especially when there’s extra time or resources, can be invaluable. This approach not only allows for minor tweaks that improve functionality or visual polish but also supports continuous improvement principles. Optimizing user interactions, improving performance, or adding small but impactful features can elevate the project.
