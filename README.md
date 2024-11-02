@@ -16,7 +16,7 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
 ## Table of Contents
 - [Agile Methodology](#agile-methodology)
 - [Epics](#epics)
-- [User Stories](#user-stories)
+- [User Stories and How They Were Completed](#user-stories-and-how-they-were-completed)
 - [Database](#database)
   - [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
   - [Tables and Entities](#tables-and-entities)
@@ -25,6 +25,7 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Logo](#logo)
   - [Background](#background)
   - [Favicon](#favicon)
+- [Features](#features)
 - [Bugs and Issues](#bugs-and-issues)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
@@ -110,7 +111,7 @@ Epic 8: Enhance User Experience with Advanced Features
     - User Story 8.3: Advanced Filtering and Search Options
     - User Story 8.4: Multi-Language Support
 
-### User Stories
+### User Stories and How They Were Completed
 
 Please read this section thoroughly, as it includes important and comprehensive information on how the User Stories and their Tasks were accomplished for this project.
 
@@ -530,7 +531,7 @@ The favicon was generated using [https://favicon.io/favicon-generator/](https://
 
 ![Luxury Blog Favicon](readme/images/luxury-blog-favicon.png)
 
-
+## Features
 
 ## Bugs and Issues
 
