@@ -467,7 +467,7 @@ Mobile device wireframes:
 
 The logo was made by CSS styling:
 
-```
+```css
 .luxury {
 font-family: 'Great Vibes', cursive;
 font-size: 64px;
@@ -475,6 +475,16 @@ color: #D4AF37; /* Gold color */
 text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 display: block;
 line-height: 0.9;
+}
+```
+
+### Background
+
+The background was made by CSS styling:
+
+```css
+.main-bg {
+    background-color: #f8ecc3;
 }
 ```
 
