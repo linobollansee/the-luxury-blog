@@ -7,7 +7,6 @@
 {% url 'account_logout' as logout_url %}
 {% url 'tombola' as tombola_url %}
 
-
 <!DOCTYPE html>
 <html class="h-100" lang="en">
 
@@ -42,44 +41,46 @@
 <body class="d-flex flex-column h-100 main-bg">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" role="navigation" aria-label="Main navigation">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand luxury">Luxury <span
-                        class="thin">Blog</span></span></a>
+            <a class="navbar-brand" href="{% url 'home' %}" aria-label="Luxury Blog Home">
+                <span class="brand luxury">Luxury <span class="thin">Blog</span></span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'home' %}">Home</a>
+                            href="{% url 'home' %}" aria-label="Home Page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'about' %}">About</a>
+                            href="{% url 'about' %}" aria-label="About Us Page">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == tombola_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'tombola' %}">Tombola</a>
-                        {% if user.is_authenticated %}
+                            href="{% url 'tombola' %}" aria-label="Tombola Page">Tombola</a>
+                    </li>
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_logout' %}">Logout</a>
+                            href="{% url 'account_logout' %}" aria-label="Logout">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_signup' %}">Register</a>
+                            href="{% url 'account_signup' %}" aria-label="Register Account">Register</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
-                            href="{% url 'account_login' %}">Login</a>
+                            href="{% url 'account_login' %}" aria-label="Login to Account">Login</a>
                     </li>
                     {% endif %}
                 </ul>
-                <span class="navbar-text text-muted">
+                <span class="navbar-text text-muted" aria-label="Tagline">
                     Where Opulence Meets Inspiration
                 </span>
             </div>
@@ -91,7 +92,7 @@
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
                     {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" title="Close alert"></button>
                 </div>
                 {% endfor %}
             </div>
@@ -103,14 +104,14 @@
         <!-- Check if the user is a superuser -->
         {% if user.is_superuser %}
         <!-- Display a message for superuser login -->
-        <p class="text-end m-3">You are logged in as a superuser: {{ user }}</p>
+        <p class="text-end m-3" aria-label="Superuser status">You are logged in as a superuser: {{ user }}</p>
         {% else %}
         <!-- Display a message for regular user login -->
-        <p class="text-end m-3">You are logged in as {{ user }}</p>
+        <p class="text-end m-3" aria-label="User status">You are logged in as {{ user }}</p>
         {% endif %}
         {% else %}
         <!-- Display a message if the user is not logged in -->
-        <p class="text-end m-3">You are not logged in</p>
+        <p class="text-end m-3" aria-label="Guest status">You are not logged in</p>
         {% endif %}
 
         {% block content %}
@@ -119,17 +120,17 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 dark-bg">
+    <footer class="footer mt-auto py-3 dark-bg" role="contentinfo" aria-label="Footer">
         <p class="m-0 text-center text-white">
             <!-- Copyright message -->
             {% block copyright %}Copyright 2024 Lino Bollansee{% endblock copyright %}
         </p>
         <!-- Social media links -->
-        <p class="m-0 text-center text-white">Follow us:
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square ms-3 fa-2x"></i></a>
-            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square ms-3 fa-2x"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square ms-3 fa-2x"></i></a>
-            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square ms-3 fa-2x"></i></a>
+        <p class="m-0 text-center text-white" aria-label="Follow us on social media">Follow us:
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-square ms-3 fa-2x"></i></a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter-square ms-3 fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram-square ms-3 fa-2x"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube-square ms-3 fa-2x"></i></a>
         </p>
     </footer>
 
