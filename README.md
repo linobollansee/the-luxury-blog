@@ -533,6 +533,32 @@ The favicon was generated using [https://favicon.io/favicon-generator/](https://
 
 ## Features
 
+### Luxury Blog Logo
+
+A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. (User Story 1.1)
+
+![Luxury Blog Logo](readme/images/luxury-blog-logo.png)
+
+The Luxury Blog offers two navigation systems, one for desktop and one for mobile, to facilitate easy browsing. (User Story 1.1)
+
+Desktop Navigation Bar
+
+![Luxury Blog Desktop Menu](readme/images/luxury-blog-desktop-navigation-bar.png)
+
+Mobile Navigation Bar
+
+![Luxury Blog Mobile Menu](readme/images/luxury-blog-mobile-navigation-bar.png)
+
+The Luxury Blog offers two footer systems, one for desktop and one for mobile, to open social media in a new browser tab. (User Story 1.1)
+
+Desktop Footer
+
+![Luxury Blog Desktop Footer](readme/images/luxury-blog-desktop-footer.png)
+
+Mobile Footer
+
+![Luxury Blog Mobile Footer](readme/images/luxury-blog-mobile-footer.png)
+
 ## Bugs and Issues
 
 - Addressing HTML validation issues on the Sign-Up page at [https://the-luxury-blog.onrender.com/accounts/signup/](https://the-luxury-blog.onrender.com/accounts/signup/) presented significant challenges. Despite numerous discussions with the Code Institute to identify the root cause, a definitive solution proved elusive. After trying an experimental fix recommended by the Code Institute—visible in this commit: [https://github.com/linobollansee/the-luxury-blog/commit/16401e24a2478c976456b548f03e15709a8a4e3e](https://github.com/linobollansee/the-luxury-blog/commit/16401e24a2478c976456b548f03e15709a8a4e3e) the outcome was a complete failure to render the page, leading to a decision to revert back to the original walkthrough project code at [https://github.com/linobollansee/the-luxury-blog/commit/a49cfbaefbf159b29da800bc2dd25e9b03ff4171](https://github.com/linobollansee/the-luxury-blog/commit/a49cfbaefbf159b29da800bc2dd25e9b03ff4171), which still displays the same validation errors. However, I have been assured that these HTML errors will not affect project assessment results, as they may arise from external libraries and technologies beyond our control. Many more commit experiments were undertaken in an effort to try to understand the issue better, but with no real success. Finally, it was discovered that other students, even those graded with a distinction grade for their unrelated project, had the exact same issue. Filip Van Elslande's Astroblog errors can be seen at [https://validator.w3.org/nu/?doc=https%3A%2F%2Fastroshare-blog-6a7ca9d34749.herokuapp.com%2Fmembers%2Fregister%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fastroshare-blog-6a7ca9d34749.herokuapp.com%2Fmembers%2Fregister%2F) for confirmation.
