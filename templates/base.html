@@ -1,5 +1,6 @@
-{% load static %}
+{% load static %}  <!-- Load the static files for use in the template -->
 
+{# Define URL patterns for navigation links #}
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'account_login' as login_url %}
@@ -7,126 +8,124 @@
 {% url 'account_logout' as logout_url %}
 {% url 'tombola' as tombola_url %}
 
-<!DOCTYPE html>
-<html class="h-100" lang="en">
+<!DOCTYPE html>  <!-- Declare the document type as HTML5 -->
+<html class="h-100" lang="en">  <!-- Set HTML language to English and define height to 100% -->
 
 <head>
-    <title>The Luxury Blog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Luxury Blog</title>  <!-- Title of the webpage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />  <!-- Ensure responsive design on mobile -->
 
-    <!-- Favicon -->
+    <!-- Favicon links for different sizes -->
     <link href="{% static 'favicon/apple-touch-icon.png' %}" rel="icon" sizes="180x180" />
     <link href="{% static 'favicon/favicon-32x32.png' %}" rel="icon" sizes="32x32" />
     <link href="{% static 'favicon/favicon-16x16.png' %}" rel="icon" sizes="16x16" />
     <link href="{% static 'favicon/site.webmanifest' %}" rel="manifest" />
 
-    <!-- Google Fonts CSS -->
+    <!-- Google Fonts CSS for typography -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome CSS -->
+    <!-- Font Awesome for icon fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS for responsive design and styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <!-- Custom CSS -->
+    <!-- Link to custom CSS stylesheet -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">
+<body class="d-flex flex-column h-100 main-bg">  <!-- Set body layout and background class -->
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" role="navigation" aria-label="Main navigation">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}" aria-label="Luxury Blog Home">
-                <span class="brand luxury">Luxury <span class="thin">Blog</span></span>
+                <span class="brand luxury">Luxury <span class="thin">Blog</span></span>  <!-- Brand name -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>  <!-- Icon for toggling the navbar -->
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Navigation links with active class based on current page -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == home_url %}active{% endif %}"
                             href="{% url 'home' %}" aria-label="Home Page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}"
                             href="{% url 'about' %}" aria-label="About Us Page">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == tombola_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == tombola_url %}active{% endif %}"
                             href="{% url 'tombola' %}" aria-label="Tombola Page">Tombola</a>
                     </li>
-                    {% if user.is_authenticated %}
+                    {% if user.is_authenticated %}  <!-- Check if user is logged in -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == logout_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
                             href="{% url 'account_logout' %}" aria-label="Logout">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == signup_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == signup_url %}active{% endif %}"
                             href="{% url 'account_signup' %}" aria-label="Register Account">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == login_url %}active" aria-current="page{% endif %}"
+                        <a class="nav-link {% if request.path == login_url %}active{% endif %}"
                             href="{% url 'account_login' %}" aria-label="Login to Account">Login</a>
                     </li>
                     {% endif %}
                 </ul>
                 <span class="navbar-text text-muted" aria-label="Tagline">
-                    Where Opulence Meets Inspiration
+                    Where Opulence Meets Inspiration  <!-- Tagline for the blog -->
                 </span>
             </div>
         </div>
     </nav>
+
+    <!-- Container for alert messages -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                {% for message in messages %}
+                {% for message in messages %}  <!-- Loop through messages to display alerts -->
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
-                    {{ message | safe }}
+                    {{ message | safe }}  <!-- Display the message safely -->
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" title="Close alert"></button>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
+
     <main class="flex-shrink-0 main-bg">
-        <!-- Check if the user is authenticated -->
-        {% if user.is_authenticated %}
-        <!-- Check if the user is a superuser -->
-        {% if user.is_superuser %}
-        <!-- Display a message for superuser login -->
+        {% if user.is_authenticated %}  <!-- Conditional content for authenticated users -->
+        {% if user.is_superuser %}  <!-- Check if the user is a superuser -->
         <p class="text-end m-3" aria-label="Superuser status">You are logged in as a superuser: {{ user }}</p>
         {% else %}
-        <!-- Display a message for regular user login -->
-        <p class="text-end m-3" aria-label="User status">You are logged in as {{ user }}</p>
+        <p class="text-end m-3" aria-label="User status">You are logged in as {{ user }}</p>  <!-- Regular user status -->
         {% endif %}
         {% else %}
-        <!-- Display a message if the user is not logged in -->
-        <p class="text-end m-3" aria-label="Guest status">You are not logged in</p>
+        <p class="text-end m-3" aria-label="Guest status">You are not logged in</p>  <!-- Guest status -->
         {% endif %}
 
-        {% block content %}
+        {% block content %}  <!-- Placeholder for page-specific content -->
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="footer mt-auto py-3 dark-bg" role="contentinfo" aria-label="Footer">
         <p class="m-0 text-center text-white">
-            <!-- Copyright message -->
-            {% block copyright %}Copyright 2024 Lino Bollansee{% endblock copyright %}
+            {% block copyright %}Copyright 2024 Lino Bollansee{% endblock copyright %}  <!-- Copyright message -->
         </p>
-        <!-- Social media links -->
         <p class="m-0 text-center text-white" aria-label="Follow us on social media">Follow us:
+            <!-- Social media links -->
             <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-square ms-3 fa-2x"></i></a>
             <a href="https://twitter.com/" target="_blank" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter-square ms-3 fa-2x"></i></a>
             <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram-square ms-3 fa-2x"></i></a>
@@ -134,11 +133,12 @@
         </p>
     </footer>
 
+    <!-- Bootstrap JS bundle for functionality -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 
-    {% block extras %}
+    {% block extras %}  <!-- Placeholder for additional scripts or styles -->
     {% endblock %}
 </body>
 
