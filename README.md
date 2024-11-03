@@ -34,6 +34,7 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
 - [Testing](#testing)
   - [Browser Compatibility](#browser-compatibility)
   - [Lighthouse Testing](#lighthouse-testing)
+  - [WAVE Web Accessibility Evaluation Tools Testing](#wave-web-accessibility-evaluation-tools-testing)
   - [Manual Testing](#manual-testing)
   - [Automated Testing](#automated-testing)
   - [Python PEP 8](#python-pep-8)
@@ -744,6 +745,52 @@ Logout page:
 Admin page:
 
 ![readme/images/luxury-blog-lighthouse-admin.png](readme/images/luxury-blog-lighthouse-admin.png)
+
+### WAVE Web Accessibility Evaluation Tools Testing
+
+The WAVE (Web Accessibility Evaluation) Tool is a web-based tool created by WebAIM (Web Accessibility in Mind) to help evaluate and improve the accessibility of web content. It’s widely used by web developers, designers, and content creators to identify potential issues that may prevent users with disabilities from accessing and using a website effectively.
+
+Home page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/)
+
+Blog pages:
+
+Mercedes article:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/the-mercedes-benz-s-class-a-legacy-of-excellence/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/the-mercedes-benz-s-class-a-legacy-of-excellence/)
+
+Rolex article:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/the-timeless-allure-of-the-rolex-submariner-a-masterpiece-of-precision/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/the-timeless-allure-of-the-rolex-submariner-a-masterpiece-of-precision/)
+
+Montblanc article:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/the-art-of-craftsmanship-elevating-the-experience-with-the-montblanc-meisterstuck/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/the-art-of-craftsmanship-elevating-the-experience-with-the-montblanc-meisterstuck/)
+
+About page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/about/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/about/)
+
+Tombola page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/tombola/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/tombola/)
+
+Signup page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/accounts/signup/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/accounts/signup/)
+
+Login page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/accounts/login/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/accounts/login/)
+
+Logout page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/accounts/logout/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/accounts/logout/)
+
+Admin page:
+
+[https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/admin/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/admin/)
 
 ### Manual Testing
 
