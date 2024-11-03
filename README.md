@@ -539,6 +539,8 @@ A beautifully designed, luxury-inspired logo greets you upon arrival. The logo s
 
 ![Luxury Blog Logo](readme/images/luxury-blog-logo.png)
 
+### Navigation Systems
+
 The Luxury Blog offers two navigation systems, one for desktop and one for mobile, to facilitate easy browsing. (User Story 1.1)
 
 Desktop Navigation Bar
@@ -549,6 +551,8 @@ Mobile Navigation Bar
 
 ![Luxury Blog Mobile Menu](readme/images/luxury-blog-mobile-navigation-bar.png)
 
+### Footer Systems
+
 The Luxury Blog offers two footer systems, one for desktop and one for mobile, to open social media in a new browser tab. (User Story 1.1)
 
 Desktop Footer
@@ -558,6 +562,30 @@ Desktop Footer
 Mobile Footer
 
 ![Luxury Blog Mobile Footer](readme/images/luxury-blog-mobile-footer.png)
+
+### Home Page Blog Posts
+
+The Luxury Blog's home page showcases a curated selection of posts centered on luxury living, covering topics such as high-end fashion, exclusive products, and lifestyle trends. Each post provides insights, reviews, and updates on the latest in luxury for readers seeking inspiration and guidance in an upscale lifestyle. (User Story 1.1)
+
+Desktop Blog Posts
+
+![Luxury Blog Desktop Blog Posts](readme/images/luxury-blog-desktop-blog-posts.png)
+
+Mobile Blog Posts
+
+![Luxury Blog Mobile Blog Posts](readme/images/luxury-blog-mobile-blog-posts.png)
+
+### Blog Post Content
+
+The Luxury Blog delivers post content with an elegant, stylish touch. (User Story 1.1)
+
+Desktop Post Content
+
+![Luxury Blog Desktop Post Content](readme/images/luxury-blog-desktop-post-content.png)
+
+Mobile Post Content
+
+![Luxury Blog Mobile Post Content](readme/images/luxury-blog-mobile-post-content.png)
 
 ## Bugs and Issues
 
