@@ -601,14 +601,6 @@ Mobile Post Content
 
 The Luxury Blog incorporates CRUD functionality to Create, Read, Update, and Delete data. (User Story 2.2: Implement CRUD Functionality)
 
-Comments section before logging in:
-
-![Luxury Blog Desktop Comments Log In](readme/images/luxury-blog-desktop-comments-log-in.png)
-
-Comments section after logging in:
-
-![Luxury Blog Desktop Comment Submit](readme/images/luxury-blog-desktop-comment-submit.png)
-
 Comment awaiting approval:
 
 ![Luxury Blog Desktop Comment Awaiting Approval](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
@@ -624,8 +616,6 @@ The comment deletion pop-up shakes for 500 milliseconds through Javascript and C
 The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted Content)
 
 The admin panel is not available to ordinary users at [https://the-luxury-blog.onrender.com/admin/](https://the-luxury-blog.onrender.com/admin/)
-
-![readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png](readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png)
 
 ### Notifications for Data Changes
 
@@ -659,11 +649,23 @@ Account sign in notification (automatically after account creation):
 
 The Luxury Blog allows you to visit as a guest, login as a user, or as a superuser. (User Story 3.1: Implement Role-Based Authentication)
 
-Sign in:
+A guest can read all the public posts:
 
-![readme/images/luxury-blog-desktop-sign-in.png](readme/images/luxury-blog-desktop-sign-in.png)
+![readme/images/luxury-blog-desktop-public-comments.png](readme/images/luxury-blog-desktop-public-comments.png)
+
+A user can edit and delete their own posts:
+
+![readme/images/luxury-blog-desktop-personal-comment.png](readme/images/luxury-blog-desktop-personal-comment.png)
+
+A superuser has all the features of the admin panel:
+
+![readme/images/luxury-blog-desktop-django-administration.png](readme/images/luxury-blog-desktop-django-administration.png)
+
+Guests and all users can participate in the Tombola
 
 ### Potential Features to Implement
+
+The DTL templates could be further customized to enhance the experience for guests, users, and superusers. For example, guests might see additional advertisements encouraging quick sign-ups, while users could receive ads more tailored to regular site visitors. Superusers could have an admin button in the navigation bar, removing the need to manually type the `/admin` link. Additionally, admins and superusers might be restricted from participating in the the Tombola or any other new features that are supposed to be only for the non-staff clients of the site.
 
 ## Bugs and Issues
 
