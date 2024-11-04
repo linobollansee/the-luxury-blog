@@ -588,6 +588,42 @@ Mobile Post Content
 
 ![Luxury Blog Mobile Post Content](readme/images/luxury-blog-mobile-post-content.png)
 
+### Comments section
+
+The Luxury Blog incorporates a comments section. This allows users to leave comments, edit comments, delete comments, after they are logged in. 
+
+Comments section before logging in:
+
+![Luxury Blog Desktop Comments Log In](readme/images/luxury-blog-desktop-comments-log-in.png)
+
+Comments section after logging in:
+
+![Luxury Blog Desktop Comment Submit](readme/images/luxury-blog-desktop-comment-submit.png)
+
+Comment awaiting approval:
+
+![Luxury Blog Desktop Comment Awaiting Approval](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
+
+Comment deletion:
+
+The comment deletion pop-up shakes for 500 milliseconds through Javascript and CSS code to better warn the user.
+
+![readme/images/luxury-blog-desktop-comment-delete.png](readme/images/luxury-blog-desktop-comment-delete.png)
+
+Comment notifications:
+
+Comment awaiting approval notification:
+
+![readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png](readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png)
+
+Comment updated notification:
+
+![readme/images/luxury-blog-desktop-comment-updated-notification.png](readme/images/luxury-blog-desktop-comment-updated-notification.png)
+
+Comment deleted notification:
+
+![readme/images/luxury-blog-desktop-comment-deleted-notification.png](readme/images/luxury-blog-desktop-comment-deleted-notification.png)
+
 ## Bugs and Issues
 
 - Addressing HTML validation issues on the Sign-Up page at [https://the-luxury-blog.onrender.com/accounts/signup/](https://the-luxury-blog.onrender.com/accounts/signup/) presented significant challenges. Despite numerous discussions with the Code Institute to identify the root cause, a definitive solution proved elusive. After trying an experimental fix recommended by the Code Institute—visible in this commit: [https://github.com/linobollansee/the-luxury-blog/commit/16401e24a2478c976456b548f03e15709a8a4e3e](https://github.com/linobollansee/the-luxury-blog/commit/16401e24a2478c976456b548f03e15709a8a4e3e) the outcome was a complete failure to render the page, leading to a decision to revert back to the original walkthrough project code at [https://github.com/linobollansee/the-luxury-blog/commit/a49cfbaefbf159b29da800bc2dd25e9b03ff4171](https://github.com/linobollansee/the-luxury-blog/commit/a49cfbaefbf159b29da800bc2dd25e9b03ff4171), which still displays the same validation errors. However, I have been assured that these HTML errors will not affect project assessment results, as they may arise from external libraries and technologies beyond our control. Many more commit experiments were undertaken in an effort to try to understand the issue better, but with no real success. Finally, it was discovered that other students, even those graded with a distinction grade for their unrelated project, had the exact same issue. Filip Van Elslande's Astroblog errors can be seen at [https://validator.w3.org/nu/?doc=https%3A%2F%2Fastroshare-blog-6a7ca9d34749.herokuapp.com%2Fmembers%2Fregister%2F](https://validator.w3.org/nu/?doc=https%3A%2F%2Fastroshare-blog-6a7ca9d34749.herokuapp.com%2Fmembers%2Fregister%2F) for confirmation.
