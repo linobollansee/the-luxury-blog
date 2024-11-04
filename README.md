@@ -26,6 +26,15 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Background](#background)
   - [Favicon](#favicon)
 - [Features](#features)
+  - [Luxury Blog Logo](#luxury-blog-logo)
+  - [Navigation Bars](#navigation-bars)
+  - [Footer Bars](#footer-bars)
+  - [Home Page Blog Posts](#home-page-blog-posts)
+  - [Implement CRUD Functionality](#implement-crud-functionality)
+  - [Securing Restricted Content](#securing-restricted-content)
+  - [Notifications for Data Changes](#notifications-for-data-changes)
+  - [Implement Role-Based Authentication](#implement-role-based-authentication)
+  - [Potential Features to Implement](#potential-features-to-implement)
 - [Bugs and Issues](#bugs-and-issues)
 - [Technologies Used](#technologies-used)
   - [Languages](#languages)
@@ -536,13 +545,13 @@ The favicon was generated using [https://favicon.io/favicon-generator/](https://
 
 ### Luxury Blog Logo
 
-A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. (User Story 1.1)
+A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
 ![Luxury Blog Logo](readme/images/luxury-blog-logo.png)
 
-### Navigation Systems
+### Navigation Bars
 
-The Luxury Blog offers two navigation systems, one for desktop and one for mobile, to facilitate easy browsing. (User Story 1.1)
+The Luxury Blog offers two navigation bars, one for desktop and one for mobile, to facilitate easy browsing. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
 Desktop Navigation Bar
 
@@ -552,9 +561,9 @@ Mobile Navigation Bar
 
 ![Luxury Blog Mobile Menu](readme/images/luxury-blog-mobile-navigation-bar.png)
 
-### Footer Systems
+### Footer Bars
 
-The Luxury Blog offers two footer systems, one for desktop and one for mobile, to open social media in a new browser tab. (User Story 1.1)
+The Luxury Blog offers two footer systems, one for desktop and one for mobile, to open social media in a new browser tab. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
 Desktop Footer
 
@@ -566,7 +575,7 @@ Mobile Footer
 
 ### Home Page Blog Posts
 
-The Luxury Blog's home page showcases a curated selection of posts centered on luxury living, covering topics such as high-end fashion, exclusive products, and lifestyle trends. Each post provides insights, reviews, and updates on the latest in luxury for readers seeking inspiration and guidance in an upscale lifestyle. (User Story 1.1)
+The Luxury Blog's home page showcases a curated selection of posts centered on luxury living, covering topics such as high-end fashion, exclusive products, and lifestyle trends. Each post provides insights, reviews, and updates on the latest in luxury for readers seeking inspiration and guidance in an upscale lifestyle. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
 Desktop Blog Posts
 
@@ -588,9 +597,9 @@ Mobile Post Content
 
 ![Luxury Blog Mobile Post Content](readme/images/luxury-blog-mobile-post-content.png)
 
-### Comments section
+### Implement CRUD Functionality
 
-The Luxury Blog incorporates a comments section. This allows users to leave comments, edit comments, delete comments, after they are logged in. 
+The Luxury Blog incorporates CRUD functionality to Create, Read, Update, and Delete data. (User Story 2.2: Implement CRUD Functionality)
 
 Comments section before logging in:
 
@@ -610,9 +619,19 @@ The comment deletion pop-up shakes for 500 milliseconds through Javascript and C
 
 ![readme/images/luxury-blog-desktop-comment-delete.png](readme/images/luxury-blog-desktop-comment-delete.png)
 
-Comment notifications:
+### Securing Restricted Content
 
-Comment awaiting approval notification:
+The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted Content)
+
+The admin panel is not available to ordinary users at [https://the-luxury-blog.onrender.com/admin/](https://the-luxury-blog.onrender.com/admin/)
+
+![readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png](readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png)
+
+### Notifications for Data Changes
+
+The Luxury Blog displays relevant notifications whenever there are changes to the data. (User Story 2.3: Handle Notifications for Data Changes)
+
+Comment submitted and awaiting approval notification:
 
 ![readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png](readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png)
 
@@ -623,6 +642,28 @@ Comment updated notification:
 Comment deleted notification:
 
 ![readme/images/luxury-blog-desktop-comment-deleted-notification.png](readme/images/luxury-blog-desktop-comment-deleted-notification.png)
+
+Collaboration form received notification:
+
+![readme/images/luxury-blog-desktop-collaboration-form-received-notification.png](readme/images/luxury-blog-desktop-collaboration-form-received-notification.png)
+
+Tombola participation notification:
+
+![readme/images/luxury-blog-desktop-tombola-participation-notification.png](readme/images/luxury-blog-desktop-tombola-participation-notification.png)
+
+Account sign in notification (automatically after account creation):
+
+![readme/images/luxury-blog-desktop-sign-in-notification.png](readme/images/luxury-blog-desktop-sign-in-notification.png)
+
+### Implement Role-Based Authentication
+
+The Luxury Blog allows you to visit as a guest, login as a user, or as a superuser. (User Story 3.1: Implement Role-Based Authentication)
+
+Sign in:
+
+![readme/images/luxury-blog-desktop-sign-in.png](readme/images/luxury-blog-desktop-sign-in.png)
+
+### Potential Features to Implement
 
 ## Bugs and Issues
 
