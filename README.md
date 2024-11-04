@@ -1799,3 +1799,6 @@ with project time management. Daisy's GitHub profile page is at [https://github.
 ## Project Advice
 
 - When using a Kanban board, seeing a task marked as "Done" can give a sense of completion, but it shouldn't necessarily signal the end of refinement. Reassessing finished tasks, especially when there’s extra time or resources, can be invaluable. This approach not only allows for minor tweaks that improve functionality or visual polish but also supports continuous improvement principles. Optimizing user interactions, improving performance, or adding small but impactful features can elevate the project.
+
+- When you know that you'll need to document your project, systematically capturing relevant screenshots as you work can be a huge time-saver down the line. By saving images of key steps or configurations as they occur, you'll avoid the hassle of trying to recreate specific circumstances later just to get similar screenshots. This approach helps ensure that your documentation is both thorough and accurate, while also allowing you to focus on the project itself rather than interrupting your workflow later to manufacture missed details.
+Lastly, some unique screenshots cannot be duplicated without restarting the whole project.
