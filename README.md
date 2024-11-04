@@ -31,9 +31,9 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Footer Bars](#footer-bars)
   - [Home Page Blog Posts](#home-page-blog-posts)
   - [Implement CRUD Functionality](#implement-crud-functionality)
-  - [Securing Restricted Content](#securing-restricted-content)
   - [Notifications for Data Changes](#notifications-for-data-changes)
   - [Implement Role-Based Authentication](#implement-role-based-authentication)
+  - [Securing Restricted Content](#securing-restricted-content)
   - [Potential Features to Implement](#potential-features-to-implement)
 - [Bugs and Issues](#bugs-and-issues)
 - [Technologies Used](#technologies-used)
@@ -543,6 +543,8 @@ The favicon was generated using [https://favicon.io/favicon-generator/](https://
 
 ## Features
 
+This section seeks to cover as many features of the Luxury Blog as possible. However, with multiple roles, diverse functionalities, updates by users, reponsive design, the power of the admin panel, and even hidden behavior of framework packages, the combinations are too vast, making complete coverage impractical. We will instead focus on functionalities that pair well with the user stories.
+
 ### Luxury Blog Logo
 
 A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
@@ -601,47 +603,59 @@ Mobile Post Content
 
 The Luxury Blog incorporates CRUD functionality to Create, Read, Update, and Delete data. (User Story 2.2: Implement CRUD Functionality)
 
-Comment awaiting approval:
+Creating Data:
 
-![Luxury Blog Desktop Comment Awaiting Approval](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
+- A user leaving a comment:
 
-Comment deletion:
+![readme/images/luxury-blog-desktop-user-leaving-comment.png](readme/images/luxury-blog-desktop-user-leaving-comment.png)
 
-The comment deletion pop-up shakes for 500 milliseconds through Javascript and CSS code to better warn the user.
+- A user participating in the Tombola:
+
+![readme/images/luxury-blog-desktop-tombola-participation.png](readme/images/luxury-blog-desktop-tombola-participation.png)
+
+Reading data:
+
+Updating data:
+
+- A user updating their comment:
+
+![readme/images/luxury-blog-desktop-user-editing-comment.png](readme/images/luxury-blog-desktop-user-editing-comment.png)
+
+Deleting data:
+
+- A user or superuser deleting their own comment:
 
 ![readme/images/luxury-blog-desktop-comment-delete.png](readme/images/luxury-blog-desktop-comment-delete.png)
 
-### Securing Restricted Content
+- A superuser deleting a comment through the admin panel:
 
-The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted Content)
-
-The admin panel is not available to ordinary users at [https://the-luxury-blog.onrender.com/admin/](https://the-luxury-blog.onrender.com/admin/)
+![readme/images/luxury-blog-desktop-superuser-delete.png](readme/images/luxury-blog-desktop-superuser-delete.png)
 
 ### Notifications for Data Changes
 
 The Luxury Blog displays relevant notifications whenever there are changes to the data. (User Story 2.3: Handle Notifications for Data Changes)
 
-Comment submitted and awaiting approval notification:
+- Comment submitted and awaiting approval notification:
 
 ![readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png](readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png)
 
-Comment updated notification:
+- Comment updated notification:
 
 ![readme/images/luxury-blog-desktop-comment-updated-notification.png](readme/images/luxury-blog-desktop-comment-updated-notification.png)
 
-Comment deleted notification:
+- Comment deleted notification:
 
 ![readme/images/luxury-blog-desktop-comment-deleted-notification.png](readme/images/luxury-blog-desktop-comment-deleted-notification.png)
 
-Collaboration form received notification:
+- Collaboration form received notification:
 
 ![readme/images/luxury-blog-desktop-collaboration-form-received-notification.png](readme/images/luxury-blog-desktop-collaboration-form-received-notification.png)
 
-Tombola participation notification:
+- Tombola participation notification:
 
 ![readme/images/luxury-blog-desktop-tombola-participation-notification.png](readme/images/luxury-blog-desktop-tombola-participation-notification.png)
 
-Account sign in notification (automatically after account creation):
+- Account sign in notification (automatically after account creation):
 
 ![readme/images/luxury-blog-desktop-sign-in-notification.png](readme/images/luxury-blog-desktop-sign-in-notification.png)
 
@@ -649,19 +663,31 @@ Account sign in notification (automatically after account creation):
 
 The Luxury Blog allows you to visit as a guest, login as a user, or as a superuser. (User Story 3.1: Implement Role-Based Authentication)
 
-A guest can read all the public posts:
+- A guest, user, or superuser can read all the approved comments:
 
 ![readme/images/luxury-blog-desktop-public-comments.png](readme/images/luxury-blog-desktop-public-comments.png)
 
-A user can edit and delete their own posts:
+- Only a user or superuser can edit and delete their own comments:
 
 ![readme/images/luxury-blog-desktop-personal-comment.png](readme/images/luxury-blog-desktop-personal-comment.png)
 
-A superuser has all the features of the admin panel:
+- A superuser has access to and can manage all the features of the admin panel:
 
 ![readme/images/luxury-blog-desktop-django-administration.png](readme/images/luxury-blog-desktop-django-administration.png)
 
-Guests and all users can participate in the Tombola
+- Guests, users, and superusers can participate in the Tombola, provided they enter a unique e-mail address:
+
+![readme/images/luxury-blog-desktop-tombola-participation-unique-email.png](readme/images/luxury-blog-desktop-tombola-participation-unique-email.png)
+
+Note: Superusers are allowed to participate in the Tombola for easier functionality testing, but this would be unrealistic in a real-world scenario. See potential features to implement.
+
+### Securing Restricted Content
+
+The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted Content)
+
+- The admin panel is not available to ordinary users at [https://the-luxury-blog.onrender.com/admin/](https://the-luxury-blog.onrender.com/admin/)
+
+![readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png](readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png)
 
 ### Potential Features to Implement
 
