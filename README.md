@@ -619,6 +619,10 @@ Reading data:
 
 ![readme/images/luxury-blog-desktop-tombola-pagination.png](readme/images/luxury-blog-desktop-tombola-pagination.png)
 
+- A superuser can also read the paginated lists of Tombola participants in the admin panel
+
+![readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png](readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png)
+
 Updating data:
 
 - A user updating their comment:
