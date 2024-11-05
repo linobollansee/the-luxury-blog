@@ -1842,5 +1842,7 @@ with project time management. Daisy's GitHub profile page is at [https://github.
 
 - Even a short code addition or change can be complex enough that a simple commit message can't fully convey the reasoning or details behind it. It's often better to document it in a seperate text file so that it can be pasted into the README at the end. This way, future readers can understand the full context and motivations for your decisions without being misled by an oversimplified message. After all, not every solution can be reduced to a quick summary.
 
+- The DRY Principle, a key concept in software development, encourages representing information, logic, and functionality only once in your code. This approach can also be used in the README documentation by combining content strategically, avoiding unnecessary repetition. Additionally, the table of contents should indicate your specific system.
+
 - When you know that you'll need to document your project, systematically capturing relevant screenshots as you work can be a huge time-saver down the line. By saving images of key steps or configurations as they occur, you'll avoid the hassle of trying to recreate specific circumstances later just to get similar screenshots. This approach helps ensure that your documentation is both thorough and accurate, while also allowing you to focus on the project itself rather than interrupting your workflow later to manufacture missed details.
 Lastly, some unique screenshots cannot be duplicated without restarting the whole project.
