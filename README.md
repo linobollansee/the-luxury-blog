@@ -719,7 +719,17 @@ Luxury Blog HTML Errors:
 
 - After a recent commit, Render.com failed to load The Luxury Blog correctly, even though I waited for the rebuild to complete. Initially, I worried that the commit might have broken the project and considered rolling back to an earlier version. However, after reviewing the minor changes on GitHub, I realized they were unlikely to be the cause. So, I cleared the cache and restarted the service on Render, and to my surprise, that solved the issue! This experience shows that technical glitches can happen on cloud platforms, and immediately reverting to previous code isn't always necessary.
 
+Luxury Blog Bad Gateway:
+
+![Luxury Blog Bad Gateway](readme/images/luxury-blog-bad-gateway.png)
+
+Note: This particular error explains itself well enough, but the cloud platform also had many misloads that didn't provide explanations.
+
+Luxury Blog Restart:
+
 ![Luxury Blog Restart](readme/images/luxury-blog-restart.png)
+
+- As in most projects, minor typos were made that had to be corrected, fortunately most of the time before the code was pushed to GitHub.
 
 ## Technologies Used
 
