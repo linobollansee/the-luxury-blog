@@ -615,6 +615,10 @@ Creating Data:
 
 Reading data:
 
+- A guest, user, or superuser can read paginated lists of Tombola participants:
+
+![readme/images/luxury-blog-desktop-tombola-pagination.png](readme/images/luxury-blog-desktop-tombola-pagination.png)
+
 Updating data:
 
 - A user updating their comment:
