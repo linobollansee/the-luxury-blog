@@ -547,7 +547,7 @@ This section seeks to cover as many features of the Luxury Blog as possible. How
 
 ### Luxury Blog Logo
 
-A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
+A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. It can be clicked to go to the home page. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
 ![Luxury Blog Logo](readme/images/luxury-blog-logo.png)
 
@@ -555,11 +555,11 @@ A beautifully designed, luxury-inspired logo greets you upon arrival. The logo s
 
 The Luxury Blog offers two navigation bars, one for desktop and one for mobile, to facilitate easy browsing. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
-Desktop Navigation Bar
+- Desktop Navigation Bar
 
 ![Luxury Blog Desktop Menu](readme/images/luxury-blog-desktop-navigation-bar.png)
 
-Mobile Navigation Bar
+- Mobile Navigation Bar
 
 ![Luxury Blog Mobile Menu](readme/images/luxury-blog-mobile-navigation-bar.png)
 
@@ -567,11 +567,11 @@ Mobile Navigation Bar
 
 The Luxury Blog offers two footer systems, one for desktop and one for mobile, to open social media in a new browser tab. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
-Desktop Footer
+- Desktop Footer
 
 ![Luxury Blog Desktop Footer](readme/images/luxury-blog-desktop-footer.png)
 
-Mobile Footer
+- Mobile Footer
 
 ![Luxury Blog Mobile Footer](readme/images/luxury-blog-mobile-footer.png)
 
@@ -579,11 +579,11 @@ Mobile Footer
 
 The Luxury Blog's home page showcases a curated selection of posts centered on luxury living, covering topics such as high-end fashion, exclusive products, and lifestyle trends. Each post provides insights, reviews, and updates on the latest in luxury for readers seeking inspiration and guidance in an upscale lifestyle. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
-Desktop Blog Posts
+- Desktop Blog Posts
 
 ![Luxury Blog Desktop Blog Posts](readme/images/luxury-blog-desktop-blog-posts.png)
 
-Mobile Blog Posts
+- Mobile Blog Posts
 
 ![Luxury Blog Mobile Blog Posts](readme/images/luxury-blog-mobile-blog-posts.png)
 
@@ -591,11 +591,11 @@ Mobile Blog Posts
 
 The Luxury Blog delivers post content with an elegant, stylish touch. (User Story 1.1)
 
-Desktop Post Content
+- Desktop Post Content
 
 ![Luxury Blog Desktop Post Content](readme/images/luxury-blog-desktop-post-content.png)
 
-Mobile Post Content
+- Mobile Post Content
 
 ![Luxury Blog Mobile Post Content](readme/images/luxury-blog-mobile-post-content.png)
 
@@ -620,6 +620,12 @@ Updating data:
 - A user updating their comment:
 
 ![readme/images/luxury-blog-desktop-user-editing-comment.png](readme/images/luxury-blog-desktop-user-editing-comment.png)
+
+Note: Javascript and CSS code has been written to briefly flash the comment's input box when the edit button is clicked. This is hard to show in screenshots.
+
+- A superuser updating their post through the admin panel:
+
+![readme/images/luxury-blog-desktop-superuser-edit.png](readme/images/luxury-blog-desktop-superuser-edit.png)
 
 Deleting data:
 
