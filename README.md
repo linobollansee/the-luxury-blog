@@ -605,6 +605,10 @@ The Luxury Blog incorporates CRUD functionality to Create, Read, Update, and Del
 
 Creating Data:
 
+- A user signing up:
+
+![readme/images/luxury-blog-desktop-user-sign-up.png](readme/images/luxury-blog-desktop-user-sign-up.png)
+
 - A user leaving a comment:
 
 ![readme/images/luxury-blog-desktop-user-leaving-comment.png](readme/images/luxury-blog-desktop-user-leaving-comment.png)
@@ -620,6 +624,8 @@ Creating Data:
 - A guest or user sending a collaboration request:
 
 ![readme/images/luxury-blog-desktop-collaboration-message.png](readme/images/luxury-blog-desktop-collaboration-message.png)
+
+- Although not all of the following are directly supported by The Luxury Blog, in theory superusers can create any data in the admin panel's data models: About, Collaborate requests, Email addresses, Groups, Users, Comments, Posts, Attachments, Sites, Social accounts, Social application tokens, Social applications.
 
 Reading data:
 
