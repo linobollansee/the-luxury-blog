@@ -699,6 +699,10 @@ The Luxury Blog allows you to visit as a guest, login as a user, or as a superus
 
 Note: Superusers are allowed to participate in the Tombola for easier functionality testing, but this would be unrealistic in a real-world scenario. See potential features to implement.
 
+- A superuser logging out via the admin panel to let other users authenticate themselves:
+
+![readme/images/luxury-blog-desktop-superuser-logout.png](readme/images/luxury-blog-desktop-superuser-logout.png)
+
 ### Securing Restricted Content
 
 The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted Content)
