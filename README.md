@@ -617,6 +617,10 @@ Creating Data:
 
 ![readme/images/luxury-blog-desktop-superuser-adding-post.png](readme/images/luxury-blog-desktop-superuser-adding-post.png)
 
+- A guest or user sending a collaboration request:
+
+![readme/images/luxury-blog-desktop-collaboration-message.png](readme/images/luxury-blog-desktop-collaboration-message.png)
+
 Reading data:
 
 - A guest, user, or superuser can read blog posts:
