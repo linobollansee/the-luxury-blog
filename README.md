@@ -619,6 +619,14 @@ Creating Data:
 
 Reading data:
 
+- A guest, user, or superuser can read blog posts:
+
+![readme/images/luxury-blog-desktop-rolex-post.png](readme/images/luxury-blog-desktop-rolex-post.png)
+
+- A guest, user, or superuser can read blog comments:
+
+![readme/images/luxury-blog-desktop-blog-comments.png](readme/images/luxury-blog-desktop-blog-comments.png)
+
 - A guest, user, or superuser can read paginated lists of Tombola participants:
 
 ![readme/images/luxury-blog-desktop-tombola-pagination.png](readme/images/luxury-blog-desktop-tombola-pagination.png)
