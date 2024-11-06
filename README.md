@@ -613,6 +613,10 @@ Creating Data:
 
 ![readme/images/luxury-blog-desktop-tombola-participation.png](readme/images/luxury-blog-desktop-tombola-participation.png)
 
+- A superuser adding a Post using the admin panel:
+
+![readme/images/luxury-blog-desktop-superuser-adding-post.png](readme/images/luxury-blog-desktop-superuser-adding-post.png)
+
 Reading data:
 
 - A guest, user, or superuser can read paginated lists of Tombola participants:
