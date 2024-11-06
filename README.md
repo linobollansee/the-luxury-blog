@@ -653,6 +653,8 @@ Deleting data:
 
 ![readme/images/luxury-blog-desktop-comment-delete.png](readme/images/luxury-blog-desktop-comment-delete.png)
 
+Note: Javascript and CSS code has been written to briefly shake the deletion confirmation box. This is hard to show in screenshots.
+
 - A superuser deleting a comment through the admin panel:
 
 ![readme/images/luxury-blog-desktop-superuser-delete.png](readme/images/luxury-blog-desktop-superuser-delete.png)
