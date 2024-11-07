@@ -45,6 +45,15 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Lighthouse Testing](#lighthouse-testing)
   - [WAVE Web Accessibility Evaluation Tools Testing](#wave-web-accessibility-evaluation-tools-testing)
   - [Manual Testing](#manual-testing)
+    - [Desktop Navigation Bar Functionality](#desktop-navigation-bar-functionality)
+    - [Mobile Navigation Bar Functionality](#mobile-navigation-bar-functionality)
+    - [Blog Post Functionality](#blog-post-functionality)
+    - [Blog Comment Functionality](#blog-comment-functionality)
+    - [About Page Functionality](#about-page-functionality)
+    - [Tombola Page Functionality](#tombola-page-functionality)
+    - [Registration Functionality](#registration-functionality)
+    - [Logging In/Out Functionality](#logging-inout-functionality)
+    - [Footer Icons Functionality](#footer-icons-functionality)
   - [Automated Testing](#automated-testing)
   - [Python PEP 8](#python-pep-8)
   - [HTML Validation](#html-validation)
@@ -967,105 +976,105 @@ Admin page:
 
 #### Desktop Navigation Bar Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Desktop loads at 992px or more     | Desktop version loads                  | Desktop version loads                  | PASS      |
-| Logo button loads home page       | Home page loads                        | Home page loads                        | PASS      |
-| Home link loads home page         | Home page loads                        | Home page loads                        | PASS      |
-| About link loads about page       | About page loads                       | About page loads                       | PASS      |
-| Tombola link loads tombola page   | Tombola page loads                     | Tombola page loads                     | PASS      |
-| Register link loads sign up page  | Sign up page loads                     | Sign up page loads                     | PASS      |
-| Login link loads login page       | Login page loads                       | Login page loads                       | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Desktop version loads at 992 pixels or more | Desktop version loads                      | Desktop version loads                        | PASS      |
+| Logo button loads the home page          | Home page loads                              | Home page loads                              | PASS      |
+| Home link loads the home page            | Home page loads                              | Home page loads                              | PASS      |
+| About link loads the about page          | About page loads                             | About page loads                             | PASS      |
+| Tombola link loads the tombola page      | Tombola page loads                           | Tombola page loads                           | PASS      |
+| Register link loads the sign-up page     | Sign-up page loads                           | Sign-up page loads                           | PASS      |
+| Login link loads the login page          | Login page loads                             | Login page loads                             | PASS      |
 
 #### Mobile Navigation Bar Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Hamburger menu icon loads at 991px or less | Hamburger menu icon appears     | Hamburger menu icon appears            | PASS      |
-| Hamburger menu opens when clicked  | Menu opens                             | Menu opens                             | PASS      |
-| Logo button loads home page       | Home page loads                        | Home page loads                        | PASS      |
-| Home link loads home page         | Home page loads                        | Home page loads                        | PASS      |
-| About link loads about page       | About page loads                       | About page loads                       | PASS      |
-| Tombola link loads tombola page   | Tombola page loads                     | Tombola page loads                     | PASS      |
-| Register link loads sign up page  | Sign up page loads                     | Sign up page loads                     | PASS      |
-| Login link loads login page       | Login page loads                       | Login page loads                       | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Hamburger menu icon loads at 991 pixels or less | Hamburger menu icon appears               | Hamburger menu icon appears                  | PASS      |
+| Hamburger menu opens when clicked        | Menu opens                                   | Menu opens                                   | PASS      |
+| Logo button loads the home page          | Home page loads                              | Home page loads                              | PASS      |
+| Home link loads the home page            | Home page loads                              | Home page loads                              | PASS      |
+| About link loads the about page          | About page loads                             | About page loads                             | PASS      |
+| Tombola link loads the tombola page      | Tombola page loads                           | Tombola page loads                           | PASS      |
+| Register link loads the sign-up page     | Sign-up page loads                           | Sign-up page loads                           | PASS      |
+| Login link loads the login page          | Login page loads                             | Login page loads                             | PASS      |
 
 #### Blog Post Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Blog posts visible on home page   | Blog posts displayed                   | Blog posts displayed                   | PASS      |
-| Superuser creates new blog posts   | Blog post created                      | Blog post created                      | PASS      |
-| Superuser edits blog posts         | Blog post edited                       | Blog post edited                       | PASS      |
-| Superuser deletes blog posts       | Blog post deleted                      | Blog post deleted                      | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Blog posts are visible on the home page  | Blog posts displayed                         | Blog posts displayed                         | PASS      |
+| Superuser creates new blog posts         | Blog post created                            | Blog post created                            | PASS      |
+| Superuser edits blog posts               | Blog post edited                             | Blog post edited                             | PASS      |
+| Superuser deletes blog posts             | Blog post deleted                            | Blog post deleted                            | PASS      |
 
 #### Blog Comment Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Superuser/users can submit comments | Comment can be submitted               | Comment can be submitted               | PASS      |
-| Superuser/users can edit comments  | Comment can be edited                  | Comment can be edited                  | PASS      |
-| Edit button flashes comment body  | Comment flashes with JS/CSS            | Comment flashes with JS/CSS            | PASS      |
-| Superuser/users can delete comments | Comment can be deleted                 | Comment can be deleted                 | PASS      |
-| Delete confirmation shakes with JS/CSS | Confirmation shakes                   | Confirmation shakes                    | PASS      |
-| Superuser can approve comments     | Comment approved in admin panel        | Comment approved in admin panel        | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Superuser and users can submit comments  | Comment can be submitted                     | Comment can be submitted                     | PASS      |
+| Superuser and users can edit comments    | Comment can be edited                        | Comment can be edited                        | PASS      |
+| Edit button flashes the comment body     | Comment flashes with JavaScript/CSS          | Comment flashes with JavaScript/CSS          | PASS      |
+| Superuser and users can delete comments  | Comment can be deleted                       | Comment can be deleted                       | PASS      |
+| Delete confirmation shakes with JavaScript/CSS | Confirmation shakes                      | Confirmation shakes                          | PASS      |
+| Superuser can approve comments           | Comment approved in the admin panel          | Comment approved in the admin panel          | PASS      |
 
 #### About Page Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| About content displays correctly   | About content displayed correctly      | About content displayed correctly      | PASS      |
-| About content editable in admin    | Content editable in rich-text mode     | Content editable in rich-text mode     | PASS      |
-| Cloudinary images selectable in admin | Cloudinary images selectable        | Cloudinary images selectable           | PASS      |
-| Superuser deletes about content    | About content deleted                  | About content deleted                  | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| About content displays correctly         | About content displayed correctly            | About content displayed correctly            | PASS      |
+| About content is editable in the admin   | Content editable in rich-text mode           | Content editable in rich-text mode           | PASS      |
+| Cloudinary images are selectable in the admin | Cloudinary images selectable               | Cloudinary images selectable                 | PASS      |
+| Superuser deletes about content          | About content deleted                        | About content deleted                        | PASS      |
 
 #### Tombola Page Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Tombola participation info loads   | Participation info visible             | Participation info visible             | PASS      |
-| Tombola participation form loads   | Form loads                             | Form loads                             | PASS      |
-| All visitors can participate       | Name and email required for participation | Name and email required              | PASS      |
-| Tombola registration success notif | "Successfully registered" notification | "Successfully registered" notification | PASS      |
-| Tombola notification can be closed | Notification can be closed             | Notification can be closed             | PASS      |
-| 10 participants displayed at a time | 10 participants displayed             | 10 participants displayed             | PASS      |
-| Pagination buttons accessible       | Pagination buttons work                | Pagination buttons work                | PASS      |
-| Participants can be deleted        | Participants deleted from admin panel  | Participants deleted from admin panel  | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Tombola participation information loads  | Participation information visible            | Participation information visible            | PASS      |
+| Tombola participation form loads         | Form loads                                   | Form loads                                   | PASS      |
+| All visitors can participate             | Name and email required for participation    | Name and email required for participation    | PASS      |
+| Tombola registration success notification | "Successfully registered" notification       | "Successfully registered" notification       | PASS      |
+| Tombola notification can be closed       | Notification can be closed                   | Notification can be closed                   | PASS      |
+| Ten participants displayed at a time     | Ten participants displayed                   | Ten participants displayed                   | PASS      |
+| Pagination buttons are accessible        | Pagination buttons work                      | Pagination buttons work                      | PASS      |
+| Participants can be deleted              | Participants deleted from the admin panel    | Participants deleted from the admin panel    | PASS      |
 
 #### Registration Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Sign up page loads correctly       | Sign up page loads                     | Sign up page loads                     | PASS      |
-| Fields can be filled               | Fields fillable                        | Fields fillable                        | PASS      |
-| Account created successfully       | Account created                        | Account created                        | PASS      |
-| Account logs in automatically      | Logged in automatically                | Logged in automatically                | PASS      |
-| Login notification can be closed   | Notification closes                    | Notification closes                    | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Sign-up page loads correctly             | Sign-up page loads                           | Sign-up page loads                           | PASS      |
+| Fields can be filled                     | Fields are fillable                          | Fields are fillable                          | PASS      |
+| Account created successfully             | Account created                              | Account created                              | PASS      |
+| Account logs in automatically            | Logged in automatically                      | Logged in automatically                      | PASS      |
+| Login notification can be closed         | Notification closes                          | Notification closes                          | PASS      |
 
 #### Logging In/Out Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Login with superuser account       | Superuser login successful             | Superuser login successful             | PASS      |
-| Login with user account            | User login successful                  | User login successful                  | PASS      |
-| Superuser login notification       | "Logged in as superuser"               | "Logged in as superuser"               | PASS      |
-| Superuser login notification closed | Can close superuser notification       | Can close superuser notification       | PASS      |
-| User login notification            | "Logged in as user"                    | "Logged in as user"                    | PASS      |
-| User login notification closed     | Can close user notification            | Can close user notification            | PASS      |
-| Logout confirmation                | "Are you sure you want to sign out?"   | "Are you sure you want to sign out?"   | PASS      |
-| Logout confirmation closed         | Can close confirmation                 | Can close confirmation                 | PASS      |
-| Logout success notification        | "You have signed out"                  | "You have signed out"                  | PASS      |
-| Logout success notification closed | Can close notification                 | Can close notification                 | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Login with superuser account             | Superuser login successful                   | Superuser login successful                   | PASS      |
+| Login with user account                  | User login successful                        | User login successful                        | PASS      |
+| Superuser login notification             | "Logged in as superuser"                     | "Logged in as superuser"                     | PASS      |
+| Superuser login notification can be closed | Can close superuser notification           | Can close superuser notification             | PASS      |
+| User login notification                  | "Logged in as user"                          | "Logged in as user"                          | PASS      |
+| User login notification can be closed    | Can close user notification                  | Can close user notification                  | PASS      |
+| Logout confirmation                      | "Are you sure you want to sign out?"         | "Are you sure you want to sign out?"         | PASS      |
+| Logout confirmation can be closed        | Can close confirmation                       | Can close confirmation                       | PASS      |
+| Logout success notification              | "You have signed out"                        | "You have signed out"                        | PASS      |
+| Logout success notification can be closed | Can close notification                       | Can close notification                       | PASS      |
 
 #### Footer Icons Functionality
 
-| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
-|------------------------------------|----------------------------------------|----------------------------------------|-----------|
-| Footer icons display correctly     | Icons display correctly                | Icons display correctly                | PASS      |
-| Facebook icon opens in new tab    | Opens Facebook                         | Opens Facebook                         | PASS      |
-| Twitter icon opens in new tab     | Opens Twitter                          | Opens Twitter                          | PASS      |
-| Instagram icon opens in new tab   | Opens Instagram                        | Opens Instagram                        | PASS      |
-| YouTube icon opens in new tab      | Opens YouTube                          | Opens YouTube                          | PASS      |
+| Test Case                                | Expected Value                               | Observed Value                               | Pass/Fail |
+|------------------------------------------|----------------------------------------------|----------------------------------------------|-----------|
+| Footer icons display correctly           | Icons display correctly                      | Icons display correctly                      | PASS      |
+| Facebook icon opens in a new tab         | Opens Facebook                               | Opens Facebook                               | PASS      |
+| Twitter icon opens in a new tab          | Opens Twitter                                | Opens Twitter                                | PASS      |
+| Instagram icon opens in a new tab        | Opens Instagram                              | Opens Instagram                              | PASS      |
+| YouTube icon opens in a new tab          | Opens YouTube                                | Opens YouTube                                | PASS      |
 
 This list of tests aims to verify the general stability and features of the web application but is not considered exhaustive; there are endless ways to test a web application, especially from the admin panel.
 
