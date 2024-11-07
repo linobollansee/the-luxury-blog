@@ -553,7 +553,7 @@ A beautifully designed, luxury-inspired logo greets you upon arrival. The logo s
 
 ### Navigation Bars
 
-The Luxury Blog offers two navigation bars, one for desktop and one for mobile, to facilitate easy browsing. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
+The Luxury Blog offers two navigation bars, one for desktop and one for mobile, to facilitate easy browsing. The navigation bar offers a Home button, an About button, a Tombola button, a Register button, a Login button, and a Logout button while one is already logged in. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
 - Desktop Navigation Bar
 
@@ -625,7 +625,7 @@ Creating Data:
 
 ![readme/images/luxury-blog-desktop-collaboration-message.png](readme/images/luxury-blog-desktop-collaboration-message.png)
 
-- Although not all of the following are directly supported by The Luxury Blog, in theory superusers can create any data in the admin panel's data models: About, Collaborate requests, Email addresses, Groups, Users, Comments, Posts, Attachments, Sites, Social accounts, Social application tokens, Social applications.
+- A superusers can create any data in the admin panel's data models.
 
 Reading data:
 
@@ -641,9 +641,19 @@ Reading data:
 
 ![readme/images/luxury-blog-desktop-tombola-pagination.png](readme/images/luxury-blog-desktop-tombola-pagination.png)
 
-- A superuser can also read the paginated lists of Tombola participants in the admin panel
+- A superuser can also read the paginated lists of Tombola participants in the admin panel:
 
 ![readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png](readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png)
+
+- A guest, user, or superuser can read the customized content and see two custom images on the About page created by the superuser:
+
+![readme/images/luxury-blog-desktop-about-content.png](readme/images/luxury-blog-desktop-about-content.png)
+
+- Only a user can read their own comment that has not yet been approved on the home page:
+
+![readme/images/luxury-blog-desktop-comment-awaiting-approval.png](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
+
+- A superusers can read any data in the admin panel's data models.
 
 Updating data:
 
@@ -657,6 +667,8 @@ Note: Javascript and CSS code has been written to briefly flash the comment's in
 
 ![readme/images/luxury-blog-desktop-superuser-edit.png](readme/images/luxury-blog-desktop-superuser-edit.png)
 
+- A superusers can update any data in the admin panel's data models.
+
 Deleting data:
 
 - A user or superuser deleting their own comment:
@@ -668,6 +680,8 @@ Note: Javascript and CSS code has been written to briefly shake the deletion con
 - A superuser deleting a comment through the admin panel:
 
 ![readme/images/luxury-blog-desktop-superuser-delete.png](readme/images/luxury-blog-desktop-superuser-delete.png)
+
+- A superuser can delete any data in the admin panel's data models.
 
 ### Notifications for Data Changes
 
