@@ -747,7 +747,7 @@ The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted C
 
 ### Potential Features to Implement
 
-The DTL templates could be further customized to enhance the experience for guests, users, and superusers. For example, guests might see additional advertisements encouraging quick sign-ups, while users could receive ads more tailored to regular site visitors. Superusers could have an admin button in the navigation bar, removing the need to manually type the `/admin` link. Additionally, admins and superusers might be restricted from participating in the the Tombola or any other new features that are supposed to be only for the non-staff clients of the site.
+The DTL templates could be further customized to enhance the experience for guests, users, and superusers. For example, guests might see additional advertisements encouraging quick sign-ups, while users could receive ads more tailored to regular site visitors. Superusers could have an admin button in the navigation bar, removing the need to manually type the `/admin` link. Additionally, admins and superusers might be restricted from participating in the the Tombola or any other new features that are supposed to be only for the non-staff clients of the site. Naturally, all the unaddressed user stories categorized as MoSCoW 'Won't Have,' including User Story 8.1: Enable Social Media Sharing for User Content, User Story 8.2: Customize Dashboard Layout, and User Story 8.3: Advanced Filtering and Search Options, are also potential features for implementation.
 
 ## Bugs and Issues
 
