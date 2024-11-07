@@ -38,7 +38,6 @@ ALLOWED_HOSTS = [
     "the-luxury-blog.onrender.com",
 ]
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -101,17 +100,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'luxury.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
@@ -154,7 +142,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
