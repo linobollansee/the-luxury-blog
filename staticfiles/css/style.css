@@ -197,3 +197,8 @@ body {
     50% { transform: translateX(5px); }
     75% { transform: translateX(-5px); }
 }
+
+/* Custom styling for Bootstrap alert component with a turquoise background color */
+.alert {
+    background-color: turquoise;
+}
