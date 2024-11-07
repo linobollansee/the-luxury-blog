@@ -15,6 +15,32 @@ from .forms import ParticipantForm
 # Define a view function for handling the Tombola page.
 # This view handles both form submissions and renders the participant list.
 def tombola_view(request):
+    """
+    Handle the Tombola page view, managing both form submissions for
+    participant registration and displaying a paginated list of registered
+    participants.
+
+    This view supports the following functionality:
+    - Handles POST requests to process form submissions for new participants.
+      - Validates and saves the participant data.
+      - Adds a one-time success message for successful registration.
+      - Redirects to the Tombola page after successful submission to prevent
+      duplicate entries on refresh.
+    - Handles GET requests to display the Tombola page with an empty form and a
+    paginated list of participants.
+      - Fetches all participants from the database, ordered by creation date
+      (most recent first).
+      - Uses pagination to display 10 participants per page.
+
+    Parameters:
+        request (HttpRequest): The incoming HTTP request, which can be GET or
+        POST.
+
+    Returns:
+        HttpResponse: Renders the 'tombola/tombola.html' template with:
+            - 'form': the ParticipantForm instance.
+            - 'participants': a paginated list of Participant objects.
+    """
     # Check if the request is a POST request when the form is being submitted.
     if request.method == 'POST':
         # Create a form instance with the submitted data (request.POST).
