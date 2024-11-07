@@ -963,84 +963,109 @@ Admin page:
 
 [https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/admin/](https://wave.webaim.org/report#/https://the-luxury-blog.onrender.com/admin/)
 
-### Manual Testing
+### Manual Testing for The Luxury Blog
 
-A set of manual tests was developed for the web application The Luxury Blog.
+#### Desktop Navigation Bar Functionality
 
-- Desktop navigation bar functionality
-  - PASS: The desktop version loads at 992 pixels width or more.
-  - PASS: The Logo button loads the home page.
-  - PASS: The Home link loads the home page. 
-  - PASS: The About link loads the about page.
-  - PASS: The Tombola link loads the tombola page.
-  - PASS: The Register link loads the sign up page.
-  - PASS: The Login link loads the login page.
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Desktop loads at 992px or more     | Desktop version loads                  | Desktop version loads                  | PASS      |
+| Logo button loads home page       | Home page loads                        | Home page loads                        | PASS      |
+| Home link loads home page         | Home page loads                        | Home page loads                        | PASS      |
+| About link loads about page       | About page loads                       | About page loads                       | PASS      |
+| Tombola link loads tombola page   | Tombola page loads                     | Tombola page loads                     | PASS      |
+| Register link loads sign up page  | Sign up page loads                     | Sign up page loads                     | PASS      |
+| Login link loads login page       | Login page loads                       | Login page loads                       | PASS      |
 
-- Mobile navigation bar functionality
-  - PASS: The hamburger menu icon loads at 991 pixels width or less.
-  - PASS: The hamburger menu opens when clicked.
-  - PASS: The Logo button loads the home page.
-  - PASS: The Home link loads the home page. 
-  - PASS: The About link loads the about page.
-  - PASS: The Tombola link loads the tombola page.
-  - PASS: The Register link loads the sign up page.
-  - PASS: The Login link loads the login page.
+#### Mobile Navigation Bar Functionality
 
-- Blog post functionality
-  - PASS: The blog posts are visible on the home page.
-  - PASS: The superuser can create new blog posts through the admin panel.
-  - PASS: The superuser can edit blog posts through the admin panel.
-  - PASS: The superuser can delete blog posts through the admin panel.
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Hamburger menu icon loads at 991px or less | Hamburger menu icon appears     | Hamburger menu icon appears            | PASS      |
+| Hamburger menu opens when clicked  | Menu opens                             | Menu opens                             | PASS      |
+| Logo button loads home page       | Home page loads                        | Home page loads                        | PASS      |
+| Home link loads home page         | Home page loads                        | Home page loads                        | PASS      |
+| About link loads about page       | About page loads                       | About page loads                       | PASS      |
+| Tombola link loads tombola page   | Tombola page loads                     | Tombola page loads                     | PASS      |
+| Register link loads sign up page  | Sign up page loads                     | Sign up page loads                     | PASS      |
+| Login link loads login page       | Login page loads                       | Login page loads                       | PASS      |
 
-- Blog comment functionality
-  - PASS: The superuser/users can submit blog comments.
-  - PASS: The superuser/users can edit blog comments.
-  - PASS: The edit button flashes the comment body with Javascript/CSS code when clicked.
-  - PASS: The superuser/users can delete their blog comments.
-  - PASS: The delete confirmation pop-up shakes with Javascript/CSS code when clicked.
-  - PASS: The superuser can approve comments in the admin panel.
+#### Blog Post Functionality
 
-- About page functionality
-  - PASS: The about content displays correctly.
-  - PASS: The about content can be edited in the admin panel in rich-text mode with summernote.
-  - PASS: The two cloudinary images can be chosen through the admin panel.
-  - PASS: The superuser can delete the about content through the admin panel.
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Blog posts visible on home page   | Blog posts displayed                   | Blog posts displayed                   | PASS      |
+| Superuser creates new blog posts   | Blog post created                      | Blog post created                      | PASS      |
+| Superuser edits blog posts         | Blog post edited                       | Blog post edited                       | PASS      |
+| Superuser deletes blog posts       | Blog post deleted                      | Blog post deleted                      | PASS      |
 
-- Tombola page functionality
-  - PASS: The tombola participation information loads.
-  - PASS: The tombola participation form loads.
-  - PASS: All visitors can participate in the Tombola with a name and unique email address.
-  - PASS: Tombola participation notification: "Your Tombola participation has been successfully registered!".
-  - PASS: Notification "Your Tombola participation has been successfully registered!" can be closed.
-  - PASS: 10 participants are displayed at a time.
-  - PASS: Pagination buttons allow access to additional participants.
-  - PASS: Tombola participants can be deleted from the admin panel.
+#### Blog Comment Functionality
 
-- Registration functionality
-  - PASS: The sign up page loads correctly. 
-  - PASS: The username/email/password/password fields can be entered with information.
-  - PASS: The account is succesfully created.
-  - PASS: The account automatically logs-in.
-  - PASS: The account login notification can be closed.
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Superuser/users can submit comments | Comment can be submitted               | Comment can be submitted               | PASS      |
+| Superuser/users can edit comments  | Comment can be edited                  | Comment can be edited                  | PASS      |
+| Edit button flashes comment body  | Comment flashes with JS/CSS            | Comment flashes with JS/CSS            | PASS      |
+| Superuser/users can delete comments | Comment can be deleted                 | Comment can be deleted                 | PASS      |
+| Delete confirmation shakes with JS/CSS | Confirmation shakes                   | Confirmation shakes                    | PASS      |
+| Superuser can approve comments     | Comment approved in admin panel        | Comment approved in admin panel        | PASS      |
 
-- Logging in/out functionality
-  - PASS: Logging in with the `superuser` account is succesful.
-  - PASS: Logging in with a `user` account is succesful.
-  - PASS: Superuser login notification: "You are logged in as a superuser:"
-  - PASS: The superuser login notification can be closed.
-  - PASS: User login notification: "You are logged in as: user"
-  - PASS: The user login notification can be closed.
-  - PASS: Logout notification: "Are you sure you want to sign out?"
-  - PASS: The logout notification can be closed.
-  - PASS: Logout confirmation: "You have signed out."
-  - PASS: The logout confirmation can be closed.
+#### About Page Functionality
 
-- Footer icons functionality
-  - PASS: The footer icons display correctly on desktop and mobile.
-  - PASS: Clicking the Facebook icon opens Facebook in a new tab.
-  - PASS: Clicking the Twitter icon opens Twitter in a new tab.
-  - PASS: Clicking the Instagram icon opens Instagram in a new tab.
-  - PASS: Clicking the YouTube icon opens YouTube in a new tab.
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| About content displays correctly   | About content displayed correctly      | About content displayed correctly      | PASS      |
+| About content editable in admin    | Content editable in rich-text mode     | Content editable in rich-text mode     | PASS      |
+| Cloudinary images selectable in admin | Cloudinary images selectable        | Cloudinary images selectable           | PASS      |
+| Superuser deletes about content    | About content deleted                  | About content deleted                  | PASS      |
+
+#### Tombola Page Functionality
+
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Tombola participation info loads   | Participation info visible             | Participation info visible             | PASS      |
+| Tombola participation form loads   | Form loads                             | Form loads                             | PASS      |
+| All visitors can participate       | Name and email required for participation | Name and email required              | PASS      |
+| Tombola registration success notif | "Successfully registered" notification | "Successfully registered" notification | PASS      |
+| Tombola notification can be closed | Notification can be closed             | Notification can be closed             | PASS      |
+| 10 participants displayed at a time | 10 participants displayed             | 10 participants displayed             | PASS      |
+| Pagination buttons accessible       | Pagination buttons work                | Pagination buttons work                | PASS      |
+| Participants can be deleted        | Participants deleted from admin panel  | Participants deleted from admin panel  | PASS      |
+
+#### Registration Functionality
+
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Sign up page loads correctly       | Sign up page loads                     | Sign up page loads                     | PASS      |
+| Fields can be filled               | Fields fillable                        | Fields fillable                        | PASS      |
+| Account created successfully       | Account created                        | Account created                        | PASS      |
+| Account logs in automatically      | Logged in automatically                | Logged in automatically                | PASS      |
+| Login notification can be closed   | Notification closes                    | Notification closes                    | PASS      |
+
+#### Logging In/Out Functionality
+
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Login with superuser account       | Superuser login successful             | Superuser login successful             | PASS      |
+| Login with user account            | User login successful                  | User login successful                  | PASS      |
+| Superuser login notification       | "Logged in as superuser"               | "Logged in as superuser"               | PASS      |
+| Superuser login notification closed | Can close superuser notification       | Can close superuser notification       | PASS      |
+| User login notification            | "Logged in as user"                    | "Logged in as user"                    | PASS      |
+| User login notification closed     | Can close user notification            | Can close user notification            | PASS      |
+| Logout confirmation                | "Are you sure you want to sign out?"   | "Are you sure you want to sign out?"   | PASS      |
+| Logout confirmation closed         | Can close confirmation                 | Can close confirmation                 | PASS      |
+| Logout success notification        | "You have signed out"                  | "You have signed out"                  | PASS      |
+| Logout success notification closed | Can close notification                 | Can close notification                 | PASS      |
+
+#### Footer Icons Functionality
+
+| Test Case                          | Expected Value                         | Observed Value                         | Pass/Fail |
+|------------------------------------|----------------------------------------|----------------------------------------|-----------|
+| Footer icons display correctly     | Icons display correctly                | Icons display correctly                | PASS      |
+| Facebook icon opens in new tab    | Opens Facebook                         | Opens Facebook                         | PASS      |
+| Twitter icon opens in new tab     | Opens Twitter                          | Opens Twitter                          | PASS      |
+| Instagram icon opens in new tab   | Opens Instagram                        | Opens Instagram                        | PASS      |
+| YouTube icon opens in new tab      | Opens YouTube                          | Opens YouTube                          | PASS      |
 
 This list of tests aims to verify the general stability and features of the web application but is not considered exhaustive; there are endless ways to test a web application, especially from the admin panel.
 
