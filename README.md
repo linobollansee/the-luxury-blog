@@ -11,7 +11,7 @@ Important: Please note that Render.com has a feature that automatically pauses s
 
 Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated and aspirational lifestyle for discerning readers. Our mission is to promote high-end goods through engaging content that resonates with affluent audiences, featuring in-depth product reviews that highlight craftsmanship and exclusivity, interviews with industry insiders for insights into the luxury sector, and exclusive brand partnerships showcasing the latest trends. We emphasize the prestige and unique qualities of luxury products—whether fashion items, automobiles, or travel experiences—through visually stunning imagery and compelling storytelling that foster a desire for ownership. Catering to an audience that appreciates elegance and sophistication, Luxury Blog strives to connect personal identities with the prestige of luxury goods, making each visit an enriching experience. Join us on this journey to explore the world of luxury!
 
-![Luxury Blog preview screenshot](readme/images/luxury-blog-preview.png)
+![Preview of the Luxury Blog project interface](readme/images/luxury-blog-preview.png)
 
 ## Table of Contents
 - [Agile Methodology](#agile-methodology)
@@ -68,7 +68,7 @@ A Kanban board has been set up and used for this purpose, providing an organized
 
 A screenshot of The Luxury Blog Kanban Board during active development phase usage:
 
-![Luxury Blog Kanban Board](readme/images/luxury-blog-kanban-board.png)
+![Kanban board for tracking tasks in the Luxury Blog project](readme/images/luxury-blog-kanban-board.png)
 
 ### Epics
 
@@ -343,7 +343,7 @@ User Story 8.4: Multi-Language Support
 
 ### Entity Relationship Diagram (ERD)
 
-![Luxury Blog ERD](readme/images/luxury-blog-erd.png)
+![Entity-Relationship Diagram (ERD) for the Luxury Blog project](readme/images/luxury-blog-erd.png)
 
 The syntax used on [https://app.eraser.io/](https://app.eraser.io/) to generate the diagram was as follows:
 
@@ -496,19 +496,19 @@ Balsamiq Wireframes, a powerful and user-friendly tool, was used to create a ser
 
 Desktop computer wireframes:
 
-![readme/images/luxury-blog-wireframe-desktop-home.png](readme/images/luxury-blog-wireframe-desktop-home.png)
-![readme/images/luxury-blog-wireframe-desktop-about.png](readme/images/luxury-blog-wireframe-desktop-about.png)
-![readme/images/luxury-blog-wireframe-desktop-tombola.png](readme/images/luxury-blog-wireframe-desktop-tombola.png)
-![readme/images/luxury-blog-wireframe-desktop-register.png](readme/images/luxury-blog-wireframe-desktop-register.png)
-![readme/images/luxury-blog-wireframe-desktop-login.png](readme/images/luxury-blog-wireframe-desktop-login.png)
+![Desktop home page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-desktop-home.png)
+![Desktop about page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-desktop-about.png)
+![Desktop tombola page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-desktop-tombola.png)
+![Desktop register page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-desktop-register.png)
+![Desktop login page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-desktop-login.png)
 
 Mobile device wireframes:
 
-![readme/images/luxury-blog-wireframe-mobile-home.png](readme/images/luxury-blog-wireframe-mobile-home.png)
-![readme/images/luxury-blog-wireframe-mobile-about.png](readme/images/luxury-blog-wireframe-mobile-about.png)
-![readme/images/luxury-blog-wireframe-mobile-tombola.png](readme/images/luxury-blog-wireframe-mobile-tombola.png)
-![readme/images/luxury-blog-wireframe-mobile-register.png](readme/images/luxury-blog-wireframe-mobile-register.png)
-![readme/images/luxury-blog-wireframe-mobile-login.png](readme/images/luxury-blog-wireframe-mobile-login.png)
+![Mobile home page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-mobile-home.png)
+![Mobile about page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-mobile-about.png)
+![Mobile tombola page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-mobile-tombola.png)
+![Mobile register page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-mobile-register.png)
+![Mobile login page wireframe for the Luxury Blog project](readme/images/luxury-blog-wireframe-mobile-login.png)
 
 ### Logo
 
@@ -539,7 +539,7 @@ The background was made by CSS styling:
 
 The favicon was generated using [https://favicon.io/favicon-generator/](https://favicon.io/favicon-generator/)
 
-![Luxury Blog Favicon](readme/images/luxury-blog-favicon.png)
+![Favicon for the Luxury Blog project](readme/images/luxury-blog-favicon.png)
 
 ## Features
 
@@ -549,7 +549,7 @@ This section seeks to cover as many features of the Luxury Blog as possible. How
 
 A beautifully designed, luxury-inspired logo greets you upon arrival. The logo sets a refined tone from the start, reflecting the elegance and high-end appeal of the content waiting for you within. It can be clicked to go to the home page. (User Story 1.1: Design Front-End for a Data-Driven Web Application)
 
-![Luxury Blog Logo](readme/images/luxury-blog-logo.png)
+![Logo for the Luxury Blog project](readme/images/luxury-blog-logo.png)
 
 ### Navigation Bars
 
@@ -557,11 +557,11 @@ The Luxury Blog offers two navigation bars, one for desktop and one for mobile, 
 
 - Desktop Navigation Bar
 
-![Luxury Blog Desktop Menu](readme/images/luxury-blog-desktop-navigation-bar.png)
+![Desktop navigation bar for the Luxury Blog project](readme/images/luxury-blog-desktop-navigation-bar.png)
 
 - Mobile Navigation Bar
 
-![Luxury Blog Mobile Menu](readme/images/luxury-blog-mobile-navigation-bar.png)
+![Mobile navigation bar for the Luxury Blog project](readme/images/luxury-blog-mobile-navigation-bar.png)
 
 ### Footer Bars
 
@@ -569,11 +569,11 @@ The Luxury Blog offers two footer systems, one for desktop and one for mobile, t
 
 - Desktop Footer
 
-![Luxury Blog Desktop Footer](readme/images/luxury-blog-desktop-footer.png)
+![Desktop footer for the Luxury Blog project](readme/images/luxury-blog-desktop-footer.png)
 
 - Mobile Footer
 
-![Luxury Blog Mobile Footer](readme/images/luxury-blog-mobile-footer.png)
+![Mobile footer for the Luxury Blog project](readme/images/luxury-blog-mobile-footer.png)
 
 ### Home Page Blog Posts
 
@@ -581,11 +581,11 @@ The Luxury Blog's home page showcases a curated selection of posts centered on l
 
 - Desktop Blog Posts
 
-![Luxury Blog Desktop Blog Posts](readme/images/luxury-blog-desktop-blog-posts.png)
+![Desktop blog posts section for the Luxury Blog project](readme/images/luxury-blog-desktop-blog-posts.png)
 
 - Mobile Blog Posts
 
-![Luxury Blog Mobile Blog Posts](readme/images/luxury-blog-mobile-blog-posts.png)
+![Mobile blog posts section for the Luxury Blog project](readme/images/luxury-blog-mobile-blog-posts.png)
 
 ### Blog Post Content
 
@@ -593,11 +593,11 @@ The Luxury Blog delivers post content with an elegant, stylish touch. (User Stor
 
 - Desktop Post Content
 
-![Luxury Blog Desktop Post Content](readme/images/luxury-blog-desktop-post-content.png)
+![Desktop post content section for the Luxury Blog project](readme/images/luxury-blog-desktop-post-content.png)
 
 - Mobile Post Content
 
-![Luxury Blog Mobile Post Content](readme/images/luxury-blog-mobile-post-content.png)
+![Mobile post content section for the Luxury Blog project](readme/images/luxury-blog-mobile-post-content.png)
 
 ### Implement CRUD Functionality
 
@@ -607,23 +607,23 @@ Creating Data:
 
 - A user signing up:
 
-![readme/images/luxury-blog-desktop-user-sign-up.png](readme/images/luxury-blog-desktop-user-sign-up.png)
+![Desktop user sign-up page for the Luxury Blog project](readme/images/luxury-blog-desktop-user-sign-up.png)
 
 - A user leaving a comment:
 
-![readme/images/luxury-blog-desktop-user-leaving-comment.png](readme/images/luxury-blog-desktop-user-leaving-comment.png)
+![Desktop user comment section for the Luxury Blog project](readme/images/luxury-blog-desktop-user-leaving-comment.png)
 
 - A user participating in the Tombola:
 
-![readme/images/luxury-blog-desktop-tombola-participation.png](readme/images/luxury-blog-desktop-tombola-participation.png)
+![Desktop tombola participation page for the Luxury Blog project](readme/images/luxury-blog-desktop-tombola-participation.png)
 
 - A superuser adding a Post using the admin panel:
 
-![readme/images/luxury-blog-desktop-superuser-adding-post.png](readme/images/luxury-blog-desktop-superuser-adding-post.png)
+![Desktop superuser adding a post for the Luxury Blog project](readme/images/luxury-blog-desktop-superuser-adding-post.png)
 
 - A guest or user sending a collaboration request:
 
-![readme/images/luxury-blog-desktop-collaboration-message.png](readme/images/luxury-blog-desktop-collaboration-message.png)
+![Desktop collaboration message section for the Luxury Blog project](readme/images/luxury-blog-desktop-collaboration-message.png)
 
 - A superusers can create any data in the admin panel's data models.
 
@@ -631,27 +631,27 @@ Reading data:
 
 - A guest, user, or superuser can read blog posts:
 
-![readme/images/luxury-blog-desktop-rolex-post.png](readme/images/luxury-blog-desktop-rolex-post.png)
+![Desktop view of a Rolex post on the Luxury Blog](readme/images/luxury-blog-desktop-rolex-post.png)
 
 - A guest, user, or superuser can read blog comments:
 
-![readme/images/luxury-blog-desktop-blog-comments.png](readme/images/luxury-blog-desktop-blog-comments.png)
+![Desktop view of blog comments section on the Luxury Blog](readme/images/luxury-blog-desktop-blog-comments.png)
 
 - A guest, user, or superuser can read paginated lists of Tombola participants:
 
-![readme/images/luxury-blog-desktop-tombola-pagination.png](readme/images/luxury-blog-desktop-tombola-pagination.png)
+![Desktop view of Tombola pagination on the Luxury Blog](readme/images/luxury-blog-desktop-tombola-pagination.png)
 
 - A superuser can also read the paginated lists of Tombola participants in the admin panel:
 
-![readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png](readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png)
+![Desktop view of the admin panel showing Tombola participants on the Luxury Blog](readme/images/luxury-blog-desktop-admin-panel-tombola-participants.png)
 
 - A guest, user, or superuser can read the customized content and see two custom images on the About page created by the superuser:
 
-![readme/images/luxury-blog-desktop-about-content.png](readme/images/luxury-blog-desktop-about-content.png)
+![Desktop view of the About content section on the Luxury Blog](readme/images/luxury-blog-desktop-about-content.png)
 
 - Only a user can read their own comment that has not yet been approved on the home page:
 
-![readme/images/luxury-blog-desktop-comment-awaiting-approval.png](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
+![Desktop view of a comment awaiting approval on the Luxury Blog](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
 
 - A superusers can read any data in the admin panel's data models.
 
@@ -659,13 +659,13 @@ Updating data:
 
 - A user updating their comment:
 
-![readme/images/luxury-blog-desktop-user-editing-comment.png](readme/images/luxury-blog-desktop-user-editing-comment.png)
+![Desktop view of a user editing a comment on the Luxury Blog](readme/images/luxury-blog-desktop-user-editing-comment.png)
 
 Note: Javascript and CSS code has been written to briefly flash the comment's input box when the edit button is clicked. This is hard to show in screenshots.
 
 - A superuser updating their post through the admin panel:
 
-![readme/images/luxury-blog-desktop-superuser-edit.png](readme/images/luxury-blog-desktop-superuser-edit.png)
+![Desktop view of a superuser editing content on the Luxury Blog](readme/images/luxury-blog-desktop-superuser-edit.png)
 
 - A superusers can update any data in the admin panel's data models.
 
@@ -673,13 +673,13 @@ Deleting data:
 
 - A user or superuser deleting their own comment:
 
-![readme/images/luxury-blog-desktop-comment-delete.png](readme/images/luxury-blog-desktop-comment-delete.png)
+![Desktop view of a comment being deleted on the Luxury Blog](readme/images/luxury-blog-desktop-comment-delete.png)
 
 Note: Javascript and CSS code has been written to briefly shake the deletion confirmation box. This is hard to show in screenshots.
 
 - A superuser deleting a comment through the admin panel:
 
-![readme/images/luxury-blog-desktop-superuser-delete.png](readme/images/luxury-blog-desktop-superuser-delete.png)
+![Desktop view of a superuser deleting content on the Luxury Blog](readme/images/luxury-blog-desktop-superuser-delete.png)
 
 - A superuser can delete any data in the admin panel's data models.
 
@@ -689,27 +689,27 @@ The Luxury Blog displays relevant notifications whenever there are changes to th
 
 - Comment submitted and awaiting approval notification:
 
-![readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png](readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png)
+![Desktop view of a comment awaiting approval notification on the Luxury Blog](readme/images/luxury-blog-desktop-comment-awaiting-approval-notification.png)
 
 - Comment updated notification:
 
-![readme/images/luxury-blog-desktop-comment-updated-notification.png](readme/images/luxury-blog-desktop-comment-updated-notification.png)
+![Desktop view of a comment updated notification on the Luxury Blog](readme/images/luxury-blog-desktop-comment-updated-notification.png)
 
 - Comment deleted notification:
 
-![readme/images/luxury-blog-desktop-comment-deleted-notification.png](readme/images/luxury-blog-desktop-comment-deleted-notification.png)
+![Desktop view of a comment deleted notification on the Luxury Blog](readme/images/luxury-blog-desktop-comment-deleted-notification.png)
 
 - Collaboration form received notification:
 
-![readme/images/luxury-blog-desktop-collaboration-form-received-notification.png](readme/images/luxury-blog-desktop-collaboration-form-received-notification.png)
+![Desktop view of a collaboration form received notification on the Luxury Blog](readme/images/luxury-blog-desktop-collaboration-form-received-notification.png)
 
 - Tombola participation notification:
 
-![readme/images/luxury-blog-desktop-tombola-participation-notification.png](readme/images/luxury-blog-desktop-tombola-participation-notification.png)
+![Desktop view of a Tombola participation notification on the Luxury Blog](readme/images/luxury-blog-desktop-tombola-participation-notification.png)
 
 - Account sign in notification (automatically after account creation):
 
-![readme/images/luxury-blog-desktop-sign-in-notification.png](readme/images/luxury-blog-desktop-sign-in-notification.png)
+![Desktop view of a sign-in notification on the Luxury Blog](readme/images/luxury-blog-desktop-sign-in-notification.png)
 
 ### Implement Role-Based Authentication
 
@@ -717,25 +717,25 @@ The Luxury Blog allows you to visit as a guest, login as a user, or as a superus
 
 - A guest, user, or superuser can read all the approved comments:
 
-![readme/images/luxury-blog-desktop-public-comments.png](readme/images/luxury-blog-desktop-public-comments.png)
+![Desktop view of public comments section on the Luxury Blog](readme/images/luxury-blog-desktop-public-comments.png)
 
 - Only a user or superuser can edit and delete their own comments:
 
-![readme/images/luxury-blog-desktop-personal-comment.png](readme/images/luxury-blog-desktop-personal-comment.png)
+![Desktop view of a personal comment on the Luxury Blog](readme/images/luxury-blog-desktop-personal-comment.png)
 
 - A superuser has access to and can manage all the features of the admin panel:
 
-![readme/images/luxury-blog-desktop-django-administration.png](readme/images/luxury-blog-desktop-django-administration.png)
+![Desktop view of the Django administration panel on the Luxury Blog](readme/images/luxury-blog-desktop-django-administration.png)
 
 - Guests, users, and superusers can participate in the Tombola, provided they enter a unique e-mail address:
 
-![readme/images/luxury-blog-desktop-tombola-participation-unique-email.png](readme/images/luxury-blog-desktop-tombola-participation-unique-email.png)
+![Desktop view of Tombola participation with a unique email entry on the Luxury Blog](readme/images/luxury-blog-desktop-tombola-participation-unique-email.png)
 
 Note: Superusers are allowed to participate in the Tombola for easier functionality testing, but this would be unrealistic in a real-world scenario. See potential features to implement.
 
 - A superuser logging out via the admin panel to let other users authenticate themselves:
 
-![readme/images/luxury-blog-desktop-superuser-logout.png](readme/images/luxury-blog-desktop-superuser-logout.png)
+![Desktop view of a superuser logging out from the Luxury Blog](readme/images/luxury-blog-desktop-superuser-logout.png)
 
 ### Securing Restricted Content
 
@@ -743,7 +743,7 @@ The Luxury Blog secures restricted content. (User Story 3.2: Secure Restricted C
 
 - The admin panel is not available to ordinary users at [https://the-luxury-blog.onrender.com/admin/](https://the-luxury-blog.onrender.com/admin/)
 
-![readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png](readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png)
+![Desktop view of a Django administration panel with an unauthorized access message on the Luxury Blog](readme/images/luxury-blog-desktop-django-adminstration-not-authorized.png)
 
 ### Potential Features to Implement
 
@@ -755,7 +755,7 @@ The DTL templates could be further customized to enhance the experience for gues
 
 Luxury Blog HTML Errors:
 
-![Luxury Blog HTML Errors](readme/images/luxury-blog-html-errors.png)
+![Desktop view of HTML error messages on the Luxury Blog](readme/images/luxury-blog-html-errors.png)
 
 - Single backticks, `&nbsp;` non-breaking spaces, and `<br>` line breaks were excessively used to create the README file. When I remembered that triple backticks were also supported and would implement similar functionality automatically, I upgraded all the content that would benefit from it.
 
@@ -763,13 +763,13 @@ Luxury Blog HTML Errors:
 
 Luxury Blog Bad Gateway:
 
-![Luxury Blog Bad Gateway](readme/images/luxury-blog-bad-gateway.png)
+![Desktop view of a Bad Gateway error page on the Luxury Blog](readme/images/luxury-blog-bad-gateway.png)
 
 Note: This particular error explains itself well enough, but the cloud platform also had many misloads that didn't provide explanations.
 
 Luxury Blog Restart:
 
-![Luxury Blog Restart](readme/images/luxury-blog-restart.png)
+![Desktop view of a restart process on the Luxury Blog](readme/images/luxury-blog-restart.png)
 
 - As in most projects, minor typos were made that had to be corrected, fortunately most of the time before the code was pushed to GitHub.
 
@@ -877,29 +877,29 @@ Google Lighthouse was used to audit the web application, providing an in-depth a
 
 Home page:
 
-![readme/images/luxury-blog-lighthouse-home.png](readme/images/luxury-blog-lighthouse-home.png)
+![Desktop view of the Lighthouse report for the Luxury Blog homepage](readme/images/luxury-blog-lighthouse-home.png)
 
 Blog pages:
 
 Mercedes article:
 
-![readme/images/luxury-blog-lighthouse-mercedes.png](readme/images/luxury-blog-lighthouse-mercedes.png)
+![Desktop view of the Lighthouse report for the Mercedes section of the Luxury Blog](readme/images/luxury-blog-lighthouse-mercedes.png)
 
 Montblanc article:
 
-![readme/images/luxury-blog-lighthouse-montblanc.png](readme/images/luxury-blog-lighthouse-montblanc.png)
+![Desktop view of the Lighthouse report for the Montblanc section of the Luxury Blog](readme/images/luxury-blog-lighthouse-montblanc.png)
 
 Rolex article:
 
-![readme/images/luxury-blog-lighthouse-rolex.png](readme/images/luxury-blog-lighthouse-rolex.png)
+![Desktop view of the Lighthouse report for the Rolex section of the Luxury Blog](readme/images/luxury-blog-lighthouse-rolex.png)
 
 About page:
 
-![readme/images/luxury-blog-lighthouse-about.png](readme/images/luxury-blog-lighthouse-about.png)
+![Desktop view of the Lighthouse report for the About section of the Luxury Blog](readme/images/luxury-blog-lighthouse-about.png)
 
 Tombola page:
 
-![readme/images/luxury-blog-lighthouse-tombola.png](readme/images/luxury-blog-lighthouse-tombola.png)
+![Desktop view of the Lighthouse report for the Tombola section of the Luxury Blog](readme/images/luxury-blog-lighthouse-tombola.png)
 
 Sign up page:
 
@@ -907,15 +907,15 @@ Sign up page:
 
 Login page:
 
-![readme/images/luxury-blog-lighthouse-login.png](readme/images/luxury-blog-lighthouse-login.png)
+![Desktop view of the Lighthouse report for the Signup section of the Luxury Blog](readme/images/luxury-blog-lighthouse-login.png)
 
 Logout page:
 
-![readme/images/luxury-blog-lighthouse-logout.png](readme/images/luxury-blog-lighthouse-logout.png)
+![Desktop view of the Lighthouse report for the Logout section of the Luxury Blog](readme/images/luxury-blog-lighthouse-logout.png)
 
 Admin page:
 
-![readme/images/luxury-blog-lighthouse-admin.png](readme/images/luxury-blog-lighthouse-admin.png)
+![Desktop view of the Lighthouse report for the Admin section of the Luxury Blog](readme/images/luxury-blog-lighthouse-admin.png)
 
 ### WAVE Web Accessibility Evaluation Tools Testing
 
@@ -1724,7 +1724,7 @@ class TestBlogViews(TestCase):
 
 Running the automated tests in the IDE Terminal:
 
-![readme/images/luxury-blog-automated-tests.png](readme/images/luxury-blog-automated-tests.png)
+![Screenshot of automated tests for the Luxury Blog project](readme/images/luxury-blog-automated-tests.png)
 
 ### Python PEP 8
 
@@ -1776,11 +1776,11 @@ tombola/views.py
 
 The `tombola/models.py` file passing PEP 8 validation
 
-![readme/images/luxury-blog-pep8-validation.png](readme/images/luxury-blog-pep8-validation.png)
+![Screenshot of PEP8 validation results for the Luxury Blog project](readme/images/luxury-blog-pep8-validation.png)
 
 The `luxury/settings.py` errors that do not break PEP 8 guidelines:
 
-![readme/images/luxury-blog-pep8-error.png](readme/images/luxury-blog-pep8-error.png)
+![Screenshot of a PEP8 error in the Luxury Blog project](readme/images/luxury-blog-pep8-error.png)
 
 ### HTML Validation
 
@@ -1823,7 +1823,7 @@ The W3C CSS Validation Service at [https://jigsaw.w3.org/css-validator/](https:/
 
 JSHint, a JavaScript Code Quality Tool at [https://jshint.com/](https://jshint.com/) was used to validate the `static/js/comments.js` file used in the Luxury Blog project without errors:
 
-![readme/images/luxury-blog-jshint.png](readme/images/luxury-blog-jshint.png)
+![Screenshot of JSHint validation results for the Luxury Blog project](readme/images/luxury-blog-jshint.png)
 
 ## Deployment
 
