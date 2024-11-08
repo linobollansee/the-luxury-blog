@@ -24,6 +24,7 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Wireframes](#wireframes)
   - [Logo](#logo)
   - [Background](#background)
+  - [Bootstrap Alerts and Notifications](#bootstrap-alerts-and-notifications)
   - [Favicon](#favicon)
 - [Features](#features)
   - [Luxury Blog Logo](#luxury-blog-logo)
@@ -542,6 +543,16 @@ The background was made by CSS styling:
 ```css
 .main-bg {
     background-color: #f8ecc3;
+}
+```
+
+### Bootstrap Alerts and Notifications
+
+The bootstrap alerts were modified by CSS styling to make the notifications more visible:
+
+```css
+.alert {
+    background-color: turquoise;
 }
 ```
 
