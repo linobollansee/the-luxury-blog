@@ -77,7 +77,7 @@ This project was planned using Agile project management through Epics, Descripti
 
 A Kanban board has been set up and used for this purpose, providing an organized overview. It can be accessed at: [https://github.com/users/linobollansee/projects/6](https://github.com/users/linobollansee/projects/6)
 
-A screenshot of The Luxury Blog Kanban Board during active development phase usage:
+A screenshot of The Luxury Blog Kanban Board during active development:
 
 ![Kanban board for tracking tasks in the Luxury Blog project](readme/images/luxury-blog-kanban-board.png)
 
