@@ -1,23 +1,32 @@
+<!-- Extend base HTML template -->
 {% extends 'base.html' %}
+<!-- Load static files for usage in template -->
 {% load static %}
+<!-- Load crispy forms for enhanced form rendering -->
 {% load crispy_forms_tags %}
 
+<!-- Start content block -->
 {% block content %}
 <div class="container mt-5">
     <div class="row">
         <div class="col-12 col-md-4 text-center">
+            <!-- Check if the profile image is a placeholder -->
             {% if "placeholder" in about.profile_image.url %}
             <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }}">
             {% else %}
             <img src="{{ about.profile_image.url }}" class="profile-image" alt="{{ about.title }}">
             {% endif %}
         </div>
+
         <div class="col-12 col-md-4">
+            <!-- Display profile title and content -->
             <h2>{{ about.title }}</h2>
             {{ about.content | safe }}
         </div>
+
         <!-- Display second profile image -->
         <div class="col-12 col-md-4 text-center">
+            <!-- Check if the second profile image is a placeholder -->
             {% if "placeholder2" in about.profile_image2.url %}
             <img src="{% static 'images/nobody.jpg' %}" class="profile-image" alt="{{ about.title }} - second image">
             {% else %}
@@ -25,11 +34,12 @@
             {% endif %}
         </div>
     </div>
+
     <div class="row justify-content-center">
         <div class="col-12 col-md-6 my-5">
-            <!-- Custom profile heading -->
+            <!-- Custom profile heading for collaboration -->
             <h2>Let’s work together!</h2>
-            <!-- Custom paragraph -->
+            <!-- Custom paragraph describing collaboration invitation -->
             <p>The Luxury Blog invites businesses to collaborate in reaching
                 a discerning audience of affluent consumers. With our focus on
                 aspirational lifestyles, craftsmanship, and exclusivity, we offer
@@ -37,6 +47,7 @@
                 from fashion to travel experiences. Let’s create a captivating
                 narrative together that connects your brand with readers who value
                 prestige and elegance.</p>
+            <!-- Collaboration form with CSRF protection and crispy styling -->
             <form method="post">
                 {{ collaborate_form | crispy }}
                 {% csrf_token %}

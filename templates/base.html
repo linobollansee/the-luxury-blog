@@ -1,6 +1,7 @@
-{% load static %}  <!-- Load the static files for use in the template -->
+<!-- Load the static files for use in the template -->
+{% load static %}
 
-{# Define URL patterns for navigation links #}
+<!-- Define URL patterns for navigation links -->
 {% url 'home' as home_url %}
 {% url 'about' as about_url %}
 {% url 'account_login' as login_url %}
@@ -8,12 +9,16 @@
 {% url 'account_logout' as logout_url %}
 {% url 'tombola' as tombola_url %}
 
-<!DOCTYPE html>  <!-- Declare the document type as HTML5 -->
-<html class="h-100" lang="en">  <!-- Set HTML language to English and define height to 100% -->
+<!-- Declare the document type as HTML5 -->
+<!DOCTYPE html>
+<!-- Set HTML language to English and define height to 100% -->
+<html class="h-100" lang="en">
 
 <head>
-    <title>The Luxury Blog</title>  <!-- Title of the webpage -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />  <!-- Ensure responsive design on mobile -->
+    <!-- Title of the webpage -->
+    <title>The Luxury Blog</title>
+    <!-- Ensure responsive design on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Favicon links for different sizes -->
     <link href="{% static 'favicon/apple-touch-icon.png' %}" rel="icon" sizes="180x180" />
@@ -39,34 +44,38 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 
-<body class="d-flex flex-column h-100 main-bg">  <!-- Set body layout and background class -->
+<body class="d-flex flex-column h-100 main-bg">
+    <!-- Set body layout and background class -->
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" role="navigation" aria-label="Main navigation">
         <div class="container-fluid">
+            <!-- Brand name -->
             <a class="navbar-brand" href="{% url 'home' %}" aria-label="Luxury Blog Home">
-                <span class="brand luxury">Luxury <span class="thin">Blog</span></span>  <!-- Brand name -->
+                <span class="brand luxury">Luxury <span class="thin">Blog</span></span>
             </a>
+            <!-- Icon for toggling the navbar -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon" aria-hidden="true"></span>  <!-- Icon for toggling the navbar -->
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
+                <!-- Navigation links with active class based on current page -->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- Navigation links with active class based on current page -->
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == home_url %}active{% endif %}"
-                            href="{% url 'home' %}" aria-label="Home Page">Home</a>
+                        <a class="nav-link {% if request.path == home_url %}active{% endif %}" href="{% url 'home' %}"
+                            aria-label="Home Page">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if request.path == about_url %}active{% endif %}"
-                            href="{% url 'about' %}" aria-label="About Us Page">About</a>
+                        <a class="nav-link {% if request.path == about_url %}active{% endif %}" href="{% url 'about' %}"
+                            aria-label="About Us Page">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == tombola_url %}active{% endif %}"
                             href="{% url 'tombola' %}" aria-label="Tombola Page">Tombola</a>
                     </li>
-                    {% if user.is_authenticated %}  <!-- Check if user is logged in -->
+                    <!-- Check if user is logged in -->
+                    {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == logout_url %}active{% endif %}"
                             href="{% url 'account_logout' %}" aria-label="Logout">Logout</a>
@@ -82,8 +91,9 @@
                     </li>
                     {% endif %}
                 </ul>
+                <!-- Tagline for the blog -->
                 <span class="navbar-text text-muted" aria-label="Tagline">
-                    Where Opulence Meets Inspiration  <!-- Tagline for the blog -->
+                    Where Opulence Meets Inspiration
                 </span>
             </div>
         </div>
@@ -93,28 +103,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                {% for message in messages %}  <!-- Loop through messages to display alerts -->
+                <!-- Loop through messages to display alerts -->
+                {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
-                    {{ message | safe }}  <!-- Display the message safely -->
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" title="Close alert"></button>
+                    <!-- Display the message safely -->
+                    {{ message | safe }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"
+                        title="Close alert"></button>
                 </div>
                 {% endfor %}
             </div>
         </div>
     </div>
 
+    <!-- Main content area -->
     <main class="flex-shrink-0 main-bg">
-        {% if user.is_authenticated %}  <!-- Conditional content for authenticated users -->
-        {% if user.is_superuser %}  <!-- Check if the user is a superuser -->
+        <!-- Conditional content for authenticated users -->
+        {% if user.is_authenticated %}
+        <!-- Check if the user is a superuser -->
+        {% if user.is_superuser %}
         <p class="text-end m-3" aria-label="Superuser status">You are logged in as a superuser: {{ user }}</p>
         {% else %}
-        <p class="text-end m-3" aria-label="User status">You are logged in as {{ user }}</p>  <!-- Regular user status -->
+        <p class="text-end m-3" aria-label="User status">You are logged in as {{ user }}</p>
+        <!-- Regular user status -->
         {% endif %}
         {% else %}
-        <p class="text-end m-3" aria-label="Guest status">You are not logged in</p>  <!-- Guest status -->
+        <p class="text-end m-3" aria-label="Guest status">You are not logged in</p> <!-- Guest status -->
         {% endif %}
 
-        {% block content %}  <!-- Placeholder for page-specific content -->
+        <!-- Placeholder for page-specific content -->
+        {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
@@ -122,14 +140,19 @@
     <!-- Footer Section -->
     <footer class="footer mt-auto py-3 dark-bg" role="contentinfo" aria-label="Footer">
         <p class="m-0 text-center text-white">
-            {% block copyright %}Copyright 2024 Lino Bollansee{% endblock copyright %}  <!-- Copyright message -->
+            <!-- Copyright message -->
+            {% block copyright %}Copyright 2024 Lino Bollansee{% endblock copyright %}
         </p>
+        <!-- Social media links -->
         <p class="m-0 text-center text-white" aria-label="Follow us on social media">Follow us:
-            <!-- Social media links -->
-            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-square ms-3 fa-2x"></i></a>
-            <a href="https://twitter.com/" target="_blank" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter-square ms-3 fa-2x"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram-square ms-3 fa-2x"></i></a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube" title="YouTube"><i class="fab fa-youtube-square ms-3 fa-2x"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" title="Facebook"><i
+                    class="fab fa-facebook-square ms-3 fa-2x"></i></a>
+            <a href="https://twitter.com/" target="_blank" aria-label="Twitter" title="Twitter"><i
+                    class="fab fa-twitter-square ms-3 fa-2x"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" title="Instagram"><i
+                    class="fab fa-instagram-square ms-3 fa-2x"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube" title="YouTube"><i
+                    class="fab fa-youtube-square ms-3 fa-2x"></i></a>
         </p>
     </footer>
 
@@ -138,7 +161,8 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
 
-    {% block extras %}  <!-- Placeholder for additional scripts or styles -->
+    <!-- Placeholder for additional scripts or styles -->
+    {% block extras %}
     {% endblock %}
 </body>
 

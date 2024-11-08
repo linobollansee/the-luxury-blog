@@ -1,15 +1,20 @@
+<!-- Extend base HTML template -->
 {% extends "base.html" %}
 
+<!-- Load i18n for translations and account/socialaccount templates -->
 {% load i18n %}
 {% load account socialaccount %}
 
+<!-- Set the title of the page to "Sign In" -->
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
+<!-- Start content block -->
 {% block content %}
 
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
+            <!-- Heading for sign-in page -->
             <h3>{% trans "Sign In" %}</h3>
             <!-- Welcome message -->
             <p>{% blocktrans %}Welcome back to the Luxury Blog. To leave a comment or like a post, please log in. If
@@ -20,12 +25,17 @@
     </div>
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
+            <!-- Login form -->
             <form class="login" method="POST" action="{% url 'account_login' %}">
+                <!-- CSRF token for security -->
                 {% csrf_token %}
+                <!-- Render the login form fields -->
                 {{ form.as_p }}
+                <!-- Redirect field if a return URL is specified -->
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
+                <!-- Submit button for signing in -->
                 <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
