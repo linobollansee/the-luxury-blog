@@ -672,7 +672,7 @@ Creating Data:
 
 ![Desktop collaboration message section for the Luxury Blog project](readme/images/luxury-blog-desktop-collaboration-message.png)
 
-- A superusers can create any data in the admin panel's data models.
+- Superusers can create any data in the admin panel's data models.
 
 Reading data:
 
