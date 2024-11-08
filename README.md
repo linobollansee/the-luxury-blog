@@ -25,6 +25,7 @@ Welcome to Luxury Blog, a premier platform dedicated to curating a sophisticated
   - [Logo](#logo)
   - [Background](#background)
   - [Bootstrap Alerts and Notifications](#bootstrap-alerts-and-notifications)
+  - [Flash effect](#flash-effect)
   - [Favicon](#favicon)
 - [Features](#features)
   - [Luxury Blog Logo](#luxury-blog-logo)
@@ -554,6 +555,31 @@ The bootstrap alerts were modified by CSS styling to make the notifications more
 .alert {
     background-color: turquoise;
 }
+```
+
+### Flash Effect
+
+A flash effect was created to make blog comment edits more visibile using CSS and Javascript:
+
+```css
+.edit-highlight {
+    animation: flashEdit 1s ease-in-out;
+}
+
+@keyframes flashEdit {
+    0% { background-color: #fffdd0; } /* Light yellow */
+    100% { background-color: white; }
+}
+```
+
+```javascript
+// Add a class to the comment text input to apply a highlighting animation
+commentText.classList.add("edit-highlight");
+        
+// Remove the highlight class after 1 second to reset the style
+setTimeout(() => {
+    commentText.classList.remove("edit-highlight");
+}, 1000); // Time set to 1000 milliseconds (1 second)
 ```
 
 ### Favicon
