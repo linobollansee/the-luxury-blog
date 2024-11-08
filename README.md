@@ -700,7 +700,7 @@ Reading data:
 
 ![Desktop view of a comment awaiting approval on the Luxury Blog](readme/images/luxury-blog-desktop-comment-awaiting-approval.png)
 
-- A superusers can read any data in the admin panel's data models.
+- A superuser can read any data in the admin panel's data models.
 
 Updating data:
 
@@ -714,7 +714,7 @@ Note: Javascript and CSS code has been written to briefly flash the comment's in
 
 ![Desktop view of a superuser editing content on the Luxury Blog](readme/images/luxury-blog-desktop-superuser-edit.png)
 
-- A superusers can update any data in the admin panel's data models.
+- A superuser can update any data in the admin panel's data models.
 
 Deleting data:
 
