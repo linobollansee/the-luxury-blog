@@ -786,6 +786,10 @@ The Luxury Blog allows you to visit as a guest, login as a user, or as a superus
 
 Note: Superusers are allowed to participate in the Tombola for easier functionality testing, but this would be unrealistic in a real-world scenario. See potential features to implement.
 
+- The Luxury Blog can indicate which role a logged in account currently has:
+
+![Desktop view of role indication on the Luxery Blog](readme/images/luxury-blog-desktop-role-indication.png)
+
 - A superuser logging out via the admin panel to let other users authenticate themselves:
 
 ![Desktop view of a superuser logging out from the Luxury Blog](readme/images/luxury-blog-desktop-superuser-logout.png)
