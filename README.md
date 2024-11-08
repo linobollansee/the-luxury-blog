@@ -721,6 +721,12 @@ The Luxury Blog displays relevant notifications whenever there are changes to th
 
 ![Desktop view of a sign-in notification on the Luxury Blog](readme/images/luxury-blog-desktop-sign-in-notification.png)
 
+The follow notification does not notify changes to data, but is included anyway for completeness:
+
+- Account sign out notification:
+
+![Desktop view of a sign-out notification on the Luxury Blog](readme/images/luxury-blog-desktop-sign-out-notification.png)
+
 ### Implement Role-Based Authentication
 
 The Luxury Blog allows you to visit as a guest, login as a user, or as a superuser. (User Story 3.1: Implement Role-Based Authentication)
