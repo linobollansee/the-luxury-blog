@@ -48,7 +48,7 @@
     <!-- Set body layout and background class -->
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white" role="navigation" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" aria-label="Main navigation">
         <div class="container-fluid">
             <!-- Brand name -->
             <a class="navbar-brand" href="{% url 'home' %}" aria-label="Luxury Blog Home">
@@ -92,7 +92,7 @@
                     {% endif %}
                 </ul>
                 <!-- Tagline for the blog -->
-                <span class="navbar-text text-muted" aria-label="Tagline">
+                <span class="navbar-text text-muted">
                     Where Opulence Meets Inspiration
                 </span>
             </div>
@@ -128,7 +128,7 @@
         <!-- Regular user status -->
         {% endif %}
         {% else %}
-        <p class="text-end m-3" aria-label="Guest status">You are not logged in</p> <!-- Guest status -->
+        <p class="text-end m-3">You are not logged in</p> <!-- Guest status -->
         {% endif %}
 
         <!-- Placeholder for page-specific content -->
@@ -138,13 +138,13 @@
     </main>
 
     <!-- Footer Section -->
-    <footer class="footer mt-auto py-3 dark-bg" role="contentinfo" aria-label="Footer">
+    <footer class="footer mt-auto py-3 dark-bg" aria-label="Footer">
         <p class="m-0 text-center text-white">
             <!-- Copyright message -->
             {% block copyright %}Copyright 2024 Lino Bollansee{% endblock copyright %}
         </p>
         <!-- Social media links -->
-        <p class="m-0 text-center text-white" aria-label="Follow us on social media">Follow us:
+        <p class="m-0 text-center text-white">Follow us:
             <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" title="Facebook"><i
                     class="fab fa-facebook-square ms-3 fa-2x"></i></a>
             <a href="https://twitter.com/" target="_blank" aria-label="Twitter" title="Twitter"><i
